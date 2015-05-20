@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+
+  <body>
+    <p>
+      Hi <%= @user.email %>,
+        Thank you for signing up for MusicApp. Please activate your account by clicking here:
+        <a href="<%= activate_users_url %>?activation_token=<%= @user.activation_token %>">Activate!</a>
+    </p>
+
+    <p>Or copy and paste this in your browser: <%= activate_users_url %>?activation_token=<%= @user.activation_token %></p>
+
+    <p>Thank you!</p>
+  <body>
+</html>

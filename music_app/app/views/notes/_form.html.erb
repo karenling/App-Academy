@@ -1,0 +1,11 @@
+<%= render 'shared/errors' %>
+<form action="<%= notes_url %>" method="post">
+  <%= form_authentication %>
+
+  <input type="hidden" name="note[track_id]" value="<%= track.id %>">
+  <label for="note-body">Note</label>
+  <textarea name="note[body]" id="note-body"><%= note.body %></textarea>
+
+  <input type="submit" value="Add Note">
+
+</form>

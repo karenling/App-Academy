@@ -1,0 +1,22 @@
+<h1><%= @album.name %></h1>
+
+Title: <%= @album.name %><br>
+Band/Artist: <%= @album.band.name %><br>
+Album type: <%= @album.live_studio_type %><br>
+
+<h2>Tracks in this album:</h2>
+<ol>
+<% @album.tracks.each do |track| %>
+  <li><%= link_to track.name, track_url(track) %></li>
+<% end %>
+</ol>
+<% if admin? %>
+  <%= link_to "Add Tracks for #{@album.name}",
+      new_album_track_url(@album) %><br>
+  <%= link_to "Edit for #{@album.name}", edit_album_url(@album) %><br>
+  <%= button_to "Delete for #{@album.name}", album_url(@album), method: "delete" %><br>
+<% end %>
+
+
+
+<%= link_to "Back to Band Page", band_url(@album.band_id) %>
