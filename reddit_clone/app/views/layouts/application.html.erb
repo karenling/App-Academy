@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RedditClone</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <style type="text/css">
+    .button_to {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+
+<%= render 'shared/notices_errors' %>
+<% if logged_in? %>
+  You are currently logged in as: <%= current_user.username %>
+  <%= button_to "Log out", session_url, method: "delete" %>
+<% else %>
+  <h3><%= link_to "Sign in here", new_session_url %> </h3>
+<% end %>
+<div style="height: 1px; width: 100%; background-color: #dddddd; margin: 10px 0;"></div>
+<%= yield %>
+</body>
+</html>

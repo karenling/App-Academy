@@ -1,0 +1,7 @@
+<span style="float: right;">posts/edit.html.erb</span>
+
+<h1>Edit Post: <%= @post.title %></h1>
+
+<%= render 'form', current_post: @post,
+                   all_subs: @subs,
+                   subs_of_post: @subs_of_post %>

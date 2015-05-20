@@ -1,0 +1,7 @@
+<span style="float: right;">users/new/html.erb</span>
+
+<%= render 'shared/username_password_form',
+  user: @user,
+  action_url: users_url,
+  submit_msg: "Create User!"
+%>

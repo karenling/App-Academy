@@ -1,0 +1,14 @@
+<span style="float: right;">comments/show.html.erb</span>
+
+<h1>Comment</h1>
+
+<p><b>Content</b>: <%= @comment.content %></p>
+<p><b>Author</b>: <%= @comment.author.username %></p>
+<p>
+  <b>Post</b>:
+  #<%= link_to @post_id, post_url(@post_id) %>
+</p>
+
+<h2>Reply?</h1>
+
+<%= render 'form', post_id: @post_id, nil_or_parent_id: @comment.id %>
