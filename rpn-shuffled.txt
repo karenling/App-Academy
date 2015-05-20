@@ -1,0 +1,153 @@
+      else
+      if operators.include?(element)
+  end
+p asking.ask_user
+# p testing.show_input
+# You should be able to invoke it as a script from the command line.
+    @answer << -@answer.pop + @answer.pop
+  end
+# input = File.read(filename)
+
+      else
+
+
+# 5 12 + 3 -
+  def show_input
+
+# in which case it opens and reads that file instead of reading user input.
+
+
+
+    p @answer << element
+  def answer_value
+# [5, 1, 2]    [+ 4 * + 3 -]
+# p testing.evaluate
+# class
+  end
+#
+        Integer(element)
+
+#require 'byebug'
+    @input = convert_to_array(@input.join(" "))
+
+#
+      @input << user_input
+# argument = RPN.new(input)
+
+    evaluate
+
+# #confirm that RPN calculator works with string directly
+
+      when "-"
+  def evaluate
+# 17 3 -
+  end
+# p script_testing.parse
+# 5 3 4 * + 3 -
+class RPN
+
+    @input = token #"5 1 2 + 4 * + 3 -"
+
+# # confirm that RPNA calculator can use a ARGV
+asking = RPN.new
+        add
+    answer_value
+# input = File.read(ARGV[0])
+
+# You should be able to, optionally, give it a filename on the command line,
+# user interface
+
+
+    @input = convert_to_array(token) if token.is_a?(String)
+# continue until done
+      break if user_input == "="
+        add_to_answer_array(element)
+    @input = []
+# 5 1 2 + 4 * + 3 -  = equation
+end
+    @answer << 1/@answer.pop * @answer.pop
+    @answer << @answer.pop * @answer.pop
+    puts "What would you like me to calculate?"
+      when "+"
+    end
+# p stdin_testing.parse
+  def divide
+
+# testing = RPN.new("5 1 2 + 4 * + 3 -")
+
+  end
+  def add
+
+      end
+      end
+
+    @input
+
+
+  def minus
+
+    @answer << @answer.pop + @answer.pop
+    @answer = []
+
+#
+  def add_to_answer_array(element)
+
+# stdin_testing = RPN.new("5 1 2 + 4 * + 3 -")
+
+  end
+
+
+        minus
+# 14
+  end
+# script_testing = RPN.new(input)
+  end
+# every two numbers we pop the operation stack and perform it on the two numbers
+
+
+# confirm that RPN calculator works with user input
+# filename = ARGV[0]
+
+        multiply
+
+    loop do
+
+      when "*"
+# use a stack to hold the operations
+#
+
+  end
+
+        element
+#
+# equation_new << equation.pop until equation.pop
+    operators = %w(+ - * /)
+  def initialize(token = [])
+    @answer[0]
+# p argument.evaluate
+  end
+
+    string = string.split(" ").map do |element|
+
+
+
+    end
+  end
+  def multiply
+#
+      user_input = gets.chomp
+# [5] << [1+2]
+# use a stack to hold the numbers
+      case element
+  def ask_user
+
+#
+  def convert_to_array(string)
+
+#
+    return string
+    @input.each do |element|
+    end
+      when "/"
+        divide
+#
