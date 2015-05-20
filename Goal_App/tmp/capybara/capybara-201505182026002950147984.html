@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GoalApp</title>
+  <link rel="stylesheet" media="all" href="/assets/application.css" data-turbolinks-track="true" />
+  <script src="/assets/application.js" data-turbolinks-track="true"></script>
+  
+</head>
+<body>
+
+
+
+
+  ryan
+  <form class="button_to" method="post" action="http://www.example.com/session"><input type="hidden" name="_method" value="delete" /><input type="submit" value="Sign Out" /></form>
+<h1>Edit Goal</h1>
+
+
+<form action="http://www.example.com/goals/1" method="post">
+  <input type="hidden" name="_method" value="patch">
+        <input type="hidden"
+             name="authenticity_token"
+             value="ZNAaMohvc57Zy0/HUqlWwp73nTbULZ56TfIDXqJ0qRAEvjw+cWMB2QzH7QgBkZyP0UvE+SmPCoo1/+MzIPXi7w==">
+
+
+
+
+  <label for="goal-body">Goal</label>
+  <input type="text"
+         name="goal[body]"
+         id="goal-body"
+         value="public goal"
+         placeholder="Goal Here..">
+  <br><br>
+  <label for="goal-completed">Completed</label>
+  <input type="radio"
+         name="goal[completed]"
+         id="goal-completed"
+         value="true"
+         >
+
+   <label for="goal-incompleted">Incomplete</label>
+   <input type="radio"
+          name="goal[completed]"
+          id="goal-incompleted"
+          value="false"
+          checked>
+  <br><br>
+  <label for="goal-private_status-false">Public</label>
+  <input type="radio"
+        name="goal[private_status]"
+        id="goal-private_status-false"
+        value="false"
+        checked>
+
+
+  <label for="goal-private_status-true">Private</label>
+  <input type="radio"
+         name="goal[private_status]"
+         id="goal-private_status-true"
+         value="true"
+         >
+  <br><br>
+  <input type="submit" value="Update Goal">
+</form>
+
+<a href="http://www.example.com/users/1">&lt;&lt; Goals</a>
+
+
+
+</body>
+</html>

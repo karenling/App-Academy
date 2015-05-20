@@ -1,0 +1,49 @@
+<% form_action = goal.persisted? ? goal_url(goal) : goals_url %>
+<% http_method = goal.persisted? ? "patch" : "post" %>
+<% button_value = goal.persisted? ? "Update Goal" : "Create Goal" %>
+
+<form action="<%= form_action %>" method="post">
+  <input type="hidden" name="_method" value="<%= http_method %>">
+  <%= csrf_token %>
+
+
+
+  <label for="goal-body">Goal</label>
+  <input type="text"
+         name="goal[body]"
+         id="goal-body"
+         value="<%= @goal.body %>">
+  <br><br>
+  <label for="goal-completed">Completed</label>
+  <input type="radio"
+         name="goal[completed]"
+         id="goal-completed"
+         value="true"
+         <%= "checked" if @goal.completed %>>
+
+   <label for="goal-incompleted">Incomplete</label>
+   <input type="radio"
+          name="goal[completed]"
+          id="goal-incompleted"
+          value="false"
+          <%= "checked" unless @goal.completed %>>
+  <br><br>
+  <label for="goal-private_status-false">Public</label>
+  <input type="radio"
+        name="goal[private_status]"
+        id="goal-private_status-false"
+        value="false"
+        <%= "checked" unless @goal.private_status %>>
+
+
+  <label for="goal-private_status-true">Private</label>
+  <input type="radio"
+         name="goal[private_status]"
+         id="goal-private_status-true"
+         value="true"
+         <%= "checked" if @goal.private_status %>>
+  <br><br>
+  <input type="submit" value="<%= button_value %>">
+</form>
+
+<%= link_to "<< Goals", user_url(current_user) %>
