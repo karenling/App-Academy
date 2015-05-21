@@ -40,7 +40,7 @@ function bubbleSort(array) {
   return array;
 }
 
-// console.log(bubbleSort([9, 3, 4, 8, 2, 1, 5, 7, 6]));
+console.log(bubbleSort([9, 3, 4, 8, 2, 1, 5, 7, 6]));
 
 
 // ---------------------------------------------------------------------
