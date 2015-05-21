@@ -26,7 +26,7 @@ Array.prototype.myUniq = function() {
   var unique_numbers = [];
 
   this.forEach(function(num) {
-    if (unique_numbers.indexOf(num) == -1) {
+    if (unique_numbers.indexOf(num) === -1) {
       unique_numbers.push(num);
     }
   });

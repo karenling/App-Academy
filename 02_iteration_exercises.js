@@ -3,11 +3,13 @@
 var substrings = function(string) {
   all_substrings = new Array();
   var i = 0;
-  while (i < string.length) {
+  while (i <= string.length) {
     var n = 1;
-    while (n < string.length) {
-      console.log(string.substring(i,n));
-      all_substrings.push(string.substring(i,n));
+    while (n <= string.length) {
+      var current_substring = string.substring(i,n);
+      if (all_substrings.indexOf(current_substring) === -1) {
+        all_substrings.push(current_substring);
+      }
       n++;
     }
     i++;
@@ -16,7 +18,7 @@ var substrings = function(string) {
 };
 
 
-// console.log(substrings("cat"));
+console.log(substrings("cat"));
 // ---------------------------------------------------------------------
 
 function bubbleSort(array) {
