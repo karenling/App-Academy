@@ -84,4 +84,37 @@ function fibonacci_iterate(n) {
 
 }
 
-console.log(fibonacci_iterate(7));
+// console.log(fibonacci_iterate(7));
+
+// ---------------------------------------------------------------------
+
+
+function bsearch(array, target) {
+  if (array.length === 0) {
+    return null;
+  }
+  var middle = Math.floor(array.length/2);
+  var left = array.slice(0, middle);
+  var right = array.slice(middle+1, array.length);
+
+  if (target === array[middle]) {
+    return middle;
+  } else if (target < array[middle]) {
+    return bsearch(left, target)
+  } else if (target > array[middle]) {
+    var result = bsearch(right, target);
+    if (result === null ) {
+      return null;
+    } else {
+      return middle + 1 + result;
+    }
+  }
+}
+
+console.log(bsearch([1, 2,  3], 1)); //# => 0
+console.log(bsearch([2, 3, 4, 5], 3));// # => 1
+console.log(bsearch([2, 4, 6, 8, 10], 6));// # => 2
+console.log(bsearch([1, 3, 4, 5, 9], 5)); //# => 3
+console.log(bsearch([1, 2, 3, 4, 5, 6], 6));// # => 5
+console.log(bsearch([1, 2, 3, 4, 5, 6], 0));// # => nil
+console.log(bsearch([1, 2, 3, 4, 5, 7], 6));// # => nil
