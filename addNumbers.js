@@ -4,13 +4,13 @@ var reader = readline.createInterface({
   output: process.stdout
 });
 
-var addNumbers = function(sum, numsLeft, completionCallback) {
+var addNumbers = function (sum, numsLeft, completionCallback) {
 
   if (numsLeft === 0) {
     completionCallback(sum);
     reader.close();
   } else {
-    reader.question("Give me number", function(answer){
+    reader.question("Give me number", function (answer) {
       var number = parseInt(answer);
       sum += number;
       console.log("Sum is: " + sum);
@@ -23,6 +23,7 @@ var addNumbers = function(sum, numsLeft, completionCallback) {
 addNumbers(0, 3, function (sum) {
   console.log("Total Sum: " + sum);
 });
+
 
 
 
