@@ -1,6 +1,7 @@
 
 "use strict";
 
+
 var substrings = function(string) {
   all_substrings = new Array();
   var i = 0;

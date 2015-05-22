@@ -2,6 +2,7 @@
 // ---------------------------------------------------------------------
 "use strict";
 
+
 Array.prototype.myEach = function (passed) {
   for(var i = 0; i < this.length; i++) {
     passed(this[i]);
