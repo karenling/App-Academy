@@ -1,4 +1,5 @@
 
+"use strict";
 
 var substrings = function(string) {
   all_substrings = new Array();

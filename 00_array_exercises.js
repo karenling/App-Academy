@@ -1,4 +1,5 @@
 // ----------------------------------------------------------------------
+"use strict";
 
 var my_transpose = function(array) {
   var transformed = [];
