@@ -1,5 +1,25 @@
-// ---------------------------------------------------------------------
 "use strict";
+// ---------------------------------------------------------------------
+
+function subsets(array) {
+  if (array.length === 0) {
+    return [array];
+  } else {
+    var last_num = array[array.length-1];
+    var smaller_subset = subsets(array.slice(0, array.length-1));
+    var new_subset = [];
+    smaller_subset.forEach(function(arr) {
+      new_subset.push(arr.concat([last_num]));
+    });
+
+    return (smaller_subset.concat(new_subset));
+  }
+}
+
+
+console.log(JSON.stringify(subsets([1, 2, 3])));
+
+// ---------------------------------------------------------------------
 
 
 function range(starting, ending) {
@@ -25,7 +45,7 @@ function sum_of_array(array) {
   }
 }
 
-console.log(sum_of_array([1, 2, 3]));
+// console.log(sum_of_array([1, 2, 3]));
 
 // ---------------------------------------------------------------------
 
@@ -114,10 +134,10 @@ function bsearch(array, target) {
   }
 }
 
-console.log(bsearch([1, 2,  3], 1)); //# => 0
-console.log(bsearch([2, 3, 4, 5], 3));// # => 1
-console.log(bsearch([2, 4, 6, 8, 10], 6));// # => 2
-console.log(bsearch([1, 3, 4, 5, 9], 5)); //# => 3
-console.log(bsearch([1, 2, 3, 4, 5, 6], 6));// # => 5
-console.log(bsearch([1, 2, 3, 4, 5, 6], 0));// # => nil
-console.log(bsearch([1, 2, 3, 4, 5, 7], 6));// # => nil
+// console.log(bsearch([1, 2,  3], 1)); //# => 0
+// console.log(bsearch([2, 3, 4, 5], 3));// # => 1
+// console.log(bsearch([2, 4, 6, 8, 10], 6));// # => 2
+// console.log(bsearch([1, 3, 4, 5, 9], 5)); //# => 3
+// console.log(bsearch([1, 2, 3, 4, 5, 6], 6));// # => 5
+// console.log(bsearch([1, 2, 3, 4, 5, 6], 0));// # => nil
+// console.log(bsearch([1, 2, 3, 4, 5, 7], 6));// # => nil
