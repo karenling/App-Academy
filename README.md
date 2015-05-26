@@ -4,4 +4,4 @@
 + `myBind` with `arguments`
 + Currying
 + Prototypal inheritance with `Surrogate`
-+ Asteroids
++ Asteroids Game
