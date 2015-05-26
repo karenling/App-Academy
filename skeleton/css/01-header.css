@@ -3,11 +3,14 @@ body {
   font: 12px Roboto;
   font-weight: 400;
   color: #ffffff;
+  background: #eee;
 }
 
 .header {
   background-color: red;
   border-bottom: 1px solid #ccc;
+  position: relative;
+  z-index: 1;
 }
 
 .header a {
@@ -38,18 +41,28 @@ body {
 .header-list {
   float: right;
   font-size: 16px;
-  box-sizing: border-box;
-
 }
+
+.header-list a {
+  padding: 10px 20px 10px 20px;
+}
+.header-list li:nth-child(1) a, .header-list li:nth-child(2) a {
+  margin-right: -4px;
+}
+
+
 .header-list li {
   display: inline;
   border-left: 1px solid #ccc;
   position: relative;
-  padding: 10px 20px;
   top: 10px;
-  margin-left: -4px;
+  padding: 10px 0;
 }
 
-.header li:hover {
+.header li:hover{
   background-color: #000000;
+}
+
+.header li:hover .badge {
+  background-color: #f00;
 }
