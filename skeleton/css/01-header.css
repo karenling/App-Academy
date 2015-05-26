@@ -7,6 +7,7 @@ body {
 
 .header {
   background-color: red;
+  border-bottom: 1px solid #ccc;
 }
 
 .header a {
@@ -16,19 +17,39 @@ body {
 
 .header-nav {
   width: 900px;
-  height: 40px;
+  height: 39px;
   margin: auto;
- 
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 .header-logo {
   float: left;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  border-right: 1px solid #ccc;
+}
 
+.header-logo:hover {
+  background-color: #000000;
 }
 
 .header-list {
   float: right;
+  font-size: 16px;
+  box-sizing: border-box;
+
 }
 .header-list li {
   display: inline;
+  border-left: 1px solid #ccc;
+  position: relative;
+  padding: 10px 20px;
+  top: 10px;
+  margin-left: -4px;
+}
+
+.header li:hover {
+  background-color: #000000;
 }
