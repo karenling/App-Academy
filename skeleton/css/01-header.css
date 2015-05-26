@@ -1,0 +1,34 @@
+/* PHASE 1: Header */
+body {
+  font: 12px Roboto;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.header {
+  background-color: red;
+}
+
+.header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-nav {
+  width: 900px;
+  height: 40px;
+  margin: auto;
+ 
+}
+
+.header-logo {
+  float: left;
+
+}
+
+.header-list {
+  float: right;
+}
+.header-list li {
+  display: inline;
+}
