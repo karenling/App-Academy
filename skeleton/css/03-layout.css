@@ -19,14 +19,11 @@
   bottom: 0;
   left: 240px;
   content: '';
-  /*float: left;*/
-
 }
 
 .content-sidebar {
   width: 200px;
   min-height: 200px;
-  /*border-right: 1px solid #ccc;*/
   float: left;
   padding: 20px;
 }
