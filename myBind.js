@@ -23,11 +23,10 @@ var Cat = function (name, color) {
   this.color = color;
   this.meow = function() {
     console.log(this.name + " says meowww!");
-  }
+  };
 };
 
 var gizmo = new Cat("Gizmo", "gray");
-
 var gizmoMeow = gizmo.meow.myBind(gizmo);
 
 gizmoMeow();
