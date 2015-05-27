@@ -5,6 +5,7 @@
   margin-top: -119px;
   position: relative;
   z-index: 3;
+  overflow: hidden;
 }
 
 .profile-info {
