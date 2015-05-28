@@ -1,0 +1,16 @@
+body {
+  font: 14px sans-serif;
+  line-height: 21px;
+  margin: 50px;
+}
+.tabs a.active {
+  font-weight: bold;
+}
+
+div.tab-pane {
+  display: none;
+}
+
+div.tab-pane.active {
+  display: block;
+}
