@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 64px;
+}
+.board {
+  border: 5px solid black;
+  margin: auto;
+  width: 330px;
+  /*float: left;*/
+}
+
+.row {
+  display: block;
+}
+
+.cell {
+  float: left;
+  border: 5px solid black;
+  background-color: gray;
+  width: 100px;
+  height: 100px;
+}
+
+.cell:hover:not(.marked) {
+  background-color: yellow;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.marked {
+  background-color: white;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: -40;
+}
+
+.marked-x {
+  color: blue;
+}
+
+.marked-o {
+  color: purple;
+}
+
+.message {
+  clear: left;
+  display: block;
+  padding-top: 30px;
+  font-size: 24px;
+}
+
+.winning {
+  background-color: #CFC;
+}
