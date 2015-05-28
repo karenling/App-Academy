@@ -7,10 +7,19 @@ body {
   font-weight: bold;
 }
 
-div.tab-pane {
+.tab-pane {
   display: none;
 }
 
-div.tab-pane.active {
+.tab-pane.transitioning {
   display: block;
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
+
+.tab-pane.active {
+  /*background-color: red;*/
+  opacity: 1;
+  display: block;
+  transition: opacity 500ms linear;
 }
