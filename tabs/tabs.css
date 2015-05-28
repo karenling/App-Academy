@@ -11,15 +11,15 @@ body {
   display: none;
 }
 
-.tab-pane.transitioning {
-  display: block;
-  opacity: 0;
-  transition: opacity 500ms linear;
-}
-
 .tab-pane.active {
   /*background-color: red;*/
   opacity: 1;
   display: block;
+  transition: opacity 1000ms ease;
+}
+
+.tab-pane.transitioning {
+  display: block;
+  opacity: 0;
   transition: opacity 500ms linear;
 }

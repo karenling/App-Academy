@@ -4,10 +4,13 @@ $.Tabs = function (el) {
   this.$contentTabs = $(this.$el.data("content-tabs"));
   this.$activeTab = this.$contentTabs.find('.active');
   this.$el.on('click', 'a', this.clickTab.bind(this));
+  this.transitioning = false;
 };
 
 $.Tabs.prototype.clickTab = function (event) {
+  if (this.transitioning) { return; }
 
+  this.transitioning = true;
   // $('a').removeClass('active');
   // this.$activeTab.removeClass('active').addClass('transitioning');
   $('.active').removeClass('active');
@@ -20,7 +23,13 @@ $.Tabs.prototype.clickTab = function (event) {
 
 $.Tabs.prototype.transitionEnd = function($targeta, currentFor) {
   this.$activeTab.removeClass('transitioning');
-  this.$activeTab = $(currentFor).addClass('active');
+  this.$activeTab = $(currentFor).addClass('transitioning');
+  setTimeout(function() {
+    this.$activeTab.removeClass('transitioning').addClass('active');
+    this.$activeTab.one('transitionend', function () {
+      this.transitioning = false;
+    }.bind(this));
+  }.bind(this), 0);
   $targeta.addClass('active');
 };
 
