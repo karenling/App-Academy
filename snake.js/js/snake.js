@@ -3,9 +3,12 @@
     window.SnakeGame = {};
   }
 
-  var Snake = SnakeGame.Snake = function() {
+  var Snake = SnakeGame.Snake = function(board) {
+    this.board = board;
     this.dir = "S";
     this.segments = [new Coord(1, 1)];
+    this.leftToGrow = 0;
+    this.score = 0;
   };
 
   Snake.prototype.move = function() {
@@ -17,7 +20,22 @@
     };
     var newCoord = this.segments[0].plus(directions[this.dir]);
     this.segments.unshift(newCoord);
-    this.segments.pop();
+    if (this.leftToGrow === 0) {
+      this.segments.pop();
+    } else {
+      this.leftToGrow -= 1;
+    }
+    if (this.segments[0].equals(this.board.apple.coord)) {
+      this.leftToGrow += 3;
+      this.score += 10;
+      this.board.newApple();
+    }
+    this.segments.forEach(function(segmentCoord, idx) {
+      if ((this.segments[0].equals(segmentCoord)) && (idx !== 0)) {
+        alert("Ran into self");
+        this.board.loseGame();
+      }
+    }.bind(this))
   };
 
   Snake.prototype.turn = function(newDirection) {
@@ -44,25 +62,20 @@
 
 
   var Board = SnakeGame.Board = function() {
-    this.dimensions = [40, 40];
-    this.snake = new Snake();
-  };
-
-  Board.prototype.render = function() {
-    var grid = [];
-    for (var i = 0; i < this.dimensions[1]; i++) {
-      grid.push(Array(this.dimensions[0]+1).join('.'));
-    }
-
-    this.snake.segments.forEach(function(element, idx) {
-      var newStr = Board.stringReplace(grid[element.yCoord], element.xCoord, "S");
-      grid[element.yCoord] = newStr;
-    });
-
-    return grid.join("\n");
+    this.dimensions = [20, 20];
+    this.snake = new Snake(this);
+    this.newApple();
   };
 
   Board.stringReplace = function(string, idx, char) {
     return string.substr(0, idx) + char + string.substr(idx + char.length);
   };
+
+  Board.prototype.newApple = function() {
+    this.apple = new SnakeGame.Apple(Math.floor(Math.random()*20), Math.floor(Math.random()*20));
+  };
+
+  var Apple = SnakeGame.Apple = function(xCoord, yCoord) {
+    this.coord = new Coord(xCoord, yCoord);
+  }
 })();

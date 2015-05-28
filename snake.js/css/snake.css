@@ -1,0 +1,28 @@
+.snake-game {
+
+}
+
+.row {
+
+}
+.row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.cell {
+  background-color: #cccccc;
+  border: 1px solid #aaaaaa;
+  height: 20px;
+  width: 20px;
+  float: left;
+}
+
+.cell.has-apple {
+  background-color: red;
+}
+
+.cell.has-snake {
+  background-color: green;
+}
