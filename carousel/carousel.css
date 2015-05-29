@@ -28,7 +28,7 @@
 .active {
   position: absolute;
   left: 0%;
-  transition: left 500ms ease;
+  transition: left 500ms linear;
 }
 
 .items.right {
