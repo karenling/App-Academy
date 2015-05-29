@@ -5,6 +5,30 @@
   width: 100%;
   height: 100%;
 }
+.gutter-images {
+  width: 90%;
+  /*display: block;
+  float: left;*/
+}
+a.nav {
+  width: 5%;
+  /*display: block;
+  float: left;*/
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+div.gutter {
+  position: relative;
+  left: 5%;
+}
+
+div.gutter:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .gutter-images img {
   width: 20%;
   height: 20%;
