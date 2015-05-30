@@ -51,7 +51,7 @@ class User < ActiveRecord::Base
 
     # TODO: How can we use limit/max_created_at here??
 
-    @tweets
+    @tweets = @tweets.limit(limit).where(["created_at < ?", max_created_at])
   end
 
   def follows?(user)

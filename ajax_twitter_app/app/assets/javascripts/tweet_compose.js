@@ -7,7 +7,8 @@ $.TweetCompose = function(el) {
   this.$el.find('textarea').on("input", this.remainingCount.bind(this));
   this.$el.on("submit", this.submit.bind(this));
   $('.mentioned-users').on("click", 'a.remove-mentioned-user', this.removeMentionedUser.bind(this));
-
+  // we've installed a listener on .mentioned-users
+  // .mentioned users is listening for a click on 'a.remove-mentioned-user'
 
 };
 
