@@ -72,7 +72,7 @@ $.InfiniteTweets.prototype.insertTweets = function(response) {
   var code = this.$script.html();
   var templateFn = _.template(code);
   var compliedTemplate = templateFn({tweets: response});
-  this.$el.find('ul').append(compliedTemplate);
+  this.$el.find('ul#feed').append(compliedTemplate);
 
 
   // record new max_created_at here
