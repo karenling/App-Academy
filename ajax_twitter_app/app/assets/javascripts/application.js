@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore
 //= require follow_toggle
 //= require user_search
 //= require tweet_compose

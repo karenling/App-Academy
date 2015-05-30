@@ -1,6 +1,8 @@
 $.InfiniteTweets = function(el) {
   this.$el = $(el);
   this.maxCreatedAt = null;
+  this.$script = this.$el.find('script');
+  console.log(this.$script);
   $('a.fetch-more').on("click", this.fetchTweets.bind(this));
 };
 
@@ -66,14 +68,17 @@ $.InfiniteTweets.prototype.insertTweets = function(response) {
     $('a.fetch-more').hide();
     $('.infinite-tweets').append($('<p>').html("No more tweets"));
   }
+
+  var code = this.$script.html();
+  var templateFn = _.template(code);
+  var compliedTemplate = templateFn({tweets: response});
+  this.$el.find('ul').append(compliedTemplate);
+
+
   // record new max_created_at here
   this.maxCreatedAt = response[response.length-1].created_at;
   console.log(this.maxCreatedAt);
-  response.forEach(function(el, idx) {
-    this.$el.find('ul').append($('<li>').html(JSON.stringify(el.content)));
 
-    // this.$el.find('ul').append($('<li>').html(JSON.stringify(response)));
-  }.bind(this));
 
 
 
