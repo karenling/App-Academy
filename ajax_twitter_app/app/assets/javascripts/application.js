@@ -16,3 +16,4 @@
 //= require user_search
 //= require tweet_compose
 //= require jquery.serializejson
+//= require infinite-tweets
