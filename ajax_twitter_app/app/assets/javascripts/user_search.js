@@ -25,18 +25,14 @@ $.UserSearch.prototype.handleInput = function(event) {
 $.UserSearch.prototype.renderResults = function(response) {
   this.$ul.html("");
   response.forEach(function(el) {
-    // console.log(current_user);
-
     var userId = el.id;
-    // debugger
     var currentLink = "/users/" + userId;
     var currentUsername = el.username;
     var $link = $('<a>').attr("href", currentLink).text(currentUsername);
     var $button = $('<button>').followToggle({
       userId: userId,
       followState: el.followed ? "followed" : "unfollowed"
-    }); // pass userid and initial follow state
-    console.log($link);
+    });
     this.$ul.append($('<li>').append($link).append("    ").append($button));
   }.bind(this));
 };

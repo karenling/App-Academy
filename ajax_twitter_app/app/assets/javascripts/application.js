@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require follow_toggle
 //= require user_search
+//= require tweet_compose
+//= require jquery.serializejson
