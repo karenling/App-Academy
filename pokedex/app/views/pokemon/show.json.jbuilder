@@ -1,1 +1,1 @@
-json.partial!("pokemon", pokemon: @pokemon)
+json.partial!("pokemon", pokemon: @pokemon, display_toys: true)

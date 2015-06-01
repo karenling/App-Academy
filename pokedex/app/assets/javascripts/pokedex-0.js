@@ -5,14 +5,25 @@ window.Pokedex.Collections = {};
 Pokedex.Models.Pokemon = Backbone.Model.extend({
   urlRoot: "/pokemon",
 
-  // pokemons: function() {
-  //   this._pokemons = this._pokemons || new PokeDex.Collections.Pokemon([], { pokemon: this });
-  //   return this._pokemons;
-  // }
+  toys: function() {
+    this._toys = this._toys || new Pokedex.Collections.PokemonToys([], { pokemon: this });
+    return this._toys;
+  },
+
+  parse: function(jsonResp) {
+    if (jsonResp.toys) {
+      this.toys().set(jsonResp.toys); // {parse: true} needed if calling recursively
+      delete jsonResp.toys; //what does this do?
+    }
+  // returns json without toys to default pokemon parser
+    return jsonResp;
+  }
+
 
 }); // WRITE ME
 
 Pokedex.Models.Toy = Backbone.Model.extend({
+
 
 }); // WRITE ME IN PHASE 2
 
@@ -22,8 +33,13 @@ Pokedex.Collections.Pokemon = Backbone.Collection.extend({
 }); // WRITE ME
 
 Pokedex.Collections.PokemonToys = Backbone.Collection.extend({
+  model: Pokedex.Models.Toy,
 
-}); // WRITE ME IN PHASE 2
+  initialize: function(models, options) {
+    this.pokemon = options.pokemon;
+    url: this.pokemon.url();
+  }
+});
 
 window.Pokedex.Test = {
   testShow: function (id) {
@@ -53,7 +69,8 @@ window.Pokedex.RootView = function ($el) {
   this.$newPoke = this.$el.find('.new-pokemon');
   this.$toyDetail = this.$el.find('.toy-detail');
 
-  // Click handlers go here.
+  this.$pokeList.on('click', 'li', this.selectPokemonFromList.bind(this) );
+  this.$newPoke.on('submit', this.submitPokemonForm.bind(this));
 };
 
 $(function() {
