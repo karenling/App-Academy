@@ -41,7 +41,7 @@ body {
 
 #pokedex > * {
 	height: 100%;
-	width: 33.33333333333%;
+	width: 33.2%;
 	border: thin solid blue;
   display:  inline-block;
 	overflow: auto;
