@@ -47,6 +47,7 @@ Pokedex.Views.PokemonIndex = Backbone.View.extend({
 
 Pokedex.Views.PokemonDetail = Backbone.View.extend({
   events: {
+    "click .toys li": "selectToyFromList"
   },
 
   refreshPokemon: function (options) {
@@ -68,11 +69,34 @@ Pokedex.Views.PokemonDetail = Backbone.View.extend({
   },
 
   selectToyFromList: function (event) {
+    console.log("lweajflew");
+    var toyId = $(event.currentTarget).data("id");
+    var pokemonId = $(event.currentTarget).data("pokemon-id");
+
+
+    var pokemon = this.model;
+    var toy = pokemon.toys().get(toyId);
+
+    var toyDetailView = new Pokedex.Views.ToyDetail({
+      model: toy
+    })
+
+    toyDetailView.render();
+
   }
 });
 
 Pokedex.Views.ToyDetail = Backbone.View.extend({
+
   render: function () {
+
+    var toyDetailTemplate = JST['toyDetail']({
+      toy: this.model,
+      pokes: []
+    })
+    $('.toy-detail').html(toyDetailTemplate);
+
+    return this;
   }
 });
 
