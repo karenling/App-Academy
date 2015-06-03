@@ -1,4 +1,10 @@
 <script type="text/template" id="pokemon-list-item-template">
+  <li class="poke-list-item" data-id="<%%= pokemon.get('id') %>">
+    <%% var shortInfo = ['name', 'poke_type'] %>
+    <%% shortInfo.forEach(function (attr) { %>
+      <%%= attr %>: <%%= pokemon.get(attr) %><br>
+    <%% }); %>
+  </li>
 </script>
 
 <script type="text/template" id="pokemon-detail-template">
