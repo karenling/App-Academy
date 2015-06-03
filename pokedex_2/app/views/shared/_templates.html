@@ -16,10 +16,10 @@
       <%% } %>
     <%% } %>
 
-    <span style="font-weight: bold;">Toys:</span><br>
-    <ul class="toys">
-    </ul>
   </div>
+  <span style="font-weight: bold;">Toys:</span><br>
+  <ul class="toys">
+  </ul>
 </script>
 
 <script type="text/template" id="toy-list-item-template">
@@ -34,26 +34,28 @@
 </script>
 
 <script type="text/template" id="toy-detail-template">
-  <img src="<%%= toy.escape('image_url') %>"><br>
-<%% for (var attr in toy.attributes) { %>
-  <%% if(attr !== 'pokemon_id' && attr !== 'image_url') { %>
-    <span style="font-weight:bold"><%%= attr %>:</span> <%%= toy.get(attr) %><br>
-  <%% } %>
-<%% } %>
-
-  <select data-pokemon-id="<%%= toy.get("pokemon_id") %>" data-toy-id="<%%= toy.id %>">
-    <%% [].forEach(function (pokemon) { %>
-      <%% if (pokemon.id == toy.get("pokemon_id")) { %>
-        <option value="<%%= pokemon.id %>" selected>
-          <%%= pokemon.get("name") %>
-        </option>
-      <%% } else { %>
-        <option value="<%%= pokemon.id %>">
-          <%%= pokemon.get("name") %>
-        </option>
+  <div class="detail">
+    <img src="<%%= toy.escape('image_url') %>"><br>
+    <%% for (var attr in toy.attributes) { %>
+      <%% if(attr !== 'pokemon_id' && attr !== 'image_url') { %>
+        <span style="font-weight:bold"><%%= attr %>:</span> <%%= toy.get(attr) %><br>
       <%% } %>
-    <%% }); %>
-  </select>
+    <%% } %>
+
+    <select data-pokemon-id="<%%= toy.get("pokemon_id") %>" data-toy-id="<%%= toy.id %>">
+      <%% [].forEach(function (pokemon) { %>
+        <%% if (pokemon.id == toy.get("pokemon_id")) { %>
+          <option value="<%%= pokemon.id %>" selected>
+            <%%= pokemon.get("name") %>
+          </option>
+        <%% } else { %>
+          <option value="<%%= pokemon.id %>">
+            <%%= pokemon.get("name") %>
+          </option>
+        <%% } %>
+      <%% }); %>
+    </select>
+  </div>
 </script>
 
 <script type="text/template" id="pokemon-form-template">
