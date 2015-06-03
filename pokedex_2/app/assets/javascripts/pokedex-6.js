@@ -67,7 +67,8 @@ Pokedex.Router = Backbone.Router.extend({
       var toy = pokemon.toys().get(toyId);
 
       var toyDetailView = new Pokedex.Views.ToyDetail({
-        model: toy
+        model: toy,
+        collection: this._pokemonIndex.collection
       });
 
       toyDetailView.render();

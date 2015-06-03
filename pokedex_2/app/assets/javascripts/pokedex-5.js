@@ -86,7 +86,7 @@ Pokedex.Views.ToyDetail = Backbone.View.extend({
   render: function () {
     var toyDetailTemplate = JST['toyDetail']({
       toy: this.model,
-      pokes: [] // TODO update this at the end
+      pokes: this.collection // TODO update this at the end
     })
     $('.toy-detail').html(toyDetailTemplate);
 

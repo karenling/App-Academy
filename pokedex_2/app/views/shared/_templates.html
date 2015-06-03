@@ -43,7 +43,7 @@
     <%% } %>
 
     <select data-pokemon-id="<%%= toy.get("pokemon_id") %>" data-toy-id="<%%= toy.id %>">
-      <%% [].forEach(function (pokemon) { %>
+      <%% pokes.forEach(function (pokemon) { %>
         <%% if (pokemon.id == toy.get("pokemon_id")) { %>
           <option value="<%%= pokemon.id %>" selected>
             <%%= pokemon.get("name") %>
