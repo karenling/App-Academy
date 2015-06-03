@@ -15,13 +15,38 @@
         <span style="font-weight: bold"><%%= attr %>:</span> <%%= pokemon.get(attr) %><br>
       <%% } %>
     <%% } %>
+
+    <span style="font-weight: bold;">Toys:</span><br>
+    <ul class="toys">
+    </ul>
   </div>
 </script>
 
 <script type="text/template" id="toy-list-item-template">
+  <li class="toy-list-item"
+      data-id="<%%= toy.get('id') %>"
+      data-pokemon-id="<%%= toy.get('pokemon_id') %>">
+    <%% var shortInfo = ['name', 'happiness', 'price']; %>
+    <%% shortInfo.forEach(function (attr) { %>
+      <%%= attr %>: <%%= toy.get(attr) %><br>
+    <%% }); %>
+  </li>
 </script>
 
 <script type="text/template" id="toy-detail-template">
+  <select data-pokemon-id="<%%= toy.get("pokemon_id") %>" data-toy-id="<%%= toy.id %>">
+    <%% pokes.each(function (pokemon) { %>
+      <%% if (pokemon.id == toy.get("pokemon_id")) { %>
+        <option value="<%%= pokemon.id %>" selected>
+          <%%= pokemon.get("name") %>
+        </option>
+      <%% } else { %>
+        <option value="<%%= pokemon.id %>">
+          <%%= pokemon.get("name") %>
+        </option>
+      <%% } %>
+    <%% }); %>
+  </select>
 </script>
 
 <script type="text/template" id="pokemon-form-template">

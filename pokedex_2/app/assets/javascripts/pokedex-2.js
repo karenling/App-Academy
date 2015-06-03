@@ -1,14 +1,17 @@
 Pokedex.RootView.prototype.addToyToList = function (toy) {
-  var $li = $('<li class="toy-list-item">');
-  $li.data('id', toy.get('id'));
-  $li.data('pokemon-id', toy.get('pokemon_id'));
 
-  var shortInfo = ['name', 'happiness', 'price'];
-  shortInfo.forEach(function (attr) {
-    $li.append(attr + ': ' + toy.get(attr) + '<br>');
-  });
-
-  this.$pokeDetail.find(".toys").append($li);
+  var content = JST['toyListItem']({ toy: toy });
+  this.$pokeDetail.find(".toys").append(content)
+  // var $li = $('<li class="toy-list-item">');
+  // $li.data('id', toy.get('id'));
+  // $li.data('pokemon-id', toy.get('pokemon_id'));
+  //
+  // var shortInfo = ['name', 'happiness', 'price'];
+  // shortInfo.forEach(function (attr) {
+  //   $li.append(attr + ': ' + toy.get(attr) + '<br>');
+  // });
+  //
+  // this.$pokeDetail.find(".toys").append($li);
 };
 
 Pokedex.RootView.prototype.renderToyDetail = function (toy) { // III
@@ -26,22 +29,28 @@ Pokedex.RootView.prototype.renderToyDetail = function (toy) { // III
     }
   }
 
-  // Phase III
-  var $pokemonSelect = $('<select>');
-  $pokemonSelect.data("pokemon-id", toy.get("pokemon_id"));
-  $pokemonSelect.data("toy-id", toy.id);
-  this.pokes.each(function (pokemon) {
-    var $pokemonOption = $('<option>');
-    $pokemonOption.attr("value", pokemon.id);
-    $pokemonOption.text(pokemon.get("name"));
-    if (pokemon.id == toy.get("pokemon_id")) {
-      $pokemonOption.prop("selected", true);
-    }
-    $pokemonSelect.append($pokemonOption);
-  });
-  $detail.append($pokemonSelect);
+
+
+  var toyContent = JST['toyDetail']({ toy: toy, pokes: this.pokes })
+  $detail.append(toyContent);
 
   this.$toyDetail.html($detail);
+  // Phase III
+  // var $pokemonSelect = $('<select>');
+  // $pokemonSelect.data("pokemon-id", toy.get("pokemon_id"));
+  // $pokemonSelect.data("toy-id", toy.id);
+  // this.pokes.each(function (pokemon) {
+  //   var $pokemonOption = $('<option>');
+  //   $pokemonOption.attr("value", pokemon.id);
+  //   $pokemonOption.text(pokemon.get("name"));
+  //   if (pokemon.id == toy.get("pokemon_id")) {
+  //     $pokemonOption.prop("selected", true);
+  //   }
+  //   $pokemonSelect.append($pokemonOption);
+  // });
+  // $detail.append($pokemonSelect);
+  //
+  // this.$toyDetail.html($detail);
 };
 
 Pokedex.RootView.prototype.selectToyFromList = function (event) {
