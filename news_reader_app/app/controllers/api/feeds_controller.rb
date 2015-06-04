@@ -4,7 +4,11 @@ class Api::FeedsController < ApplicationController
   end
 
   def show
-    render json: Feed.find(params[:id]), include: :latest_entries
+    feed = Feed.find(params[:id])
+    if params[:refresh]
+      feed.reload
+    end
+    render json: feed, include: :latest_entries
   end
 
   def create
