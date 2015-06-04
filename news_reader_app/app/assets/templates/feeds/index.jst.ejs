@@ -1,3 +1,5 @@
 <% collection.forEach(function (feed) { %>
-  <%= feed.escape("title") %><br>
+  <a href="#/feeds/<%= feed.id %>">
+    <%= feed.escape("title") %>
+  </a><br>
 <% }); %>
