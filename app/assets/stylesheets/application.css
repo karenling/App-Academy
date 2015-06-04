@@ -13,14 +13,54 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background: #fefefe;
+}
 
 .errors {
   color: red;
   font-weight: bold;
 }
 
-div {
-  float: left;
+ul li {
+  padding: 10px;
+}
+h1 {
+  letter-spacing: 1px;
+  font-size: 72px;
+  padding-left: 40px;
+
 }
 
-ul
+div.sidebar {
+  border-right: 1px solid #ddd;
+}
+
+.show-button {
+  margin-left: 40px;
+}
+
+.btn-danger:not(.show-button) {
+  padding: 2px 10px;
+  position: relative;
+  top: -3px;
+  right: -8px;
+}
+
+.btn-journ {
+  float: right;
+}
+
+div.post-show {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  background: #EEE;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+span:nth-child(2) {
+  font-weight: bold;
+  font-size: 20px;
+}

@@ -1,5 +1,6 @@
 Journal.Views.PostShow = Backbone.View.extend({
   template: JST['posts/show'],
+  className: "post-show",
 
   initialize: function() {
     this.listenTo(this.model, "sync", this.render);

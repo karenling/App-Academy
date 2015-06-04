@@ -1,6 +1,7 @@
 Journal.Views.PostsIndexItem = Backbone.View.extend({
   template: JST['posts/post'],
   tagName: "li",
+  className: "list-group-item",
 
   initialize: function () {
       this.listenTo(this.model, "sync change", this.render);
