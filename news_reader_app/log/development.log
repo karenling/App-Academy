@@ -17998,3 +17998,1799 @@ Processing by Api::FeedsController#show as JSON
   [1m[36mFeed Load (0.9ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "1"]]
   [1m[35mEntry Load (9.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1 ORDER BY "entries"."published_at" DESC  [["feed_id", 1]]
 Completed 200 OK in 382ms (Views: 370.4ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:27:31 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (1.5ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 20ms (Views: 14.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:32:27 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 684ms (Views: 682.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:32:28 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.5ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 76ms (Views: 75.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:34:22 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.8ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 68ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:34:53 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.5ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:36:06 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 314ms (Views: 313.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:36:07 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (4.8ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 10ms (Views: 4.8ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/api/feeds/5" for 127.0.0.1 at 2015-06-04 16:36:10 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"5"}
+  [1m[35mFeed Load (98.7ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "5"]]
+  [1m[36mSQL (65.2ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-06-04 23:36:10.207589' WHERE "feeds"."id" = 5[0m
+  [1m[35m (2.6ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433460960"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T23:36:00+00:00\",\"link\":\"http://example.com/test/1433460960\",\"description\":\"Est et sunt cillum occaecat dolore non ex.\",\"pubDate\":\"2015-06-04T16:36:00-07:00\",\"guid\":\"http://example.com/test/1433460960\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433460960"], ["published_at", Thu, 04 Jun 2015 23:36:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T23:36:00+00:00"], ["updated_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433460900"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T23:35:00+00:00\",\"link\":\"http://example.com/test/1433460900\",\"description\":\"Aliquip est voluptate excepteur aute.\",\"pubDate\":\"2015-06-04T16:35:00-07:00\",\"guid\":\"http://example.com/test/1433460900\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433460900"], ["published_at", Thu, 04 Jun 2015 23:35:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T23:35:00+00:00"], ["updated_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433460840"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T23:34:00+00:00\",\"link\":\"http://example.com/test/1433460840\",\"description\":\"Eiusmod nisi aute velit in irure.\",\"pubDate\":\"2015-06-04T16:34:00-07:00\",\"guid\":\"http://example.com/test/1433460840\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433460840"], ["published_at", Thu, 04 Jun 2015 23:34:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T23:34:00+00:00"], ["updated_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433460780"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T23:33:00+00:00\",\"link\":\"http://example.com/test/1433460780\",\"description\":\"Voluptate proident duis quis et.\",\"pubDate\":\"2015-06-04T16:33:00-07:00\",\"guid\":\"http://example.com/test/1433460780\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433460780"], ["published_at", Thu, 04 Jun 2015 23:33:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T23:33:00+00:00"], ["updated_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433460720"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T23:32:00+00:00\",\"link\":\"http://example.com/test/1433460720\",\"description\":\"Ipsum id aute ea consectetur dolore aliqua sit dolore officia tempor.\",\"pubDate\":\"2015-06-04T16:32:00-07:00\",\"guid\":\"http://example.com/test/1433460720\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433460720"], ["published_at", Thu, 04 Jun 2015 23:32:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T23:32:00+00:00"], ["updated_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433460660"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T23:31:00+00:00\",\"link\":\"http://example.com/test/1433460660\",\"description\":\"Veniam fugiat aliquip id est veniam.\",\"pubDate\":\"2015-06-04T16:31:00-07:00\",\"guid\":\"http://example.com/test/1433460660\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433460660"], ["published_at", Thu, 04 Jun 2015 23:31:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T23:31:00+00:00"], ["updated_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433460600"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T23:30:00+00:00\",\"link\":\"http://example.com/test/1433460600\",\"description\":\"Deserunt ex ut cupidatat quis do velit tempor deserunt velit consequat.\",\"pubDate\":\"2015-06-04T16:30:00-07:00\",\"guid\":\"http://example.com/test/1433460600\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433460600"], ["published_at", Thu, 04 Jun 2015 23:30:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T23:30:00+00:00"], ["updated_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433460540"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T23:29:00+00:00\",\"link\":\"http://example.com/test/1433460540\",\"description\":\"Excepteur exercitation non excepteur commodo consectetur veniam ea sint reprehenderit cupidatat laboris.\",\"pubDate\":\"2015-06-04T16:29:00-07:00\",\"guid\":\"http://example.com/test/1433460540\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433460540"], ["published_at", Thu, 04 Jun 2015 23:29:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T23:29:00+00:00"], ["updated_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433460480"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T23:28:00+00:00\",\"link\":\"http://example.com/test/1433460480\",\"description\":\"Dolore ex officia minim ut tempor qui in aute ut.\",\"pubDate\":\"2015-06-04T16:28:00-07:00\",\"guid\":\"http://example.com/test/1433460480\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433460480"], ["published_at", Thu, 04 Jun 2015 23:28:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T23:28:00+00:00"], ["updated_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433460420"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T23:27:00+00:00\",\"link\":\"http://example.com/test/1433460420\",\"description\":\"Est id do dolor adipisicing officia.\",\"pubDate\":\"2015-06-04T16:27:00-07:00\",\"guid\":\"http://example.com/test/1433460420\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433460420"], ["published_at", Thu, 04 Jun 2015 23:27:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T23:27:00+00:00"], ["updated_at", Thu, 04 Jun 2015 23:36:10 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mEntry Load (1.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1 ORDER BY "entries"."published_at" DESC[0m  [["feed_id", 5]]
+Completed 200 OK in 480ms (Views: 301.6ms | ActiveRecord: 177.3ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:36:12 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/feeds/2" for 127.0.0.1 at 2015-06-04 16:36:13 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mFeed Load (0.3ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35mSQL (0.7ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-06-04 23:36:13.262723' WHERE "feeds"."id" = 2
+  [1m[36m (1.7ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:36:13 UTC +00:00], ["feed_id", 2], ["guid", "http://www.wired.com/?p=1790433"], ["json", "{\"title\":\"Inflatable Garage Allows for On-the-Fly Jet Engine Repairs\",\"link\":\"http://feeds.wired.com/c/35185/f/661370/s/46f2be98/sc/24/l/0L0Swired0N0C20A150C0A60Cinflatable0Egarage0Eallows0Efly0Ejet0Eengine0Erepairs0C/story01.htm\",\"description\":\"\\u0026lt;div class=\\\"rss_thumbnail\\\"\\u0026gt;\\u0026lt;img src=\\\"http://www.wired.com/wp-content/uploads/2015/06/800x600_1433274600_igloo_grey_sky-660x489.jpg\\\" alt=\\\"Inflatable Garage Allows for On-the-Fly Jet Engine Repairs\\\" /\\u0026gt;\\u0026lt;/div\\u0026gt;\\u0026lt;p\\u0026gt;Airbus has developed an inflatable tent that can be carried anywhere and set up in just a few minutes, for doing repairs without needing to rent a hangar.\\u0026lt;/p\\u0026gt; \\u0026lt;p\\u0026gt;The post \\u0026lt;a rel=\\\"nofollow\\\" href=\\\"http://www.wired.com/2015/06/inflatable-garage-allows-fly-jet-engine-repairs/\\\"\\u0026gt;Inflatable Garage Allows for On-the-Fly Jet Engine Repairs\\u0026lt;/a\\u0026gt; appeared first on \\u0026lt;a rel=\\\"nofollow\\\" href=\\\"http://www.wired.com\\\"\\u0026gt;WIRED\\u0026lt;/a\\u0026gt;.\\u0026lt;/p\\u0026gt;\\u0026lt;img width='1' height='1' src='http://feeds.wired.com/c/35185/f/661370/s/46f2be98/sc/24/mf.gif' border='0'/\\u0026gt;\\u0026lt;br clear='all'/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://da.feedsportal.com/r/231041182607/u/0/f/661370/c/35185/s/46f2be98/sc/24/rc/1/rc.htm\\\" rel=\\\"nofollow\\\"\\u0026gt;\\u0026lt;img src=\\\"http://da.feedsportal.com/r/231041182607/u/0/f/661370/c/35185/s/46f2be98/sc/24/rc/1/rc.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://da.feedsportal.com/r/231041182607/u/0/f/661370/c/35185/s/46f2be98/sc/24/rc/2/rc.htm\\\" rel=\\\"nofollow\\\"\\u0026gt;\\u0026lt;img src=\\\"http://da.feedsportal.com/r/231041182607/u/0/f/661370/c/35185/s/46f2be98/sc/24/rc/2/rc.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://da.feedsportal.com/r/231041182607/u/0/f/661370/c/35185/s/46f2be98/sc/24/rc/3/rc.htm\\\" rel=\\\"nofollow\\\"\\u0026gt;\\u0026lt;img src=\\\"http://da.feedsportal.com/r/231041182607/u/0/f/661370/c/35185/s/46f2be98/sc/24/rc/3/rc.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://da.feedsportal.com/r/231041182607/u/0/f/661370/c/35185/s/46f2be98/sc/24/a2.htm\\\"\\u0026gt;\\u0026lt;img src=\\\"http://da.feedsportal.com/r/231041182607/u/0/f/661370/c/35185/s/46f2be98/sc/24/a2.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://adchoice.feedsportal.com/r/231041182607/u/0/f/661370/c/35185/s/46f2be98/sc/24/ach.htm\\\"\\u0026gt;\\u0026lt;img src=\\\"http://adchoice.feedsportal.com/r/231041182607/u/0/f/661370/c/35185/s/46f2be98/sc/24/ach.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;img width=\\\"1\\\" height=\\\"1\\\" src=\\\"http://pi.feedsportal.com/r/231041182607/u/0/f/661370/c/35185/s/46f2be98/sc/24/a2t.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;img width=\\\"1\\\" height=\\\"1\\\" src=\\\"http://pi2.feedsportal.com/r/231041182607/u/0/f/661370/c/35185/s/46f2be98/sc/24/a2t2.img\\\" border=\\\"0\\\"/\\u0026gt;\",\"comments\":\"http://www.wired.com/2015/06/inflatable-garage-allows-fly-jet-engine-repairs/#comments\",\"pubDate\":\"2015-06-04T14:28:49-07:00\",\"category\":\"Aviation\",\"guid\":\"http://www.wired.com/?p=1790433\",\"dc_creator\":\"Alex Davies\"}"], ["link", "http://feeds.wired.com/c/35185/f/661370/s/46f2be98/sc/24/l/0L0Swired0N0C20A150C0A60Cinflatable0Egarage0Eallows0Efly0Ejet0Eengine0Erepairs0C/story01.htm"], ["published_at", Thu, 04 Jun 2015 21:28:49 UTC +00:00], ["title", "Inflatable Garage Allows for On-the-Fly Jet Engine Repairs"], ["updated_at", Thu, 04 Jun 2015 23:36:13 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (18.9ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:36:13 UTC +00:00], ["feed_id", 2], ["guid", "http://www.wired.com/?p=1790331"], ["json", "{\"title\":\"Startup Says It’s the First to Make Synthetic Spider Silk\",\"link\":\"http://feeds.wired.com/c/35185/f/661370/s/46f254b2/sc/38/l/0L0Swired0N0C20A150C0A60Cbolt0Ethreads0Espider0Esilk0C/story01.htm\",\"description\":\"\\u0026lt;div class=\\\"rss_thumbnail\\\"\\u0026gt;\\u0026lt;img src=\\\"http://www.wired.com/wp-content/uploads/2015/06/bolt-threads-ft-660x440.jpg\\\" alt=\\\"Startup Says It’s the First to Make Synthetic Spider Silk\\\" /\\u0026gt;\\u0026lt;/div\\u0026gt;\\u0026lt;p\\u0026gt;After five years of quiet work, Bolt Threads claims it has finally cracked the problem of mass-producing spider silk for everyday use.\\u0026lt;/p\\u0026gt; \\u0026lt;p\\u0026gt;The post \\u0026lt;a rel=\\\"nofollow\\\" href=\\\"http://www.wired.com/2015/06/bolt-threads-spider-silk/\\\"\\u0026gt;Startup Says It’s the First to Make Synthetic Spider Silk\\u0026lt;/a\\u0026gt; appeared first on \\u0026lt;a rel=\\\"nofollow\\\" href=\\\"http://www.wired.com\\\"\\u0026gt;WIRED\\u0026lt;/a\\u0026gt;.\\u0026lt;/p\\u0026gt;\\u0026lt;img width='1' height='1' src='http://feeds.wired.com/c/35185/f/661370/s/46f254b2/sc/38/mf.gif' border='0'/\\u0026gt;\\u0026lt;br clear='all'/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://da.feedsportal.com/r/231041254179/u/0/f/661370/c/35185/s/46f254b2/sc/38/rc/1/rc.htm\\\" rel=\\\"nofollow\\\"\\u0026gt;\\u0026lt;img src=\\\"http://da.feedsportal.com/r/231041254179/u/0/f/661370/c/35185/s/46f254b2/sc/38/rc/1/rc.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://da.feedsportal.com/r/231041254179/u/0/f/661370/c/35185/s/46f254b2/sc/38/rc/2/rc.htm\\\" rel=\\\"nofollow\\\"\\u0026gt;\\u0026lt;img src=\\\"http://da.feedsportal.com/r/231041254179/u/0/f/661370/c/35185/s/46f254b2/sc/38/rc/2/rc.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://da.feedsportal.com/r/231041254179/u/0/f/661370/c/35185/s/46f254b2/sc/38/rc/3/rc.htm\\\" rel=\\\"nofollow\\\"\\u0026gt;\\u0026lt;img src=\\\"http://da.feedsportal.com/r/231041254179/u/0/f/661370/c/35185/s/46f254b2/sc/38/rc/3/rc.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://da.feedsportal.com/r/231041254179/u/0/f/661370/c/35185/s/46f254b2/sc/38/a2.htm\\\"\\u0026gt;\\u0026lt;img src=\\\"http://da.feedsportal.com/r/231041254179/u/0/f/661370/c/35185/s/46f254b2/sc/38/a2.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://adchoice.feedsportal.com/r/231041254179/u/0/f/661370/c/35185/s/46f254b2/sc/38/ach.htm\\\"\\u0026gt;\\u0026lt;img src=\\\"http://adchoice.feedsportal.com/r/231041254179/u/0/f/661370/c/35185/s/46f254b2/sc/38/ach.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;img width=\\\"1\\\" height=\\\"1\\\" src=\\\"http://pi.feedsportal.com/r/231041254179/u/0/f/661370/c/35185/s/46f254b2/sc/38/a2t.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;img width=\\\"1\\\" height=\\\"1\\\" src=\\\"http://pi2.feedsportal.com/r/231041254179/u/0/f/661370/c/35185/s/46f254b2/sc/38/a2t2.img\\\" border=\\\"0\\\"/\\u0026gt;\",\"comments\":\"http://www.wired.com/2015/06/bolt-threads-spider-silk/#comments\",\"pubDate\":\"2015-06-04T13:56:36-07:00\",\"category\":\"Startups\",\"guid\":\"http://www.wired.com/?p=1790331\",\"dc_creator\":\"Davey Alba\"}"], ["link", "http://feeds.wired.com/c/35185/f/661370/s/46f254b2/sc/38/l/0L0Swired0N0C20A150C0A60Cbolt0Ethreads0Espider0Esilk0C/story01.htm"], ["published_at", Thu, 04 Jun 2015 20:56:36 UTC +00:00], ["title", "Startup Says It’s the First to Make Synthetic Spider Silk"], ["updated_at", Thu, 04 Jun 2015 23:36:13 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:36:13 UTC +00:00], ["feed_id", 2], ["guid", "http://www.wired.com/?p=1789902"], ["json", "{\"title\":\"The Bizarre Instruments That Make Hannibal Sound So Creepy\",\"link\":\"http://feeds.wired.com/c/35185/f/661370/s/46f254b3/sc/23/l/0L0Swired0N0C20A150C0A60Channibal0Emusical0Einstruments0C/story01.htm\",\"description\":\"\\u0026lt;div class=\\\"rss_thumbnail\\\"\\u0026gt;\\u0026lt;img src=\\\"http://www.wired.com/wp-content/uploads/2015/06/Harp_0100_V1_HPA-660x337.jpg\\\" alt=\\\"The Bizarre Instruments That Make Hannibal Sound So Creepy\\\" /\\u0026gt;\\u0026lt;/div\\u0026gt;\\u0026lt;p\\u0026gt;With the show's third season starting tonight, composer Brian Reitzell was kind enough to show off a few of the more peculiar selections from his massive collection.\\u0026lt;/p\\u0026gt; \\u0026lt;p\\u0026gt;The post \\u0026lt;a rel=\\\"nofollow\\\" href=\\\"http://www.wired.com/2015/06/hannibal-musical-instruments/\\\"\\u0026gt;The Bizarre Instruments That Make \\u0026lt;em\\u0026gt;Hannibal\\u0026lt;/em\\u0026gt; Sound So Creepy\\u0026lt;/a\\u0026gt; appeared first on \\u0026lt;a rel=\\\"nofollow\\\" href=\\\"http://www.wired.com\\\"\\u0026gt;WIRED\\u0026lt;/a\\u0026gt;.\\u0026lt;/p\\u0026gt;\\u0026lt;img width='1' height='1' src='http://feeds.wired.com/c/35185/f/661370/s/46f254b3/sc/23/mf.gif' border='0'/\\u0026gt;\\u0026lt;br clear='all'/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://da.feedsportal.com/r/231041254178/u/0/f/661370/c/35185/s/46f254b3/sc/23/rc/1/rc.htm\\\" rel=\\\"nofollow\\\"\\u0026gt;\\u0026lt;img src=\\\"http://da.feedsportal.com/r/231041254178/u/0/f/661370/c/35185/s/46f254b3/sc/23/rc/1/rc.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://da.feedsportal.com/r/231041254178/u/0/f/661370/c/35185/s/46f254b3/sc/23/rc/2/rc.htm\\\" rel=\\\"nofollow\\\"\\u0026gt;\\u0026lt;img src=\\\"http://da.feedsportal.com/r/231041254178/u/0/f/661370/c/35185/s/46f254b3/sc/23/rc/2/rc.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://da.feedsportal.com/r/231041254178/u/0/f/661370/c/35185/s/46f254b3/sc/23/rc/3/rc.htm\\\" rel=\\\"nofollow\\\"\\u0026gt;\\u0026lt;img src=\\\"http://da.feedsportal.com/r/231041254178/u/0/f/661370/c/35185/s/46f254b3/sc/23/rc/3/rc.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://da.feedsportal.com/r/231041254178/u/0/f/661370/c/35185/s/46f254b3/sc/23/a2.htm\\\"\\u0026gt;\\u0026lt;img src=\\\"http://da.feedsportal.com/r/231041254178/u/0/f/661370/c/35185/s/46f254b3/sc/23/a2.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br/\\u0026gt;\\u0026lt;a href=\\\"http://adchoice.feedsportal.com/r/231041254178/u/0/f/661370/c/35185/s/46f254b3/sc/23/ach.htm\\\"\\u0026gt;\\u0026lt;img src=\\\"http://adchoice.feedsportal.com/r/231041254178/u/0/f/661370/c/35185/s/46f254b3/sc/23/ach.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;img width=\\\"1\\\" height=\\\"1\\\" src=\\\"http://pi.feedsportal.com/r/231041254178/u/0/f/661370/c/35185/s/46f254b3/sc/23/a2t.img\\\" border=\\\"0\\\"/\\u0026gt;\\u0026lt;img width=\\\"1\\\" height=\\\"1\\\" src=\\\"http://pi2.feedsportal.com/r/231041254178/u/0/f/661370/c/35185/s/46f254b3/sc/23/a2t2.img\\\" border=\\\"0\\\"/\\u0026gt;\",\"comments\":\"http://www.wired.com/2015/06/hannibal-musical-instruments/#comments\",\"pubDate\":\"2015-06-04T13:53:44-07:00\",\"category\":\"Music\",\"guid\":\"http://www.wired.com/?p=1789902\",\"dc_creator\":\"K.M. McFarland\"}"], ["link", "http://feeds.wired.com/c/35185/f/661370/s/46f254b3/sc/23/l/0L0Swired0N0C20A150C0A60Channibal0Emusical0Einstruments0C/story01.htm"], ["published_at", Thu, 04 Jun 2015 20:53:44 UTC +00:00], ["title", "The Bizarre Instruments That Make Hannibal Sound So Creepy"], ["updated_at", Thu, 04 Jun 2015 23:36:13 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mEntry Load (1.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1 ORDER BY "entries"."published_at" DESC[0m  [["feed_id", 2]]
+Completed 200 OK in 502ms (Views: 475.3ms | ActiveRecord: 26.2ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:36:15 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.7ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/feeds/3" for 127.0.0.1 at 2015-06-04 16:36:16 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mFeed Load (0.5ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35mSQL (0.6ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-06-04 23:36:16.655112' WHERE "feeds"."id" = 3
+  [1m[36m (1.6ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:36:16 UTC +00:00], ["feed_id", 3], ["guid", "http://www.npr.org/sections/thetwo-way/2015/06/04/412086068/massive-data-breach-puts-4-million-federal-employees-records-at-risk?utm_medium=RSS&amp;utm_campaign=news"], ["json", "{\"title\":\"Massive Data Breach Puts 4 Million Federal Employees' Records At Risk\",\"link\":\"http://www.npr.org/sections/thetwo-way/2015/06/04/412086068/massive-data-breach-puts-4-million-federal-employees-records-at-risk?utm_medium=RSS\\u0026amp;utm_campaign=news\",\"description\":\"The Office of Personnel Management says it's notifying current and former employees whose personally identifiable information may have been compromised.\",\"content_encoded\":\"\\u003Cp\\u003EThe Office of Personnel Management says it's notifying current and former employees whose personally identifiable information may have been compromised.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=412086068\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2015-06-04T16:22:42-07:00\",\"guid\":\"http://www.npr.org/sections/thetwo-way/2015/06/04/412086068/massive-data-breach-puts-4-million-federal-employees-records-at-risk?utm_medium=RSS\\u0026amp;utm_campaign=news\",\"dc_creator\":\"Sam Sanders\"}"], ["link", "http://www.npr.org/sections/thetwo-way/2015/06/04/412086068/massive-data-breach-puts-4-million-federal-employees-records-at-risk?utm_medium=RSS&amp;utm_campaign=news"], ["published_at", Thu, 04 Jun 2015 23:22:42 UTC +00:00], ["title", "Massive Data Breach Puts 4 Million Federal Employees' Records At Risk"], ["updated_at", Thu, 04 Jun 2015 23:36:16 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:36:16 UTC +00:00], ["feed_id", 3], ["guid", "http://www.npr.org/sections/goatsandsoda/2015/06/04/412046893/viral-superspreader-how-one-man-triggered-a-deadly-mers-outbreak?utm_medium=RSS&amp;utm_campaign=news"], ["json", "{\"title\":\"Viral Superspreader? How One Man Triggered A Deadly MERS Outbreak\",\"link\":\"http://www.npr.org/sections/goatsandsoda/2015/06/04/412046893/viral-superspreader-how-one-man-triggered-a-deadly-mers-outbreak?utm_medium=RSS\\u0026amp;utm_campaign=news\",\"description\":\"In the past week, cases of the Middle East respiratory syndrome have more than tripled in South Korea. Researchers now have a clue to why the outbreak has grown so large, so quickly.\",\"content_encoded\":\"\\u003Cp\\u003EIn the past week, cases of the Middle East respiratory syndrome have more than tripled in South Korea. Researchers now have a clue to why the outbreak has grown so large, so quickly.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=412046893\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2015-06-04T16:03:00-07:00\",\"guid\":\"http://www.npr.org/sections/goatsandsoda/2015/06/04/412046893/viral-superspreader-how-one-man-triggered-a-deadly-mers-outbreak?utm_medium=RSS\\u0026amp;utm_campaign=news\",\"dc_creator\":\"Michaeleen Doucleff\"}"], ["link", "http://www.npr.org/sections/goatsandsoda/2015/06/04/412046893/viral-superspreader-how-one-man-triggered-a-deadly-mers-outbreak?utm_medium=RSS&amp;utm_campaign=news"], ["published_at", Thu, 04 Jun 2015 23:03:00 UTC +00:00], ["title", "Viral Superspreader? How One Man Triggered A Deadly MERS Outbreak"], ["updated_at", Thu, 04 Jun 2015 23:36:16 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:36:16 UTC +00:00], ["feed_id", 3], ["guid", "http://www.npr.org/sections/thesalt/2015/06/04/411777947/trader-joes-ex-president-opens-store-with-aging-food-and-cheap-meals?utm_medium=RSS&amp;utm_campaign=news"], ["json", "{\"title\":\"Trader Joe's Ex-President Opens Store With Aging Food And Cheap Meals\",\"link\":\"http://www.npr.org/sections/thesalt/2015/06/04/411777947/trader-joes-ex-president-opens-store-with-aging-food-and-cheap-meals?utm_medium=RSS\\u0026amp;utm_campaign=news\",\"description\":\"Would you buy groceries with a shorter shelf life if they were sold at a steep discount? Doug Rauch will test the idea at a new grocery store stocked with food donated by wholesalers and markets.\",\"content_encoded\":\"\\u003Cp\\u003EWould you buy groceries with a shorter shelf life if they were sold at a steep discount? Doug Rauch will test the idea at a new grocery store stocked with food donated by wholesalers and markets.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=411777947\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2015-06-04T15:25:00-07:00\",\"guid\":\"http://www.npr.org/sections/thesalt/2015/06/04/411777947/trader-joes-ex-president-opens-store-with-aging-food-and-cheap-meals?utm_medium=RSS\\u0026amp;utm_campaign=news\",\"dc_creator\":\"Curt Nickisch\"}"], ["link", "http://www.npr.org/sections/thesalt/2015/06/04/411777947/trader-joes-ex-president-opens-store-with-aging-food-and-cheap-meals?utm_medium=RSS&amp;utm_campaign=news"], ["published_at", Thu, 04 Jun 2015 22:25:00 UTC +00:00], ["title", "Trader Joe's Ex-President Opens Store With Aging Food And Cheap Meals"], ["updated_at", Thu, 04 Jun 2015 23:36:16 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:36:16 UTC +00:00], ["feed_id", 3], ["guid", "http://www.npr.org/2015/06/04/412036871/nypds-union-rift-confronted-by-a-wider-shift-in-leadership-style?utm_medium=RSS&amp;utm_campaign=news"], ["json", "{\"title\":\"NYPD's Union Rift Confronted By A Wider Shift In Leadership Style\",\"link\":\"http://www.npr.org/2015/06/04/412036871/nypds-union-rift-confronted-by-a-wider-shift-in-leadership-style?utm_medium=RSS\\u0026amp;utm_campaign=news\",\"description\":\"The force's union faces a serious upcoming election challenge. Opponents of incumbent President Patrick Lynch say it's time for a new dialogue with city leaders and the public.\",\"content_encoded\":\"\\u003Cp\\u003EThe force's union faces a serious upcoming election challenge. Opponents of incumbent President Patrick Lynch say it's time for a new dialogue with city leaders and the public.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=412036871\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2015-06-04T15:01:00-07:00\",\"guid\":\"http://www.npr.org/2015/06/04/412036871/nypds-union-rift-confronted-by-a-wider-shift-in-leadership-style?utm_medium=RSS\\u0026amp;utm_campaign=news\",\"dc_creator\":\"Joel Rose\"}"], ["link", "http://www.npr.org/2015/06/04/412036871/nypds-union-rift-confronted-by-a-wider-shift-in-leadership-style?utm_medium=RSS&amp;utm_campaign=news"], ["published_at", Thu, 04 Jun 2015 22:01:00 UTC +00:00], ["title", "NYPD's Union Rift Confronted By A Wider Shift In Leadership Style"], ["updated_at", Thu, 04 Jun 2015 23:36:16 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:36:16 UTC +00:00], ["feed_id", 3], ["guid", "http://www.npr.org/sections/thetwo-way/2015/06/04/412068327/lightning-hope-lesson-was-learned-in-opening-game-loss-to-blackhawks?utm_medium=RSS&amp;utm_campaign=news"], ["json", "{\"title\":\"Lightning Hope Lesson Was Learned In Opening Game Loss To Blackhawks\",\"link\":\"http://www.npr.org/sections/thetwo-way/2015/06/04/412068327/lightning-hope-lesson-was-learned-in-opening-game-loss-to-blackhawks?utm_medium=RSS\\u0026amp;utm_campaign=news\",\"description\":\"Chicago took advantage of late-game lapses to win in game one. Tampa Bay knows it has to keep the pressure on to bounce back in game two of the Stanley Cup finals.\",\"content_encoded\":\"\\u003Cp\\u003EChicago took advantage of late-game lapses to win in game one. Tampa Bay knows it has to keep the pressure on to bounce back in game two of the Stanley Cup finals.\\u003C/p\\u003E\\u003Cp\\u003E\\u003Ca href=\\\"http://www.npr.org/templates/email/emailAFriend.php?storyId=412068327\\\"\\u003E\\u0026raquo; E-Mail This\\u003C/a\\u003E\\u003C/p\\u003E\",\"pubDate\":\"2015-06-04T14:51:00-07:00\",\"guid\":\"http://www.npr.org/sections/thetwo-way/2015/06/04/412068327/lightning-hope-lesson-was-learned-in-opening-game-loss-to-blackhawks?utm_medium=RSS\\u0026amp;utm_campaign=news\",\"dc_creator\":\"David McGuffin\"}"], ["link", "http://www.npr.org/sections/thetwo-way/2015/06/04/412068327/lightning-hope-lesson-was-learned-in-opening-game-loss-to-blackhawks?utm_medium=RSS&amp;utm_campaign=news"], ["published_at", Thu, 04 Jun 2015 21:51:00 UTC +00:00], ["title", "Lightning Hope Lesson Was Learned In Opening Game Loss To Blackhawks"], ["updated_at", Thu, 04 Jun 2015 23:36:16 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mEntry Load (1.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1 ORDER BY "entries"."published_at" DESC[0m  [["feed_id", 3]]
+Completed 200 OK in 177ms (Views: 167.7ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:36:17 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 240ms (Views: 239.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:36:43 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.6ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 173ms (Views: 173.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:37:38 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.8ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:42:23 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 223ms (Views: 223.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:42:23 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:23 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:23 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:23 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:42:24 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.9ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.9ms)
+  [1m[36mFeed Load (8.8ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (101.5ms)[0m  [1mINSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:43:51 UTC +00:00], ["title", "Something"], ["updated_at", Thu, 04 Jun 2015 23:43:51 UTC +00:00], ["url", "http://qz.com/feed/"]]
+PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_feeds_on_url"
+DETAIL:  Key (url)=(http://qz.com/feed/) already exists.
+: INSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:44:57 UTC +00:00], ["title", "Something0"], ["updated_at", Thu, 04 Jun 2015 23:44:57 UTC +00:00], ["url", "http://qz.com/feed/"]]
+PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_feeds_on_url"
+DETAIL:  Key (url)=(http://qz.com/feed/) already exists.
+: INSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["title", "Something0"], ["updated_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["url", "http://qz.com/feed/0"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["title", "Something1"], ["updated_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["url", "http://qz.com/feed/1"]]
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["title", "Something2"], ["updated_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["url", "http://qz.com/feed/2"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["title", "Something3"], ["updated_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["url", "http://qz.com/feed/3"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["title", "Something4"], ["updated_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["url", "http://qz.com/feed/4"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["title", "Something5"], ["updated_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["url", "http://qz.com/feed/5"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["title", "Something6"], ["updated_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["url", "http://qz.com/feed/6"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["title", "Something7"], ["updated_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["url", "http://qz.com/feed/7"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["title", "Something8"], ["updated_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["url", "http://qz.com/feed/8"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["title", "Something9"], ["updated_at", Thu, 04 Jun 2015 23:45:32 UTC +00:00], ["url", "http://qz.com/feed/9"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:45:35 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.8ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/api/feeds/18" for 127.0.0.1 at 2015-06-04 16:45:43 -0700
+
+ActionController::RoutingError (No route matches [DELETE] "/api/feeds/18"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (30.9ms)
+
+
+Started GET "/api/feeds/18" for 127.0.0.1 at 2015-06-04 16:45:43 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"18"}
+  [1m[36mFeed Load (0.4ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "18"]]
+  [1m[35mEntry Load (0.9ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1 ORDER BY "entries"."published_at" DESC  [["feed_id", 18]]
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+
+
+Started GET "/api/feeds/18" for 127.0.0.1 at 2015-06-04 16:46:30 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"18"}
+  [1m[36mFeed Load (0.4ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "18"]]
+  [1m[35mSQL (0.8ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-06-04 23:46:30.720085' WHERE "feeds"."id" = 18
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1 ORDER BY "entries"."published_at" DESC[0m  [["feed_id", 18]]
+Completed 200 OK in 608ms (Views: 564.3ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:46:32 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:46:33 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (1.3ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/api/feeds/11" for 127.0.0.1 at 2015-06-04 16:46:35 -0700
+
+ActionController::RoutingError (No route matches [DELETE] "/api/feeds/11"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.9ms)
+
+
+Started GET "/api/feeds/11" for 127.0.0.1 at 2015-06-04 16:46:35 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "11"]]
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-06-04 23:46:35.801116' WHERE "feeds"."id" = 11[0m
+  [1m[35mEntry Load (0.4ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1 ORDER BY "entries"."published_at" DESC  [["feed_id", 11]]
+Completed 200 OK in 463ms (Views: 460.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:47:10 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 598ms (Views: 597.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+
+
+Started GET "/api/feeds/11" for 127.0.0.1 at 2015-06-04 16:47:11 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mFeed Load (0.9ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "11"]]
+  [1m[35mSQL (4.3ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-06-04 23:47:11.876952' WHERE "feeds"."id" = 11
+  [1m[36mEntry Load (0.5ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1 ORDER BY "entries"."published_at" DESC[0m  [["feed_id", 11]]
+Completed 200 OK in 547ms (Views: 539.7ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:47:13 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.5ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 25ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.9ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:47:16 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.7ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/api/feeds/10" for 127.0.0.1 at 2015-06-04 16:47:18 -0700
+
+ActionController::RoutingError (No route matches [DELETE] "/api/feeds/10"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (17.4ms)
+
+
+Started DELETE "/api/feeds/16" for 127.0.0.1 at 2015-06-04 16:47:26 -0700
+
+ActionController::RoutingError (No route matches [DELETE] "/api/feeds/16"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:47:46 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (3.2ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:48:11 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:48:12 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (2.4ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 43ms (Views: 15.0ms | ActiveRecord: 7.4ms)
+
+
+Started DELETE "/api/feeds/10" for 127.0.0.1 at 2015-06-04 16:48:14 -0700
+Processing by Api::FeedsController#destroy as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mFeed Load (0.6ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "10"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mEntry Load (0.5ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 10]]
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "feeds" WHERE "feeds"."id" = $1  [["id", 10]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 25ms (Views: 0.5ms | ActiveRecord: 3.2ms)
+
+
+Started DELETE "/api/feeds/12" for 127.0.0.1 at 2015-06-04 16:48:18 -0700
+Processing by Api::FeedsController#destroy as JSON
+  Parameters: {"id"=>"12"}
+  [1m[35mFeed Load (0.3ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "12"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 12]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "feeds" WHERE "feeds"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:48:19 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (1.4ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.6ms)
