@@ -3167,3 +3167,829 @@ Processing by Api::FeedsController#show as JSON
   [1m[35mFeed Load (0.5ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "3"]]
   [1m[36mEntry Load (3.0ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 3]]
 Completed 200 OK in 35ms (Views: 30.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 13:57:38 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+
+
+Started GET "/api/feeds/3" for 127.0.0.1 at 2015-06-04 13:57:39 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36mSQL (1.1ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-06-04 20:57:39.258916' WHERE "feeds"."id" = 3[0m
+  [1m[35m (1.7ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (1.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 3]]
+Completed 200 OK in 165ms (Views: 159.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:00:34 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/feeds/4" for 127.0.0.1 at 2015-06-04 14:00:36 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mFeed Load (0.4ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mSQL (0.8ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-06-04 21:00:36.074573' WHERE "feeds"."id" = 4
+  [1m[36m (1.2ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (8.7ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 21:00:36 UTC +00:00], ["feed_id", 4], ["guid", "http://qz.com/preview/419947"], ["json", "{\"title\":\"Charted: the precise moment when Americans started liking George W. Bush more than Barack Obama\",\"link\":\"http://qz.com/419947/charted-the-precise-moment-when-americans-started-liking-george-w-bush-more-than-barack-obama/\",\"description\":\"A poll released yesterday (June 3) by CNN and ORC International found that only 49% of Americans have a \\u0026#8220;favorable\\u0026#8221; view of US president Barack Obama. Historically, presidents have\\u0026#8230;\\u003Cimg alt=\\\"\\\" border=\\\"0\\\" src=\\\"http://pixel.wp.com/b.gif?host=qz.com\\u0026#038;blog=39587363\\u0026#038;post=419947\\u0026#038;subd=qzprod\\u0026#038;ref=\\u0026#038;feed=1\\\" width=\\\"1\\\" height=\\\"1\\\" /\\u003E\",\"content\":\"\",\"content_encoded\":\"\\u003Cimg width=\\\"640\\\" height=\\\"360\\\" src=\\\"https://qzprod.files.wordpress.com/2015/06/ap081110014875-e1433442419790.jpg?w=640\\\" class=\\\"attachment-medium_10 wp-post-image\\\" alt=\\\"Tough crowd.\\\" /\\u003E\\u003Cp\\u003EA poll \\u003Ca href=\\\"https://www.yahoo.com/politics/more-americans-hold-favorable-view-of-george-w-120609395871.html\\\" target=\\\"_blank\\\"\\u003Ereleased yesterday\\u003C/a\\u003E (June 3) by CNN and ORC International found that only 49% of Americans have a \\u0026#8220;favorable\\u0026#8221; view of US president Barack Obama. Historically, presidents have been least popular with the public \\u003Ca href=\\\"http://fivethirtyeight.blogs.nytimes.com/2013/05/16/is-there-really-a-second-term-curse/\\\" target=\\\"_blank\\\"\\u003Eduring their second terms in office\\u003C/a\\u003E, so it isn\\u0026#8217;t surprising to see Obama\\u0026#8217;s favorability rating slip below 50%. It\\u0026#8217;s not even the first time he has had less than a majority of favorable responses.\\u003C/p\\u003E\\n\\u003Cp\\u003EIt is, however, the first time that he has been liked less than former president George W. Bush.\\u003C/p\\u003E\\n\\u003Cp\\u003EBush, who left office in 2009 with a 35% favorability rating, is now viewed favorably by 52% of Americans surveyed. Based on \\u003Ca href=\\\"http://i2.cdn.turner.com/cnn/2015/images/06/02/obama,.economy.poll.pdf\\\" target=\\\"_blank\\\"\\u003Epast data\\u003C/a\\u003E (pdf) from the CNN/ORC poll, this marks the first time since 2005 that a majority have had a favorable opinion of Bush.\\u003C/p\\u003E\\n\\u003Cfigure id=\\\"image-419950\\\" class=\\\"inline-image  aligncenter zoomable size-medium\\\"\\u003E\\u003Cimg src=\\\"https://qzprod.files.wordpress.com/2015/06/percent-of-favorable-ratings-vs-unfavorable-or-none-in-polling-obama-bush_chartbuilder-1.png?w=640\\\" data-retina=\\\"https://qzprod.files.wordpress.com/2015/06/percent-of-favorable-ratings-vs-unfavorable-or-none-in-polling-obama-bush_chartbuilder-1.png?w=1024\\\" alt=\\\"\\\" title=\\\"\\\"/\\u003E\\u003C/figure\\u003E\\n\\u003Cp\\u003EThe survey was conducted between May 29 and May 31. Results are based on telephone interviews with 1,025 US adults.\\u003C/p\\u003E\\u003Cimg alt=\\\"\\\" border=\\\"0\\\" src=\\\"http://pixel.wp.com/b.gif?host=qz.com\\u0026#038;blog=39587363\\u0026#038;post=419947\\u0026#038;subd=qzprod\\u0026#038;ref=\\u0026#038;feed=1\\\" width=\\\"1\\\" height=\\\"1\\\" /\\u003E\",\"comments\":\"http://qz.com/419947/charted-the-precise-moment-when-americans-started-liking-george-w-bush-more-than-barack-obama/#comments\",\"pubDate\":\"2015-06-04T12:41:50-07:00\",\"category\":\"Uncategorized\",\"guid\":\"http://qz.com/preview/419947\",\"dc_creator\":\"Svati Kirsten Narula\",\"media_content_url\":\"https://qzprod.files.wordpress.com/2015/06/ap081110014875-e1433442419790.jpg?w=640\",\"media_content_type\":\"html\",\"media_title\":\"Barack Obama, George W. Bush\",\"media_thumbnail_url\":\"https://qzprod.files.wordpress.com/2015/06/ap081110014875-e1433442419790.jpg?w=640\"}"], ["link", "http://qz.com/419947/charted-the-precise-moment-when-americans-started-liking-george-w-bush-more-than-barack-obama/"], ["published_at", Thu, 04 Jun 2015 19:41:50 UTC +00:00], ["title", "Charted: the precise moment when Americans started liking George W. Bush more than Barack Obama"], ["updated_at", Thu, 04 Jun 2015 21:00:36 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:00:36 UTC +00:00], ["feed_id", 4], ["guid", "http://qz.com/preview/420274"], ["json", "{\"title\":\"Google Street View has an underwater version that lets you explore the world\\u0026#8217;s seabeds\",\"link\":\"http://qz.com/420274/google-street-view-has-an-underwater-version-that-lets-you-explore-the-worlds-seabeds/\",\"description\":\"Now you can swim with humpback whales, explore coral reefs in the Pacific, or walk on a beach in Bali—all from the comfort of your desk\\u0026#8230;\\u003Cimg alt=\\\"\\\" border=\\\"0\\\" src=\\\"http://pixel.wp.com/b.gif?host=qz.com\\u0026#038;blog=39587363\\u0026#038;post=420274\\u0026#038;subd=qzprod\\u0026#038;ref=\\u0026#038;feed=1\\\" width=\\\"1\\\" height=\\\"1\\\" /\\u003E\",\"content\":\"\",\"content_encoded\":\"\\u003Cimg width=\\\"640\\\" height=\\\"360\\\" src=\\\"https://qzprod.files.wordpress.com/2015/06/google-sea-view.jpeg?w=640\\\" class=\\\"attachment-medium_10 wp-post-image\\\" alt=\\\"No diving skills required.\\\" /\\u003E\\u003Cp\\u003ENow you can swim with humpback whales, explore coral reefs in the Pacific, or walk on a beach in Bali—all from the comfort of your desk chair.\\u003C/p\\u003E\\n\\u003Cp\\u003ETo encourage us humans to learn more about the ocean, Google \\u003Ca href=\\\"http://google-latlong.blogspot.com/2015/06/explore-life-beneath-waves-in-honor-of.html\\\" target=\\\"_blank\\\"\\u003Ehas released a tranche\\u003C/a\\u003E of new underwater images for its Google Street View application.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cspan class='embed-youtube' style='text-align:center; display: block;'\\u003E\\u003Ciframe class='youtube-player' type='text/html' width='640' height='390' src='http://www.youtube.com/embed/4C5EGXqgx8s?version=3\\u0026#038;rel=1\\u0026#038;fs=1\\u0026#038;showsearch=0\\u0026#038;showinfo=1\\u0026#038;iv_load_policy=1\\u0026#038;wmode=transparent' frameborder='0' allowfullscreen='true'\\u003E\\u003C/iframe\\u003E\\u003C/span\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EThe shots come from partnerships with the \\u003Ca href=\\\"http://catlinseaviewsurvey.com/\\\" target=\\\"_blank\\\"\\u003ECatlin Seaview Survey\\u003C/a\\u003E, the US \\u003Ca href=\\\"http://sanctuaries.noaa.gov/\\\" target=\\\"_blank\\\"\\u003ENational Oceanic and Atmospheric Administration\\u003C/a\\u003E, and the \\u003Ca href=\\\"http://chagos-trust.org/\\\" target=\\\"_blank\\\"\\u003EChagos Conservation Trust\\u003C/a\\u003E, and have led to some truly amazing moments. The point is that by better documenting our oceans and our affect on them, we will be inspired to learn more about them, and better protect them, Google says in its announcement.\\u003C/p\\u003E\\n\\u003Cfigure id=\\\"image-420339\\\" class=\\\"inline-image  alignnone zoomable size-medium\\\"\\u003E\\u003Cimg src=\\\"https://qzprod.files.wordpress.com/2015/06/humpback-whales-cook-islands-hyperlapse.gif?w=640\\\" data-retina=\\\"https://qzprod.files.wordpress.com/2015/06/humpback-whales-cook-islands-hyperlapse.gif?w=640\\\" alt=\\\"\\\" title=\\\"\\u0026#8220;I think we made a wrong turn by Hawaii.\\u0026#8221;\\\"/\\u003E\\u003Cfigcaption class=\\\"inline-image-caption\\\"\\u003E\\u003Ci class=\\\"icon-camera\\\"\\u003E\\u003C/i\\u003E\\u0026#8220;I think we made a wrong turn by Hawaii.\\u0026#8221;\\u003Cspan class=\\\"inline-image-credit\\\"\\u003E(Google Maps Blog)\\u003C/span\\u003E\\u003C/figcaption\\u003E\\u003C/figure\\u003E\\n\\u003Cp\\u003ELast week at Google\\u0026#8217;s I/O developers conference, \\u003Ca href=\\\"http://qz.com/414722/googles-new-player-lets-you-make-your-own-virtual-reality-videos-and-post-them-to-youtube/\\\" target=\\\"_blank\\\"\\u003Ethe company introduced\\u003C/a\\u003E an updated version of its Cardboard virtual reality system. Google also \\u003Ca href=\\\"http://www.slashgear.com/google-cardboard-amazing-places-to-go-with-google-maps-street-view-13373648/\\\" target=\\\"_blank\\\"\\u003Erecently announced\\u003C/a\\u003E that Street View is available for Cardboard in certain locations. So it\\u0026#8217;s not much of a stretch to think that at some point soon, using just a smartphone and a piece of cardboard, we could be exploring the depths of the world\\u0026#8217;s oceans in immersive 3D.\\u003C/p\\u003E\\n\\u003Cp\\u003EGoogle was not immediately available to comment on whether this was part of their, um, roadmap.\\u003C/p\\u003E\\u003Cimg alt=\\\"\\\" border=\\\"0\\\" src=\\\"http://pixel.wp.com/b.gif?host=qz.com\\u0026#038;blog=39587363\\u0026#038;post=420274\\u0026#038;subd=qzprod\\u0026#038;ref=\\u0026#038;feed=1\\\" width=\\\"1\\\" height=\\\"1\\\" /\\u003E\",\"comments\":\"http://qz.com/420274/google-street-view-has-an-underwater-version-that-lets-you-explore-the-worlds-seabeds/#comments\",\"pubDate\":\"2015-06-04T12:40:31-07:00\",\"category\":\"The Sea\",\"guid\":\"http://qz.com/preview/420274\",\"dc_creator\":\"Mike Murphy\",\"media_content_url\":\"https://qzprod.files.wordpress.com/2015/06/google-sea-view.jpeg?w=640\",\"media_content_type\":\"html\",\"media_title\":\"google sea view\",\"media_thumbnail_url\":\"https://qzprod.files.wordpress.com/2015/06/google-sea-view.jpeg?w=640\"}"], ["link", "http://qz.com/420274/google-street-view-has-an-underwater-version-that-lets-you-explore-the-worlds-seabeds/"], ["published_at", Thu, 04 Jun 2015 19:40:31 UTC +00:00], ["title", "Google Street View has an underwater version that lets you explore the world&#8217;s seabeds"], ["updated_at", Thu, 04 Jun 2015 21:00:36 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 21:00:36 UTC +00:00], ["feed_id", 4], ["guid", "http://qz.com/preview/420113"], ["json", "{\"title\":\"The NBA finals will be played on an increasingly global stage\",\"link\":\"http://qz.com/420113/the-nba-finals-will-be-played-on-an-increasingly-global-stage/\",\"description\":\"When the NBA finals series tips off tonight, it\\u0026#8217;ll pit two of the most popular players in the game. Stephen Curry of the Golden State\\u0026#8230;\\u003Cimg alt=\\\"\\\" border=\\\"0\\\" src=\\\"http://pixel.wp.com/b.gif?host=qz.com\\u0026#038;blog=39587363\\u0026#038;post=420113\\u0026#038;subd=qzprod\\u0026#038;ref=\\u0026#038;feed=1\\\" width=\\\"1\\\" height=\\\"1\\\" /\\u003E\",\"content\":\"\",\"content_encoded\":\"\\u003Cimg width=\\\"640\\\" height=\\\"360\\\" src=\\\"https://qzprod.files.wordpress.com/2015/06/lebron.jpg?w=640\\\" class=\\\"attachment-medium_10 wp-post-image\\\" alt=\\\"Championship or bust.\\\" /\\u003E\\u003Cp\\u003EWhen the NBA finals series tips off tonight, it\\u0026#8217;ll pit two of the most popular players in the game. Stephen Curry of the Golden State Warriors, who \\u003Ca href=\\\"http://www.cbssports.com/nba/writer/ken-berger/25151664/nba-awards-ballot-stephen-curry-gets-mvp-over-james-harden-in-heated-race\\\" target=\\\"_blank\\\"\\u003Ewas selected\\u003C/a\\u003E as the league\\u0026#8217;s Most Valuable Player this year, will be going up against the four-time MVP Lebron James and his fellow Cleveland Cavaliers.\\u003C/p\\u003E\\n\\u003Cp\\u003EThe matchup also will continue to burnish the game\\u0026#8217;s reputation as \\u003Ca href=\\\"http://www.newyorker.com/business/currency/basketball-and-globalization\\\" target=\\\"_blank\\\"\\u003Eone of America\\u0026#8217;s truly global sports\\u003C/a\\u003E. Last year\\u0026#8217;s finals between the San Antonio Spurs and the Miami Heat was \\u003Ca href=\\\"http://www.cctv-america.com/2014/06/06/nba-launches-outreach-for-china-global-audience\\\" target=\\\"_blank\\\"\\u003Ebroadcast in 47 different languages\\u003C/a\\u003E, with coverage available in 215 countries.\\u003C/p\\u003E\\n\\u003Cp\\u003ELooking at the roster of the two teams in this year\\u0026#8217;s championship series shows just how international pro-basketball has become. There will be Australians, Brazilians, a Russian, a Canadian, a Nigerian and a Bosnian competing. (League-wide, 14% of the NBA\\u0026#8217;s players are foreign nationals, according to \\u003Ca href=\\\"http://www.sportingintelligence.com/?s=%22global+sports+salaries+survey%22\\u0026amp;x=44\\u0026amp;y=9\\\" target=\\\"_blank\\\"\\u003Edata\\u003C/a\\u003E from sportingintelligence.com.)\\u003C/p\\u003E\\n\\u003Cp\\u003EIn April, the NBA became the first of all \\u003Ca href=\\\"http://www.nba.com/2015/news/04/22/nba-visits-cuba-for-basketball-clinic.ap/\\\" target=\\\"_blank\\\"\\u003EAmerican professional sports to visit Cuba\\u003C/a\\u003E, holding a four-day basketball clinic camp. And in August, Africa will be next when an exhibition game featuring the African players, captained by the Sudanese Luol Deng of the Miami Heat, will play against world players in Johannesburg. There have already been \\u003Ca href=\\\"http://www.si.com/nba/2015/04/22/nba-exhibition-africa\\\" target=\\\"_blank\\\"\\u003Egames played in London\\u003C/a\\u003E and \\u003Ca href=\\\"http://www.nba.com/hornets/hornets-nba-global-games-china-2015-fact-sheet\\\" target=\\\"_blank\\\"\\u003Ein China\\u003C/a\\u003E.\\u003C/p\\u003E\\n\\u003Cp\\u003EAll that exposure has helped the NBA build up its social media following \\u003Ca href=\\\"http://www.forbes.com/sites/aliciajessop/2012/06/14/the-surge-of-the-nbas-international-viewership-and-popularity/\\\" target=\\\"_blank\\\"\\u003Eoutside the US\\u003C/a\\u003E. On the Chinese online media platforms Sina and Tencent, the \\u003Ca href=\\\"http://www.nba.com/hornets/hornets-nba-global-games-china-2015-fact-sheet\\\" target=\\\"_blank\\\"\\u003ENBA is the most followed sports league\\u003C/a\\u003E, with almost 100 million followers.\\u003C/p\\u003E\\n\\u003Cp\\u003EAround the world and across platforms, teams and players, \\u003Ca href=\\\"http://www.nba.com/2015/news/04/16/record-number-of-fans-join-nba-on-social-media/\\\" target=\\\"_blank\\\"\\u003Ethe league has more than 800 million social media followers\\u003C/a\\u003E.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cimg class=\\\"size-medium-desktop wp-image-420210\\\" src=\\\"https://qzprod.files.wordpress.com/2015/06/nba_social_media_followers_from_2012-2015_in_millions_facebook_twitter_chartbuilder.png?w=640\\u0026#038;h=267\\\" alt=\\\"NBA_social_media_followers_from_2012-2015_(in_millions)_Facebook_Twitter_chartbuilder\\\" width=\\\"640\\\" height=\\\"267\\\" /\\u003E\\u003C/p\\u003E\\u003Cimg alt=\\\"\\\" border=\\\"0\\\" src=\\\"http://pixel.wp.com/b.gif?host=qz.com\\u0026#038;blog=39587363\\u0026#038;post=420113\\u0026#038;subd=qzprod\\u0026#038;ref=\\u0026#038;feed=1\\\" width=\\\"1\\\" height=\\\"1\\\" /\\u003E\",\"comments\":\"http://qz.com/420113/the-nba-finals-will-be-played-on-an-increasingly-global-stage/#comments\",\"pubDate\":\"2015-06-04T12:26:43-07:00\",\"category\":\"Business of Sport\",\"guid\":\"http://qz.com/preview/420113\",\"dc_creator\":\"Omar Mohammed\",\"media_content_url\":\"https://qzprod.files.wordpress.com/2015/06/lebron.jpg?w=640\",\"media_content_type\":\"html\",\"media_title\":\"Lebron James\",\"media_thumbnail_url\":\"https://qzprod.files.wordpress.com/2015/06/lebron.jpg?w=640\"}"], ["link", "http://qz.com/420113/the-nba-finals-will-be-played-on-an-increasingly-global-stage/"], ["published_at", Thu, 04 Jun 2015 19:26:43 UTC +00:00], ["title", "The NBA finals will be played on an increasingly global stage"], ["updated_at", Thu, 04 Jun 2015 21:00:36 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:00:36 UTC +00:00], ["feed_id", 4], ["guid", "http://qz.com/preview/420205"], ["json", "{\"title\":\"26 years after Tiananmen, Chinese millennials are forgetting to fear their government\",\"link\":\"http://qz.com/420205/26-years-after-tiananmen-chinese-millennials-are-forgetting-to-fear-their-government/\",\"description\":\"When the journalist Eric Fish had just began researching a book about Chinese millennials, one of his subjects told him: \\u0026#8220;Be sure to say that we\\u0026#8230;\\u003Cimg alt=\\\"\\\" border=\\\"0\\\" src=\\\"http://pixel.wp.com/b.gif?host=qz.com\\u0026#038;blog=39587363\\u0026#038;post=420205\\u0026#038;subd=qzprod\\u0026#038;ref=\\u0026#038;feed=1\\\" width=\\\"1\\\" height=\\\"1\\\" /\\u003E\",\"content\":\"\",\"content_encoded\":\"\\u003Cimg width=\\\"640\\\" height=\\\"360\\\" src=\\\"https://qzprod.files.wordpress.com/2015/06/china-millennial-tiananmen_crop.jpg?w=640\\\" class=\\\"attachment-medium_10 wp-post-image\\\" alt=\\\"/China Daily\\\" /\\u003E\\u003Cp\\u003EWhen the journalist Eric Fish had just began researching a book about Chinese millennials, one of his subjects told him: \\u0026#8220;Be sure to say that we post-90s people aren\\u0026#8217;t just idiots. Foreigners always think we\\u0026#8217;re brainwashed.\\u0026#8221;\\u003C/p\\u003E\\n\\u003Cp\\u003EThe guy was right to worry—on this day especially. Every year, as the Western press eulogizes the hundreds (or by some estimates thousands) of demonstrators killed in and around Tiananmen Square on June 4, 1989, it gropes for a purpose to such senseless loss of life and potential.\\u003C/p\\u003E\\n\\u003Cp\\u003EThe glitch in the moral narrative arc is this: The same Communist Party that massacred its youth has since brought dazzling prosperity to China, and to today\\u0026#8217;s youth. In what China-watchers sometimes call the \\u0026#8220;grand bargain,\\u0026#8221; the Party bought the people\\u0026#8217;s apathy and amnesia, and it seems to have worked.\\u003C/p\\u003E\\n\\u003Cp\\u003ENo one has benefited more from the grand bargain than China\\u0026#8217;s 250 million millennials. But as Fish probes in his book, \\u003Cem\\u003EChina’s Millennials: The Want Generation\\u003C/em\\u003E, many have grown weary of apathy and materialism. And as the economy slows, the Chinese government is increasingly struggling to keep up its side of the bargain.\\u003C/p\\u003E\\n\\u003Cp\\u003EQuartz sat down with Fish to talk about what makes Chinese millennials tick, the challenge they pose to the Xi Jinping administration, and the legacy of Tiananmen. Fish\\u0026#8217;s answers have been edited and condensed for clarity.\\u003C/p\\u003E\\n\\u003Cfigure id=\\\"image-420273\\\" class=\\\"inline-image  alignleft zoomable size-small\\\"\\u003E\\u003Cimg src=\\\"https://qzprod.files.wordpress.com/2015/06/millennials-cover.jpg?w=1024\\\" data-retina=\\\"https://qzprod.files.wordpress.com/2015/06/millennials-cover.jpg?w=1024\\\" alt=\\\"\\\" title=\\\"\\\"/\\u003E\\u003C/figure\\u003E\\n\\u003Ch2\\u003EOn what sets Chinese millennials apart\\u003C/h2\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EFirst off, what drove your to write your book?\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EWhat became apparent during the 25th anniversary of the Tiananmen crackdown last year is that there seems to be a lot of looking at China\\u0026#8217;s millennials from the West and seeing young people that are pacified by economic growth and nationalism. The economy took off in the \\u0026#8217;90s, and at the same time the government instituted this kind of patriotic education campaign shifting the focus from socialist ideology to Chinese nationalism. There\\u0026#8217;s definitely a lot of substance to that story still, but I think it\\u0026#8217;s now less relevant.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EHow are Chinese millennials different from the previous generation?\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EThe young people I talked to again and again say they care less about money. There\\u0026#8217;s less satisfaction with pure economic growth, with materialism. They are more interested in religion, environmentalism, journalism—things that fulfill a sense of meaning. They\\u0026#8217;re less inclined to parrot the party line. They\\u0026#8217;re more individualistic.\\u003C/p\\u003E\\n\\u003Ch2\\u003EOn attitudes toward the government\\u003C/h2\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EDo millennials buy into Xi Jinping\\u0026#8217;s Chinese Dream concept—are young people more immune to that hokey paternalism? \\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EThere\\u0026#8217;s a funny story I heard from a young entrepreneur I talked to about this. A Beijing TV station wanted to do a TV segment on him as an example of an innovative entrepreneur living the Chinese dream. The guy was a total hippie—he had long hair, he was scruffy, he wore a t-shirt. They asked him about his schooling and he said, \\u0026#8220;Oh, I fought with teachers a lot in class.\\u0026#8221; They asked him about how he became innovative, and he said, \\u0026#8220;A lot of it probably came from my parents divorce.\\u0026#8221;\\u003C/p\\u003E\\n\\u003Cp\\u003EThe business he started was sort of like Pandora, except it matches music to your mood. His parents were divorced when he was really young and he used the piano to escape. He said that since his parents didn\\u0026#8217;t pressure him to study for the \\u003Cem\\u003Egaokao\\u003C/em\\u003E [the all-important college entrance exam] he was free to pour himself into creative pursuits—and that frame of mind about doing something different helped him found a startup.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EI bet that went over well!\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EWell, at the end of the interview, the TV station producer basically told him his story didn\\u0026#8217;t fit with the theme of their Chinese dream series and the segment never ran. The entrepreneur said to me afterward, \\u0026#8220;The Chinese Dream should be about many people living their own dreams, not about what the Chinese leaders want us to do.\\u0026#8221;\\u003C/p\\u003E\\n\\u003Cspan class=\\\"pull-quote\\\"\\u003E\\u003Cspan class=\\\"quote-line\\\"\\u003E\\u0026nbsp;\\u003C/span\\u003E\\u003Cspan\\u003E\\u0026#8220;The Chinese Dream should be about many people living their own dreams, not about what the Chinese leaders want us to do.\\u0026#8221;\\u003C/span\\u003E\\u003Cspan class=\\\"quote-line\\\"\\u003E\\u0026nbsp;\\u003C/span\\u003E\\u003C/span\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EWhat about nationalism—is the government playing with fire a little by stoking it?\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EIt is interesting to see youth out at these huge protests—the 2012 [Anti-Japan protests] were the biggest there has been since the \\u0026#8217;80s. But while young people who are very fervent patriots and nationalists have some overlap with the government agenda, at the same time, there\\u0026#8217;s a threat there that could be very dangerous for the government if it\\u0026#8217;s not handled correctly. This is something the government is worried about—that nationalistic protests could turn against them. It\\u0026#8217;s happened so many times in Chinese history: the May 4th movement, protests in 1935 against the Kuomintang government to stand up to Japan more. There was also a connection between the anti-Japan protests of 1985 that morphed into outrage about corrupt domestic leaders who were selling out their country [which eventually gave way to the Tiananmen protests].\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EIs Xi\\u0026#8217;s image as an anti-corruption crusader compelling to millennials?\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EFor sure. Xi is definitely giving off this image that he\\u0026#8217;s taking care of business. His anti-corruption campaign has been wildly popular with young people. How long that can last if more fundamental things don\\u0026#8217;t change, I don\\u0026#8217;t know. Anecdotally people are saying, \\u0026#8220;things are better, I don\\u0026#8217;t have to pay bribes anymore.\\u0026#8221; But are officials waiting out what they think is a temporary campaign? How much of this is permanent and systemic?\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EDoes that imply more potential for popular protest?\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EIt\\u0026#8217;s hard to imagine what would bring people together for any kind of movement, but it\\u0026#8217;s also really hard to judge these things until they happen. Like the Southern Weekend protests [demonstrations over government censorship of the prominent magazine Southern Weekend in 2013]—clearly media censorship was something a lot of people really cared about. The general thing that is happening is that young people are losing inhibitions to speak up, they\\u0026#8217;re demanding more from their leaders, and tolerance for incompetence, corruption, and injustice is shrinking.\\u003C/p\\u003E\\n\\u003Cp\\u003EAt the same time a lot of social and economic problems are getting worse—the economy and job situation are getting pretty dismal for them, the environment, the gender imbalance. If all those things ever intersect in some way, that could spell trouble. I have no idea what that would look like, but I think these trends are things that keep China\\u0026#8217;s leaders awake at night.\\u003C/p\\u003E\\n\\u003Cspan class=\\\"pull-quote\\\"\\u003E\\u003Cspan class=\\\"quote-line\\\"\\u003E\\u0026nbsp;\\u003C/span\\u003E\\u003Cspan\\u003EYoung people are losing inhibitions to speak up.\\u003C/span\\u003E\\u003Cspan class=\\\"quote-line\\\"\\u003E\\u0026nbsp;\\u003C/span\\u003E\\u003C/span\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EHow effectively is the government managing youth outrage these days?\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EIt depends on how you look at it. At the end of the Hu Jintao administration [from 2003 to 2013] there were all these street demonstrations and online movements and those have really been subdued. So in that it way, it really seems that Xi has been successful. But the more Xi [muzzles dissent] the more people he puts in contact with the coercive measures of the state.\\u003C/p\\u003E\\n\\u003Cp\\u003EThe Feminist Five [that were jailed for more than a month in March after protesting sexual harassment on public transport] are a good example. They\\u0026#8217;d done these pretty innocuous demonstrations and they weren\\u0026#8217;t that political at all. But by imprisoning them for more than a month, it made a lot of people who only cared about very narrow feminist issues care about bigger political issues. And it brought others, including men, to the feminist cause. It\\u0026#8217;s a case study in what happens when the state escalates repression—is it going to last, or are they creating more problems for themselves in the long run?\\u003C/p\\u003E\\n\\u003Ch2\\u003EOn millennial entrepreneurism\\u003C/h2\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EPeople are talking about China and innovation right now. Are there experiences unique to Chinese millennials that make them more comfortable entrepreneurs?\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EI think it\\u0026#8217;s definitely a more entrepreneurial generation. Younger people who don\\u0026#8217;t have the memory of the hardships that their parents\\u0026#8217; generation did, they\\u0026#8217;re less afraid of taking that entrepreneurial plunge into something that could easily fail.\\u003C/p\\u003E\\n\\u003Cp\\u003ESo those who say Chinese can\\u0026#8217;t innovate—that\\u0026#8217;s absurd. There\\u0026#8217;s all kind of cool innovation happening everywhere you look. But at a society level, there are some huge roadblocks to innovation legally, politically, culturally. The young innovators that I talked to are still outliers. One 22-year-old entrepreneur I talk about in the book said a lot of the people he was working with on app development are not from China\\u0026#8217;s top universities because those graduates go directly into state-owned companies or Baidu or Tencent.\\u003C/p\\u003E\\n\\u003Cp\\u003EThe culture has decided, if you\\u0026#8217;re at the top of your field you get a job at a big company—you don\\u0026#8217;t create something new. Graduates from the second-tier of schools are more inclined to start their own businesses. Launching a tech startup as a college grad or even dropping out of college—that was completely crazy not too long ago. But it becomes less insane when you see other people doing it.\\u003C/p\\u003E\\n\\u003Cspan class=\\\"pull-quote\\\"\\u003E\\u003Cspan class=\\\"quote-line\\\"\\u003E\\u0026nbsp;\\u003C/span\\u003E\\u003Cspan\\u003EGraduates from the second-tier of schools are more inclined to start their own businesses.\\u003C/span\\u003E\\u003Cspan class=\\\"quote-line\\\"\\u003E\\u0026nbsp;\\u003C/span\\u003E\\u003C/span\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EHow much of that willingness to launch their own business is because it\\u0026#8217;s getting so hard for millennials to get jobs?\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EThat\\u0026#8217;s definitely a driver. In 2012, college graduate unemployment was 16%, which was double the US. And it gets worse every year. University degrees are devaluing quite quickly, so it\\u0026#8217;s definitely one motivator to do a startup.\\u003C/p\\u003E\\n\\u003Ch2\\u003EOn Tiananmen\\u003C/h2\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EIn general, how do millennials seem to view Tiananmen? Does it mean anything to them?\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EThere\\u0026#8217;s not this appreciation that people were protesting the government for a slew of reasons that threatened the government\\u0026#8217;s legitimacy enough that it saw fit to violently suppress them. But there\\u0026#8217;s also not as much of an appreciation of what the state is willing to do to keep power as what people maybe had 15, 20 years ago.\\u003C/p\\u003E\\n\\u003Cp\\u003ETiananmen was suppressed way more violently than it needed to be. There had been large protests in years before that that were less violently broken up. When they used tanks and machine guns [around Tiananmen Square] the government sent a pretty effective message that it wasn\\u0026#8217;t going to tolerate protest anymore. But they then erased, or attempted to erase, Tiananmen. The side-effect is, the next generation that wasn\\u0026#8217;t around to receive that message—there\\u0026#8217;s not that fear that there once was about stepping out of line.\\u003C/p\\u003E\\n\\u003Cspan class=\\\"pull-quote\\\"\\u003E\\u003Cspan class=\\\"quote-line\\\"\\u003E\\u0026nbsp;\\u003C/span\\u003E\\u003Cspan\\u003ETiananmen just one of so many issues on which there\\u0026#8217;s no longer groupthink anymore.\\u003C/span\\u003E\\u003Cspan class=\\\"quote-line\\\"\\u003E\\u0026nbsp;\\u003C/span\\u003E\\u003C/span\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EYou say \\u0026#8220;attempted to erase\\u0026#8221;\\u0026#8230;\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EThe idea that it\\u0026#8217;s been totally erased from history in China is a bit overblown. Some people know entirely what happened. Most know that something happened—that people were killed in 1989—but they\\u0026#8217;re very sketchy on the details—why they were killed.\\u003C/p\\u003E\\n\\u003Cp\\u003ESome people I talked to, when I brought it up, they said, \\u0026#8220;Well they must have done something really bad,\\u0026#8221; like threatening the stability of the country. They think that the protesters must have been too uncompromising, and that the government had no choice.\\u003C/p\\u003E\\n\\u003Cp\\u003EBut you ask 10 different people, you get 10 different answers. I\\u0026#8217;ve gotten responses that run the gamut from \\u0026#8220;what they did was absolutely correct\\u0026#8221; and \\u0026#8220;these were people trying to create chaos that needed to be put down,\\u0026#8221; all the way to the other extreme—the view that the massacre was unnecessarily brutal and stripped the Communist Party of its legitimacy.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EIs it kind of remarkable that you get such a range of responses?\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003ETiananmen is just one of so many issues on which there\\u0026#8217;s no longer groupthink anymore. It used to be you asked what people thought about some issue and they\\u0026#8217;d say the government line. Views on Tiananmen is a good example of that—of the diversity of opinions blooming in China.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003ESo Chinese millennials are \\u003Cem\\u003Enot\\u003C/em\\u003E \\u0026#8220;brainwashed\\u0026#8221;?\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EWe in the West hear about Chinese censorship all the time. But time and again, even when I talked to young migrants or rural workers, they all seemed to have a fairly good understanding of what was going on—they\\u0026#8217;re aware of the same problems that we see.\\u003C/p\\u003E\\n\\u003Cp\\u003EHowever, they don\\u0026#8217;t necessarily see the same solutions, or make the connections between these problems and the political system the way [Westerners] are inclined to do. I don\\u0026#8217;t think there is any great willingness to shake up the system completely. A lot of people see value in stability.\\u003C/p\\u003E\\n\\u003Cp\\u003E\\u003Cstrong\\u003EDo you see any parallels between the mood among young people now and in the late 1980s?\\u003C/strong\\u003E\\u003C/p\\u003E\\n\\u003Cp\\u003EWell, look how Tiananmen was sparked. [The protesters] came out to grieve for a leader, Hu Yaobang, who was celebrated because he wasn\\u0026#8217;t corrupt, he didn\\u0026#8217;t put his children in high positions. He was the model who highlighted all the corruption in the system. The Weibo things [the exposure of corrupt officials on social media] that have blown up and gotten a lot of local officials fired—that might be helping people have more courage to speak out when they see something wrong. Online tools definitely create strength in numbers.\\u003C/p\\u003E\\n\\u003Cp\\u003EThe comparison to today is useful in that in 1989 there were all sorts of different economic and social circumstances that contributed to people being willing to go out on the streets and push for change en masse.\\u003C/p\\u003E\\n\\u003Cp\\u003EAnd the demonstrators weren\\u0026#8217;t pushing for what we think of as Western-style democracy; there were all these different things people were protesting, and in many ways, they weren\\u0026#8217;t united on them. Students were pushing for reforms to go fast, workers thought they\\u0026#8217;d gone too fast.\\u003C/p\\u003E\\n\\u003Cp\\u003EIn the posters you see from Tiananmen—about freedom of speech and democracy—these concepts were popular, but there never seemed to be this notion of \\u0026#8220;we need to flip the system.\\u0026#8221; Today, I don\\u0026#8217;t see a huge clamoring for fundamental political overhaul either. The question is, will anything bring these different groups of young people together?\\u003C/p\\u003E\\u003Cimg alt=\\\"\\\" border=\\\"0\\\" src=\\\"http://pixel.wp.com/b.gif?host=qz.com\\u0026#038;blog=39587363\\u0026#038;post=420205\\u0026#038;subd=qzprod\\u0026#038;ref=\\u0026#038;feed=1\\\" width=\\\"1\\\" height=\\\"1\\\" /\\u003E\",\"comments\":\"http://qz.com/420205/26-years-after-tiananmen-chinese-millennials-are-forgetting-to-fear-their-government/#comments\",\"pubDate\":\"2015-06-04T12:18:35-07:00\",\"category\":\"China's Transition\",\"guid\":\"http://qz.com/preview/420205\",\"dc_creator\":\"Gwynn Guilford\",\"media_content_url\":\"https://qzprod.files.wordpress.com/2015/06/china-millennial-tiananmen_crop.jpg?w=640\",\"media_content_type\":\"html\",\"media_title\":\"china millennial tiananmen_crop\",\"media_thumbnail_url\":\"https://qzprod.files.wordpress.com/2015/06/china-millennial-tiananmen_crop.jpg?w=640\"}"], ["link", "http://qz.com/420205/26-years-after-tiananmen-chinese-millennials-are-forgetting-to-fear-their-government/"], ["published_at", Thu, 04 Jun 2015 19:18:35 UTC +00:00], ["title", "26 years after Tiananmen, Chinese millennials are forgetting to fear their government"], ["updated_at", Thu, 04 Jun 2015 21:00:36 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mEntry Load (1.9ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 4]]
+Completed 200 OK in 668ms (Views: 646.3ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 14:00:38 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 214ms (Views: 213.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 14:00:38 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:38 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:38 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:38 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:38 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:38 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:38 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:38 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:38 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:39 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:39 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:39 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:39 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:39 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 14:00:39 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:00:39 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (2.1ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:01:31 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.4ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 59ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:01:33 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.6ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 14:02:41 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:02:42 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.5ms)[0m  SELECT "feeds".* FROM "feeds"
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-06-04 21:02:42.445929' WHERE "feeds"."id" = 2[0m
+  [1m[35m (0.5ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (1.0ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 2]]
+  [1m[35mSQL (0.8ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-06-04 21:02:42.873335' WHERE "feeds"."id" = 6
+  [1m[36m (0.6ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35mEntry Load (0.5ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 6]]
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-06-04 21:02:43.097664' WHERE "feeds"."id" = 5[0m
+  [1m[35m (0.6ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433451720"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:02:00+00:00\",\"link\":\"http://example.com/test/1433451720\",\"description\":\"Aliquip aute aliquip laboris culpa.\",\"pubDate\":\"2015-06-04T14:02:00-07:00\",\"guid\":\"http://example.com/test/1433451720\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451720"], ["published_at", Thu, 04 Jun 2015 21:02:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:02:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433451660"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:01:00+00:00\",\"link\":\"http://example.com/test/1433451660\",\"description\":\"Est velit laboris labore duis.\",\"pubDate\":\"2015-06-04T14:01:00-07:00\",\"guid\":\"http://example.com/test/1433451660\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451660"], ["published_at", Thu, 04 Jun 2015 21:01:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:01:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433451600"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:00:00+00:00\",\"link\":\"http://example.com/test/1433451600\",\"description\":\"Et eu incididunt dolore aliqua Lorem nisi sit veniam sit sunt incididunt et eu.\",\"pubDate\":\"2015-06-04T14:00:00-07:00\",\"guid\":\"http://example.com/test/1433451600\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451600"], ["published_at", Thu, 04 Jun 2015 21:00:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:00:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433451540"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T20:59:00+00:00\",\"link\":\"http://example.com/test/1433451540\",\"description\":\"Sint et elit dolor laboris proident ipsum ullamco do proident fugiat.\",\"pubDate\":\"2015-06-04T13:59:00-07:00\",\"guid\":\"http://example.com/test/1433451540\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451540"], ["published_at", Thu, 04 Jun 2015 20:59:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T20:59:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433451480"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T20:58:00+00:00\",\"link\":\"http://example.com/test/1433451480\",\"description\":\"Sit labore Lorem voluptate nulla.\",\"pubDate\":\"2015-06-04T13:58:00-07:00\",\"guid\":\"http://example.com/test/1433451480\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451480"], ["published_at", Thu, 04 Jun 2015 20:58:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T20:58:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433451420"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T20:57:00+00:00\",\"link\":\"http://example.com/test/1433451420\",\"description\":\"Reprehenderit aliqua cupidatat enim reprehenderit ad proident veniam dolore.\",\"pubDate\":\"2015-06-04T13:57:00-07:00\",\"guid\":\"http://example.com/test/1433451420\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451420"], ["published_at", Thu, 04 Jun 2015 20:57:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T20:57:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433451360"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T20:56:00+00:00\",\"link\":\"http://example.com/test/1433451360\",\"description\":\"Nulla esse occaecat officia nostrud ad ad consequat deserunt labore ipsum ad nulla.\",\"pubDate\":\"2015-06-04T13:56:00-07:00\",\"guid\":\"http://example.com/test/1433451360\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451360"], ["published_at", Thu, 04 Jun 2015 20:56:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T20:56:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mEntry Load (0.8ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 5]]
+  [1m[36mSQL (0.9ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-06-04 21:02:43.379685' WHERE "feeds"."id" = 1[0m
+  [1m[35m (1.0ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1433451760"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:02:40+00:00\",\"link\":\"http://example.com/test/1433451760\",\"description\":\"Quis tempor sunt sint dolore adipisicing culpa occaecat qui voluptate qui culpa Lorem.\",\"pubDate\":\"2015-06-04T14:02:40-07:00\",\"guid\":\"http://example.com/test/1433451760\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451760"], ["published_at", Thu, 04 Jun 2015 21:02:40 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:02:40+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1433451750"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:02:30+00:00\",\"link\":\"http://example.com/test/1433451750\",\"description\":\"Cupidatat consequat ex sit pariatur fugiat consectetur consequat minim dolor adipisicing deserunt.\",\"pubDate\":\"2015-06-04T14:02:30-07:00\",\"guid\":\"http://example.com/test/1433451750\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451750"], ["published_at", Thu, 04 Jun 2015 21:02:30 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:02:30+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1433451740"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:02:20+00:00\",\"link\":\"http://example.com/test/1433451740\",\"description\":\"Cupidatat enim sit laborum commodo quis ad nulla proident nisi ipsum sunt non nisi.\",\"pubDate\":\"2015-06-04T14:02:20-07:00\",\"guid\":\"http://example.com/test/1433451740\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451740"], ["published_at", Thu, 04 Jun 2015 21:02:20 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:02:20+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1433451730"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:02:10+00:00\",\"link\":\"http://example.com/test/1433451730\",\"description\":\"Cillum aute dolor labore incididunt.\",\"pubDate\":\"2015-06-04T14:02:10-07:00\",\"guid\":\"http://example.com/test/1433451730\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451730"], ["published_at", Thu, 04 Jun 2015 21:02:10 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:02:10+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1433451710"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:01:50+00:00\",\"link\":\"http://example.com/test/1433451710\",\"description\":\"Sunt sunt aliqua id ipsum voluptate qui do dolore commodo cupidatat ipsum.\",\"pubDate\":\"2015-06-04T14:01:50-07:00\",\"guid\":\"http://example.com/test/1433451710\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451710"], ["published_at", Thu, 04 Jun 2015 21:01:50 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:01:50+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1433451700"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:01:40+00:00\",\"link\":\"http://example.com/test/1433451700\",\"description\":\"Amet in laboris aute velit cillum.\",\"pubDate\":\"2015-06-04T14:01:40-07:00\",\"guid\":\"http://example.com/test/1433451700\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451700"], ["published_at", Thu, 04 Jun 2015 21:01:40 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:01:40+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1433451690"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:01:30+00:00\",\"link\":\"http://example.com/test/1433451690\",\"description\":\"Culpa laborum voluptate incididunt ea.\",\"pubDate\":\"2015-06-04T14:01:30-07:00\",\"guid\":\"http://example.com/test/1433451690\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451690"], ["published_at", Thu, 04 Jun 2015 21:01:30 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:01:30+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1433451680"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:01:20+00:00\",\"link\":\"http://example.com/test/1433451680\",\"description\":\"Excepteur anim dolor proident cupidatat nisi laborum deserunt minim aliqua et exercitation consequat dolor culpa.\",\"pubDate\":\"2015-06-04T14:01:20-07:00\",\"guid\":\"http://example.com/test/1433451680\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451680"], ["published_at", Thu, 04 Jun 2015 21:01:20 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:01:20+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00], ["feed_id", 1], ["guid", "http://example.com/test/1433451670"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:01:10+00:00\",\"link\":\"http://example.com/test/1433451670\",\"description\":\"Eiusmod ullamco commodo pariatur esse ex.\",\"pubDate\":\"2015-06-04T14:01:10-07:00\",\"guid\":\"http://example.com/test/1433451670\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451670"], ["published_at", Thu, 04 Jun 2015 21:01:10 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:01:10+00:00"], ["updated_at", Thu, 04 Jun 2015 21:02:43 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mEntry Load (1.4ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 1]]
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-06-04 21:02:43.656322' WHERE "feeds"."id" = 3[0m
+  [1m[35m (1.1ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (0.8ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 3]]
+  [1m[35mSQL (0.7ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-06-04 21:02:43.821923' WHERE "feeds"."id" = 4
+  [1m[36m (0.9ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35mEntry Load (1.9ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 4]]
+Completed 200 OK in 2231ms (Views: 2005.3ms | ActiveRecord: 195.7ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:04:03 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.9ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 54ms (Views: 6.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 263ms (Views: 262.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:04:18 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (1.6ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 14:05:04 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:05:05 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.7ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:05:07 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:05:18 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.5ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 14:09:47 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 289ms (Views: 289.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+
+
+Started GET "/api/feeds/2" for 127.0.0.1 at 2015-06-04 14:09:48 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mFeed Load (0.8ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36mSQL (3.7ms)[0m  [1mUPDATE "feeds" SET "updated_at" = '2015-06-04 21:09:48.699156' WHERE "feeds"."id" = 2[0m
+  [1m[35m (0.9ms)[0m  SELECT "entries"."guid" FROM "entries"
+  [1m[36mEntry Load (1.3ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 2]]
+Completed 200 OK in 450ms (Views: 438.4ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:09:50 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (1.3ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/feeds/5" for 127.0.0.1 at 2015-06-04 14:10:09 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mFeed Load (2.1ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "5"]]
+  [1m[35mSQL (0.9ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-06-04 21:10:09.234419' WHERE "feeds"."id" = 5
+  [1m[36m (0.8ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433452200"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:10:00+00:00\",\"link\":\"http://example.com/test/1433452200\",\"description\":\"Deserunt do veniam ex fugiat aliqua laboris.\",\"pubDate\":\"2015-06-04T14:10:00-07:00\",\"guid\":\"http://example.com/test/1433452200\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433452200"], ["published_at", Thu, 04 Jun 2015 21:10:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:10:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433452140"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:09:00+00:00\",\"link\":\"http://example.com/test/1433452140\",\"description\":\"Reprehenderit culpa irure tempor dolore commodo reprehenderit.\",\"pubDate\":\"2015-06-04T14:09:00-07:00\",\"guid\":\"http://example.com/test/1433452140\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433452140"], ["published_at", Thu, 04 Jun 2015 21:09:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:09:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433452080"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:08:00+00:00\",\"link\":\"http://example.com/test/1433452080\",\"description\":\"Pariatur minim cupidatat mollit dolor reprehenderit.\",\"pubDate\":\"2015-06-04T14:08:00-07:00\",\"guid\":\"http://example.com/test/1433452080\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433452080"], ["published_at", Thu, 04 Jun 2015 21:08:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:08:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433452020"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:07:00+00:00\",\"link\":\"http://example.com/test/1433452020\",\"description\":\"Cupidatat adipisicing aliquip cillum magna occaecat do enim proident non do minim ullamco.\",\"pubDate\":\"2015-06-04T14:07:00-07:00\",\"guid\":\"http://example.com/test/1433452020\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433452020"], ["published_at", Thu, 04 Jun 2015 21:07:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:07:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433451960"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:06:00+00:00\",\"link\":\"http://example.com/test/1433451960\",\"description\":\"Veniam velit reprehenderit incididunt nostrud id minim laboris nostrud dolore commodo labore.\",\"pubDate\":\"2015-06-04T14:06:00-07:00\",\"guid\":\"http://example.com/test/1433451960\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451960"], ["published_at", Thu, 04 Jun 2015 21:06:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:06:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433451900"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:05:00+00:00\",\"link\":\"http://example.com/test/1433451900\",\"description\":\"Eiusmod cillum duis nulla id est.\",\"pubDate\":\"2015-06-04T14:05:00-07:00\",\"guid\":\"http://example.com/test/1433451900\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451900"], ["published_at", Thu, 04 Jun 2015 21:05:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:05:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433451840"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:04:00+00:00\",\"link\":\"http://example.com/test/1433451840\",\"description\":\"Laborum sunt reprehenderit nisi est ex pariatur qui.\",\"pubDate\":\"2015-06-04T14:04:00-07:00\",\"guid\":\"http://example.com/test/1433451840\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451840"], ["published_at", Thu, 04 Jun 2015 21:04:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:04:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00], ["feed_id", 5], ["guid", "http://example.com/test/1433451780"], ["json", "{\"title\":\"Lorem ipsum 2015-06-04T21:03:00+00:00\",\"link\":\"http://example.com/test/1433451780\",\"description\":\"Culpa ex ea ea eiusmod cillum proident ut nulla cillum.\",\"pubDate\":\"2015-06-04T14:03:00-07:00\",\"guid\":\"http://example.com/test/1433451780\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433451780"], ["published_at", Thu, 04 Jun 2015 21:03:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-04T21:03:00+00:00"], ["updated_at", Thu, 04 Jun 2015 21:10:09 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mEntry Load (0.8ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 5]]
+Completed 200 OK in 303ms (Views: 289.2ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+
+
+Started GET "/api/feeds/5" for 127.0.0.1 at 2015-06-04 14:10:10 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mFeed Load (0.8ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "5"]]
+  [1m[35mEntry Load (19.6ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 5]]
+Completed 200 OK in 58ms (Views: 36.6ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 14:10:11 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 14:10:11 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 14:10:11 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 14:10:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:11 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:11 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:11 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:11 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:11 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:11 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:12 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:12 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:12 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:12 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:12 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:12 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:12 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:12 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:12 -0700
+
+
+Started GET "/api/feeds/5" for 127.0.0.1 at 2015-06-04 14:10:12 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mFeed Load (0.5ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "5"]]
+  [1m[35mEntry Load (1.7ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 5]]
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:10:14 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.7ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/feeds/5" for 127.0.0.1 at 2015-06-04 14:10:15 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"5"}
+  [1m[35mFeed Load (3.1ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1  [["id", "5"]]
+  [1m[36mEntry Load (1.3ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1[0m  [["feed_id", 5]]
+Completed 200 OK in 34ms (Views: 26.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:10:17 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (2.5ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/feeds/3" for 127.0.0.1 at 2015-06-04 14:10:18 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mFeed Load (0.8ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35mSQL (2.4ms)[0m  UPDATE "feeds" SET "updated_at" = '2015-06-04 21:10:18.284970' WHERE "feeds"."id" = 3
+  [1m[36m (1.0ms)[0m  [1mSELECT "entries"."guid" FROM "entries"[0m
+  [1m[35mEntry Load (0.9ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 3]]
+Completed 200 OK in 172ms (Views: 165.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 14:10:18 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+
+
+Started GET "/api/feeds/3" for 127.0.0.1 at 2015-06-04 14:10:19 -0700
+Processing by Api::FeedsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mFeed Load (0.6ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35mEntry Load (1.8ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."feed_id" = $1  [["feed_id", 3]]
+Completed 200 OK in 45ms (Views: 39.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 14:10:20 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.6ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.6ms)
