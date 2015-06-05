@@ -19794,3 +19794,2254 @@ Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:48:20 -0700
 Processing by Api::FeedsController#index as JSON
   [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds"
 Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:52:31 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 182ms (Views: 181.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:52:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:31 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:31 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:52:32 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.8ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:57:26 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 67ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:57:27 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.9ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:59:06 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 362ms (Views: 361.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:59:07 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (1.6ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:59:12 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 16:59:39 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 16:59:40 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.6ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 218ms (Views: 217.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 17:00:05 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 17:00:47 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 96ms (Views: 95.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 17:00:47 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 17:00:48 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (2.3ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 17:00:55 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 74ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 17:00:56 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.5ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/?feed%5Btitle%5D=&feed%5Burl%5D=" for 127.0.0.1 at 2015-06-04 17:11:46 -0700
+Processing by StaticPagesController#index as HTML
+  Parameters: {"feed"=>{"title"=>"", "url"=>""}}
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 295ms (Views: 294.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 17:11:46 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:46 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 17:11:47 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.7ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?feed%5Btitle%5D=&feed%5Burl%5D=" for 127.0.0.1 at 2015-06-04 17:12:37 -0700
+Processing by StaticPagesController#index as HTML
+  Parameters: {"feed"=>{"title"=>"", "url"=>""}}
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 245ms (Views: 245.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 17:12:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:37 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:37 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:37 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:37 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:37 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:37 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:37 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 17:12:38 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (15.7ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 34ms (Views: 17.8ms | ActiveRecord: 15.7ms)
+
+
+Started POST "/api/feeds" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+Processing by Api::FeedsController#create as JSON
+  Parameters: {"feed"=>{"title"=>"Hi hih hi", "url"=>"http://something.com"}}
+  [1m[36mFeed Load (30.4ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."url" = 'http://something.com' LIMIT 1[0m
+Completed 500 Internal Server Error in 356ms
+
+SocketError - getaddrinfo: nodename nor servname provided, or not known:
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:879:in `block in connect'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/timeout.rb:76:in `timeout'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:878:in `connect'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:863:in `do_start'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:852:in `start'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:313:in `open_http'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:724:in `buffer_open'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:210:in `block in open_loop'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:208:in `open_loop'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:149:in `open_uri'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:704:in `open'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:34:in `open'
+  app/models/feed.rb:11:in `find_or_create_by_url'
+  app/controllers/api/feeds_controller.rb:15:in `create'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:383:in `_run__3116807231895668283__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.3) lib/rack/etag.rb:23:in `call'
+  rack (1.5.3) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.3) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__389344137355494185__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/?feed%5Btitle%5D=Hi+hih+hi&feed%5Burl%5D=http%3A%2F%2Fsomething.com" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+Processing by StaticPagesController#index as HTML
+  Parameters: {"feed"=>{"title"=>"Hi hih hi", "url"=>"http://something.com"}}
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 28ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 17:12:51 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/?feed%5Btitle%5D=Hi+hih+hi&feed%5Burl%5D=http%3A%2F%2Fsomething.com" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+Processing by StaticPagesController#index as HTML
+  Parameters: {"feed"=>{"title"=>"Hi hih hi", "url"=>"http://something.com"}}
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 586ms (Views: 585.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 17:13:08 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.6ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/?feed%5Btitle%5D=Hi+hih+hi&feed%5Burl%5D=http%3A%2F%2Fsomething.com" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+Processing by StaticPagesController#index as HTML
+  Parameters: {"feed"=>{"title"=>"Hi hih hi", "url"=>"http://something.com"}}
+  Rendered static_pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 17:13:13 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/feeds" for 127.0.0.1 at 2015-06-04 17:13:18 -0700
+Processing by Api::FeedsController#create as JSON
+  Parameters: {"feed"=>{"title"=>"Hi hih hi", "url"=>"http://something.com"}}
+  [1m[36mFeed Load (0.7ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."url" = 'http://something.com' LIMIT 1[0m
+Completed 500 Internal Server Error in 4ms
+
+SocketError - getaddrinfo: nodename nor servname provided, or not known:
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:879:in `block in connect'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/timeout.rb:76:in `timeout'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:878:in `connect'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:863:in `do_start'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:852:in `start'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:313:in `open_http'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:724:in `buffer_open'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:210:in `block in open_loop'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:208:in `open_loop'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:149:in `open_uri'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:704:in `open'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:34:in `open'
+  app/models/feed.rb:11:in `find_or_create_by_url'
+  app/controllers/api/feeds_controller.rb:15:in `create'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:383:in `_run__3116807231895668283__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.3) lib/rack/etag.rb:23:in `call'
+  rack (1.5.3) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.3) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__389344137355494185__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/api/feeds" for 127.0.0.1 at 2015-06-04 17:14:45 -0700
+Processing by Api::FeedsController#create as JSON
+  Parameters: {"feed"=>{"title"=>"Hi hih hi", "url"=>"http://http://feeds.feedburner.com/TheHouseThatLarsBuilt"}}
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."url" = 'http://http://feeds.feedburner.com/TheHouseThatLarsBuilt' LIMIT 1
+Completed 500 Internal Server Error in 9ms
+
+SocketError - getaddrinfo: nodename nor servname provided, or not known:
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:879:in `block in connect'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/timeout.rb:76:in `timeout'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:878:in `connect'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:863:in `do_start'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:852:in `start'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:313:in `open_http'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:724:in `buffer_open'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:210:in `block in open_loop'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:208:in `open_loop'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:149:in `open_uri'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:704:in `open'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:34:in `open'
+  app/models/feed.rb:11:in `find_or_create_by_url'
+  app/controllers/api/feeds_controller.rb:15:in `create'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:383:in `_run__3116807231895668283__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.3) lib/rack/etag.rb:23:in `call'
+  rack (1.5.3) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.3) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__389344137355494185__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/api/feeds" for 127.0.0.1 at 2015-06-04 17:15:16 -0700
+Processing by Api::FeedsController#create as JSON
+  Parameters: {"feed"=>{"title"=>"Hi hih hi", "url"=>"http://http://feeds.feedburner.com/TheHouseThatLarsBuilt"}}
+  [1m[36mFeed Load (0.6ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."url" = 'http://http://feeds.feedburner.com/TheHouseThatLarsBuilt' LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms
+
+SocketError - getaddrinfo: nodename nor servname provided, or not known:
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:879:in `block in connect'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/timeout.rb:76:in `timeout'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:878:in `connect'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:863:in `do_start'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/net/http.rb:852:in `start'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:313:in `open_http'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:724:in `buffer_open'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:210:in `block in open_loop'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:208:in `open_loop'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:149:in `open_uri'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:704:in `open'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/open-uri.rb:34:in `open'
+  app/models/feed.rb:11:in `find_or_create_by_url'
+  app/controllers/api/feeds_controller.rb:15:in `create'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:383:in `_run__3116807231895668283__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.3) lib/rack/etag.rb:23:in `call'
+  rack (1.5.3) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.3) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__389344137355494185__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/api/feeds" for 127.0.0.1 at 2015-06-04 17:15:21 -0700
+Processing by Api::FeedsController#create as JSON
+  Parameters: {"feed"=>{"title"=>"gresg", "url"=>"http://feeds.feedburner.com/TheHouseThatLarsBuilt"}}
+  [1m[35mFeed Load (0.8ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."url" = 'http://feeds.feedburner.com/TheHouseThatLarsBuilt' LIMIT 1
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 17:15:33 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 17:15:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:33 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:33 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:33 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:33 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:33 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 17:15:34 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.7ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/feeds" for 127.0.0.1 at 2015-06-04 17:15:43 -0700
+Processing by Api::FeedsController#create as JSON
+  Parameters: {"feed"=>{"title"=>"fweafew", "url"=>"http://feeds.feedburner.com/TheHouseThatLarsBuilt"}}
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."url" = 'http://feeds.feedburner.com/TheHouseThatLarsBuilt' LIMIT 1
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 29ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 17:15:51 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 17:15:52 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[36mFeed Load (0.9ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.9ms)
+  [1m[36mFeed Load (7.8ms)[0m  [1mSELECT "feeds".* FROM "feeds"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 17:17:26 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 17:17:27 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (190.2ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 202ms (Views: 11.9ms | ActiveRecord: 190.2ms)
+
+
+Started POST "/api/feeds" for 127.0.0.1 at 2015-06-04 17:17:33 -0700
+Processing by Api::FeedsController#create as JSON
+  Parameters: {"feed"=>{"title"=>"ExtraPetite", "url"=>"http://feeds.feedburner.com/ExtraPetite"}}
+  [1m[36mFeed Load (56.1ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."url" = 'http://feeds.feedburner.com/ExtraPetite' LIMIT 1[0m
+  [1m[35m (10.0ms)[0m  BEGIN
+  [1m[36mSQL (76.0ms)[0m  [1mINSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 05 Jun 2015 00:17:34 UTC +00:00], ["title", "Extra Petite"], ["updated_at", Fri, 05 Jun 2015 00:17:34 UTC +00:00], ["url", "http://feeds.feedburner.com/ExtraPetite"]]
+  [1m[35m (19.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (18.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "json", "link", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 05 Jun 2015 00:17:34 UTC +00:00], ["feed_id", 19], ["json", "{\"id\":\"tag:blogger.com,1999:blog-6879961822849422387.post-6000008197990177099\",\"title\":\"Exploring Paris: Tweed jacket, striped tee + jeweled sandals\",\"link\":\"http://www.extrapetite.com/feeds/6000008197990177099/comments/default\",\"link+alternate\":\"http://feedproxy.google.com/~r/ExtraPetite/~3/DaL1w-GhY8E/exploring-paris-tweed-jacket-striped.html\",\"link+self\":\"http://www.blogger.com/feeds/6879961822849422387/posts/default/6000008197990177099\",\"link+edit\":\"http://www.blogger.com/feeds/6879961822849422387/posts/default/6000008197990177099\",\"link+replies\":\"http://www.extrapetite.com/feeds/6000008197990177099/comments/default\",\"author\":\"Jeanhttp://www.blogger.com/profile/12216324874406973211noreply@blogger.com\",\"content\":\"\\u0026lt;a href=\\\"https://www.flickr.com/photos/53737603@N04/18211160789\\\" title=\\\"Jewel sandals paris casual outfit by Extra Petite, on Flickr\\\"\\u0026gt;\\u0026lt;img alt=\\\"Jewel sandals paris casual outfit\\\" height=\\\"897\\\" src=\\\"https://c1.staticflickr.com/1/414/18211160789_c4bc83e8a0_o.jpg\\\" width=\\\"670\\\" /\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br /\\u0026gt;\\u0026lt;div style=\\\"text-align: center;\\\"\\u0026gt;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/z869uf46w\\\" target=\\\"_blank\\\"\\u0026gt;Ann Taylor striped tee\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;,\\u0026amp;nbsp;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/2uusif46w\\\" target=\\\"_blank\\\"\\u0026gt;Ann Taylor jacket\\u0026amp;nbsp;\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;c/o, \\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/2rz8ff46w\\\" target=\\\"_blank\\\"\\u0026gt;Saint Laurent bag\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;\\u0026lt;/div\\u0026gt;\\u0026lt;div style=\\\"text-align: center;\\\"\\u0026gt;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/yrij6f46w\\\" target=\\\"_blank\\\"\\u0026gt;Sole Society sandals\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt; c/o (3 colors),\\u0026amp;nbsp;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/xf8r6f46w\\\" target=\\\"_blank\\\"\\u0026gt;Banana Republic navy pants\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;,\\u0026lt;/div\\u0026gt;\\u0026lt;br /\\u0026gt;Bonjour from Paris! We’re visiting for a few projects and are trying to soak up all the yummy baguettes, cheese, and pretty sights in between  – follow along on \\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://instagram.com/extrapetite#\\\" target=\\\"_blank\\\"\\u0026gt;Instagram\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt; for our daily snapshots! Today’s post is my outfit from our first day here. I had traveled in these same pants and sandals on our red-eye flight (pairing below), and just freshened up the upper half for a day around the city. Swap the sandals for closed-toe flats or heels, and this is easily a work-appropriate pairing as well.\\u0026lt;br /\\u0026gt;\\u0026lt;i\\u0026gt;\\u0026lt;br /\\u0026gt;\\u0026lt;/i\\u0026gt;\\u0026lt;br /\\u0026gt;\\u0026lt;div style=\\\"text-align: center;\\\"\\u0026gt;\\u0026lt;i\\u0026gt;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/yrij6f46w\\\" target=\\\"_blank\\\"\\u0026gt;Sole Society sandals\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;\\u0026amp;nbsp;and\\u0026amp;nbsp;\\u0026lt;b style=\\\"text-align: start;\\\"\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/c6723f46w\\\" target=\\\"_blank\\\"\\u0026gt;bag\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;, BR trench (\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/~5ihzH\\\" target=\\\"_blank\\\"\\u0026gt;similar\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;), \\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://bit.ly/1cTH9kU\\\" target=\\\"_blank\\\"\\u0026gt;Halogen shirt\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;,\\u0026amp;nbsp;\\u0026lt;a href=\\\"http://rstyle.me/n/2uu9if46w\\\" style=\\\"font-weight: bold;\\\" target=\\\"_blank\\\"\\u0026gt;Bric's suitcase\\u0026lt;/a\\u0026gt;\\u0026lt;/i\\u0026gt;\\u0026lt;/div\\u0026gt;\\u0026lt;a href=\\\"https://www.flickr.com/photos/53737603@N04/18210223030\\\" title=\\\"travel casual outfit by Extra Petite, on Flickr\\\"\\u0026gt;\\u0026lt;img alt=\\\"travel casual outfit\\\" height=\\\"670\\\" src=\\\"https://c1.staticflickr.com/9/8790/18210223030_250fc37547_o.jpg\\\" width=\\\"670\\\" /\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br /\\u0026gt;I also wanted to mention that my\\u0026amp;nbsp;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/c6723f46w\\\" target=\\\"_blank\\\"\\u0026gt;Sole Society Cassidy weekender bag\\u0026lt;/a\\u0026gt;\\u0026amp;nbsp;\\u0026lt;/b\\u0026gt;(3 colors, bigger size \\\"Lacie\\\" sold\\u0026amp;nbsp;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/nr9bsf46w\\\" target=\\\"_blank\\\"\\u0026gt;here\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;\\u0026amp;nbsp;with metal feet)\\u0026amp;nbsp;has finally been restocked! My default travel set shown above is the Bric’s carry-on and this weekender bag (love the neutral scheme with the two together), if Nick hasn’t claimed it first. The faux-leather has a decent weight to it so I usually transport it resting on top of my roller suitcase instead of on my shoulder.\\u0026lt;br /\\u0026gt;\\u0026lt;a href=\\\"https://www.flickr.com/photos/53737603@N04/18398966251\\\" title=\\\"ann taylor chanel style jacket petites by Extra Petite, on Flickr\\\"\\u0026gt;\\u0026lt;img alt=\\\"ann taylor chanel style jacket petites\\\" height=\\\"464\\\" src=\\\"https://c2.staticflickr.com/8/7745/18398966251_bd0044a75b_o.jpg\\\" width=\\\"670\\\" /\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br /\\u0026gt;\\u0026lt;br /\\u0026gt;\\u0026lt;a name='more'\\u0026gt;\\u0026lt;/a\\u0026gt;I picked out these Sole Society sandals after seeing them on a fellow blogger, who mentioned they fit true to size and were comfy right off the bat (thanks, \\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"https://instagram.com/p/1x-OVcur4b/?taken-by=fhasselhof\\\" target=\\\"_blank\\\"\\u0026gt;Fran\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;!). They indeed required no breaking in for me, and have a fair amount of cushioning on the soles. The stones helped spruce up my most basic of airport outfits, without adding much weight to the shoe. Sizing felt true to size if not a little small, typical of Sole Society. I’m usually between a 5 and 5.5 in US shoes – got a 5 in these and probably could've gone up half, as the back of my foot is almost past the edge of the sandal. For T-straps like these, I think fit also depends on your toe length. Since I have shorter toes, you can see in the second photo there's still space in the front, which could be taken up by someone with the same shoe size but longer toes.\\u0026lt;br /\\u0026gt;\\u0026lt;a href=\\\"https://www.flickr.com/photos/53737603@N04/18397910745\\\" title=\\\"jardin du luxembourg by Extra Petite, on Flickr\\\"\\u0026gt;\\u0026lt;img alt=\\\"jardin du luxembourg\\\" height=\\\"670\\\" src=\\\"https://c1.staticflickr.com/1/534/18397910745_c39667f37a_o.jpg\\\" width=\\\"670\\\" /\\u0026gt;\\u0026lt;/a\\u0026gt;I walked in these shoes for around 3 miles the first day and am happy to report no comfort issues. Our first journey brought us to the beautiful\\u0026amp;nbsp;Jardin Du Luxembourg, which was abuzz with visitors sun-tanning and enjoying picnics. We had hoped to have tapas at the nearby, popular \\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://www.yelp.com/biz/l-avant-comptoir-paris\\\" target=\\\"_blank\\\"\\u0026gt;L’Avant Comptoir \\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;but the line was wrapped around the corner. Will have to go back earlier another time!\\u0026lt;br /\\u0026gt;\\u0026lt;a href=\\\"https://www.flickr.com/photos/53737603@N04/18399539261\\\" title=\\\"Little Breizh paris france crepes by Extra Petite, on Flickr\\\"\\u0026gt;\\u0026lt;img alt=\\\"Little Breizh paris france crepes\\\" height=\\\"670\\\" src=\\\"https://c1.staticflickr.com/9/8759/18399539261_003e49552c_o.jpg\\\" width=\\\"670\\\" /\\u0026gt;\\u0026lt;/a\\u0026gt;After walking a bit more we came across \\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://www.yelp.com/biz/little-breizh-paris?osq=crepe\\\" target=\\\"_blank\\\"\\u0026gt;Little Breizh\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;, which filled our bellies with savory and sweet crepes the size of our heads. I’m in awe at how the French can enjoy copious amounts of cheese, bread and sweets while staying so fit!\\u0026lt;br /\\u0026gt;\\u0026lt;a href=\\\"https://www.flickr.com/photos/53737603@N04/18397344925\\\" title=\\\"Jewel sandals paris casual outfit1 by Extra Petite, on Flickr\\\"\\u0026gt;\\u0026lt;img alt=\\\"Jewel sandals paris casual outfit1\\\" height=\\\"493\\\" src=\\\"https://c2.staticflickr.com/8/7741/18397344925_f861813a93_o.jpg\\\" width=\\\"670\\\" /\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br /\\u0026gt;From there it was an easy stroll along the Seine river. We stopped by the bridge full of love locks, not having had any idea that those locks (700,000 of them, estimated weighing ~ 45 tons) were being removed this weekend due to the weight and public safety concerns! We felt fortunate to have gotten a last glimpse.\\u0026lt;br /\\u0026gt;\\u0026lt;div class=\\\"shopthepost-widget\\\" data-widget-id=\\\"773840\\\"\\u0026gt;\\u0026lt;script type=\\\"text/javascript\\\"\\u0026gt;!function(d,s,id){var e, p = /^http:/.test(d.location) ? 'http' : 'https';if(!d.getElementById(id)) {e = d.createElement(s);e.id = id;e.src = p + '://' + 'widgets.rewardstyle.com' + '/js/shopthepost.js';d.body.appendChild(e);}if(typeof window.__stp === 'object') if(d.readyState === 'complete') {window.__stp.init();}}(document, 'script', 'shopthepost-script');\\u0026lt;/script\\u0026gt;\\u0026lt;br /\\u0026gt;\\u0026lt;div class=\\\"rs-adblock\\\"\\u0026gt;\\u0026lt;img onerror=\\\"this.parentNode.innerHTML='Disable your ad blocking software to view this content.'\\\" src=\\\"//assets.rewardstyle.com/images/search/350.gif\\\" style=\\\"height: 15px; width: 15px;\\\" /\\u0026gt;\\u0026lt;noscript\\u0026gt;JavaScript is currently disabled in this browser. Reactivate it to view this content.\\u0026lt;/noscript\\u0026gt;\\u0026lt;/div\\u0026gt;\\u0026lt;/div\\u0026gt;\\u0026lt;br /\\u0026gt;Thank you to Sole Society for sponsoring this post! Can't wait to share more from our trip, including our charming apartment rental that I know a few of you expressed interested in.\\u0026lt;img src=\\\"http://feeds.feedburner.com/~r/ExtraPetite/~4/DaL1w-GhY8E\\\" height=\\\"1\\\" width=\\\"1\\\" alt=\\\"\\\"/\\u0026gt;\",\"published\":\"2015-06-02T15:43:00-07:00\",\"updated\":\"2015-06-03T15:22:45-07:00\",\"category\":\"\",\"feedburner_origLink\":\"http://www.extrapetite.com/2015/06/exploring-paris-tweed-jacket-striped.html\"}"], ["link", "http://www.extrapetite.com/feeds/6000008197990177099/comments/default"], ["title", "Exploring Paris: Tweed jacket, striped tee + jeweled sandals"], ["updated_at", Fri, 05 Jun 2015 00:17:34 UTC +00:00]]
+PG::NotNullViolation: ERROR:  null value in column "guid" violates not-null constraint
+DETAIL:  Failing row contains (1126, null, http://www.extrapetite.com/feeds/6000008197990177099/comments/de..., Exploring Paris: Tweed jacket, striped tee + jeweled sandals, null, 19, {"id":"tag:blogger.com,1999:blog-6879961822849422387.post-600000..., 2015-06-05 00:17:34.614015, 2015-06-05 00:17:34.614015).
+: INSERT INTO "entries" ("created_at", "feed_id", "json", "link", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 1389ms
+
+PG::NotNullViolation - ERROR:  null value in column "guid" violates not-null constraint
+DETAIL:  Failing row contains (1126, null, http://www.extrapetite.com/feeds/6000008197990177099/comments/de..., Exploring Paris: Tweed jacket, striped tee + jeweled sandals, null, 19, {"id":"tag:blogger.com,1999:blog-6879961822849422387.post-600000..., 2015-06-05 00:17:34.614015, 2015-06-05 00:17:34.614015).
+:
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:786:in `exec_cache'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:139:in `block in exec_query'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract_adapter.rb:435:in `block in log'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract_adapter.rb:430:in `log'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:137:in `exec_query'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:184:in `exec_insert'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/database_statements.rb:96:in `insert'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/query_cache.rb:14:in `insert'
+  activerecord (4.0.2) lib/active_record/relation.rb:76:in `insert'
+  activerecord (4.0.2) lib/active_record/persistence.rb:509:in `create_record'
+  activerecord (4.0.2) lib/active_record/attribute_methods/dirty.rb:78:in `create_record'
+  activerecord (4.0.2) lib/active_record/callbacks.rb:306:in `block in create_record'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3870286901813018079__create__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  activerecord (4.0.2) lib/active_record/callbacks.rb:306:in `create_record'
+  activerecord (4.0.2) lib/active_record/timestamp.rb:57:in `create_record'
+  activerecord (4.0.2) lib/active_record/persistence.rb:477:in `create_or_update'
+  activerecord (4.0.2) lib/active_record/callbacks.rb:302:in `block in create_or_update'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:383:in `_run__3870286901813018079__save__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  activerecord (4.0.2) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.0.2) lib/active_record/persistence.rb:128:in `save!'
+  activerecord (4.0.2) lib/active_record/validations.rb:57:in `save!'
+  activerecord (4.0.2) lib/active_record/attribute_methods/dirty.rb:41:in `save!'
+  activerecord (4.0.2) lib/active_record/transactions.rb:275:in `block in save!'
+  activerecord (4.0.2) lib/active_record/transactions.rb:326:in `block in with_transaction_returning_status'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `block in transaction'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/database_statements.rb:210:in `within_new_transaction'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `transaction'
+  activerecord (4.0.2) lib/active_record/transactions.rb:209:in `transaction'
+  activerecord (4.0.2) lib/active_record/transactions.rb:323:in `with_transaction_returning_status'
+  activerecord (4.0.2) lib/active_record/transactions.rb:275:in `save!'
+  activerecord (4.0.2) lib/active_record/validations.rb:41:in `create!'
+  app/models/entry.rb:7:in `create_from_json!'
+  app/models/feed.rb:14:in `block in find_or_create_by_url'
+  app/models/feed.rb:13:in `find_or_create_by_url'
+  app/controllers/api/feeds_controller.rb:15:in `create'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:383:in `_run__3116807231895668283__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.3) lib/rack/etag.rb:23:in `call'
+  rack (1.5.3) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.3) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__389344137355494185__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/composite_view.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/news_reader.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/jquery.serializejson.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/entries/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/entries/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/feeds/form.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/feeds/index.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/feeds/index_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/feeds/show.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/models/feed.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/models/entry.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/collections/entries.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/collections/feeds.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/views/entries/entries_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/views/feeds/feed_form.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/views/entries/entry_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/views/feeds/feed_item.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/views/feeds/feeds_index.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/views/feeds/feeds_show.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/routers/router.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+
+
+Started GET "/api/feeds" for 127.0.0.1 at 2015-06-04 17:18:09 -0700
+Processing by Api::FeedsController#index as JSON
+  [1m[35mFeed Load (0.7ms)[0m  SELECT "feeds".* FROM "feeds"
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/feeds" for 127.0.0.1 at 2015-06-04 17:18:15 -0700
+Processing by Api::FeedsController#create as JSON
+  Parameters: {"feed"=>{"title"=>"extrapetite", "url"=>"https://www.blogger.com/feeds/6879961822849422387/posts/default"}}
+  [1m[36mFeed Load (0.6ms)[0m  [1mSELECT "feeds".* FROM "feeds" WHERE "feeds"."url" = 'https://www.blogger.com/feeds/6879961822849422387/posts/default' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 05 Jun 2015 00:18:16 UTC +00:00], ["title", "Extra Petite"], ["updated_at", Fri, 05 Jun 2015 00:18:16 UTC +00:00], ["url", "https://www.blogger.com/feeds/6879961822849422387/posts/default"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (17.3ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "json", "link", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 05 Jun 2015 00:18:16 UTC +00:00], ["feed_id", 20], ["json", "{\"id\":\"tag:blogger.com,1999:blog-6879961822849422387.post-6000008197990177099\",\"title\":\"Exploring Paris: Tweed jacket, striped tee + jeweled sandals\",\"link\":\"http://www.extrapetite.com/feeds/6000008197990177099/comments/default\",\"link+alternate\":\"http://www.extrapetite.com/2015/06/exploring-paris-tweed-jacket-striped.html\",\"link+self\":\"https://www.blogger.com/feeds/6879961822849422387/posts/default/6000008197990177099\",\"link+edit\":\"https://www.blogger.com/feeds/6879961822849422387/posts/default/6000008197990177099\",\"link+replies\":\"http://www.extrapetite.com/feeds/6000008197990177099/comments/default\",\"author\":\"Jeanhttp://www.blogger.com/profile/12216324874406973211noreply@blogger.com\",\"content\":\"\\u0026lt;a href=\\\"https://www.flickr.com/photos/53737603@N04/18211160789\\\" title=\\\"Jewel sandals paris casual outfit by Extra Petite, on Flickr\\\"\\u0026gt;\\u0026lt;img alt=\\\"Jewel sandals paris casual outfit\\\" height=\\\"897\\\" src=\\\"https://c1.staticflickr.com/1/414/18211160789_c4bc83e8a0_o.jpg\\\" width=\\\"670\\\" /\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br /\\u0026gt;\\u0026lt;div style=\\\"text-align: center;\\\"\\u0026gt;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/z869uf46w\\\" target=\\\"_blank\\\"\\u0026gt;Ann Taylor striped tee\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;,\\u0026amp;nbsp;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/2uusif46w\\\" target=\\\"_blank\\\"\\u0026gt;Ann Taylor jacket\\u0026amp;nbsp;\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;c/o, \\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/2rz8ff46w\\\" target=\\\"_blank\\\"\\u0026gt;Saint Laurent bag\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;\\u0026lt;/div\\u0026gt;\\u0026lt;div style=\\\"text-align: center;\\\"\\u0026gt;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/yrij6f46w\\\" target=\\\"_blank\\\"\\u0026gt;Sole Society sandals\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt; c/o (3 colors),\\u0026amp;nbsp;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/xf8r6f46w\\\" target=\\\"_blank\\\"\\u0026gt;Banana Republic navy pants\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;,\\u0026lt;/div\\u0026gt;\\u0026lt;br /\\u0026gt;Bonjour from Paris! We’re visiting for a few projects and are trying to soak up all the yummy baguettes, cheese, and pretty sights in between  – follow along on \\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://instagram.com/extrapetite#\\\" target=\\\"_blank\\\"\\u0026gt;Instagram\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt; for our daily snapshots! Today’s post is my outfit from our first day here. I had traveled in these same pants and sandals on our red-eye flight (pairing below), and just freshened up the upper half for a day around the city. Swap the sandals for closed-toe flats or heels, and this is easily a work-appropriate pairing as well.\\u0026lt;br /\\u0026gt;\\u0026lt;i\\u0026gt;\\u0026lt;br /\\u0026gt;\\u0026lt;/i\\u0026gt;\\u0026lt;br /\\u0026gt;\\u0026lt;div style=\\\"text-align: center;\\\"\\u0026gt;\\u0026lt;i\\u0026gt;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/yrij6f46w\\\" target=\\\"_blank\\\"\\u0026gt;Sole Society sandals\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;\\u0026amp;nbsp;and\\u0026amp;nbsp;\\u0026lt;b style=\\\"text-align: start;\\\"\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/c6723f46w\\\" target=\\\"_blank\\\"\\u0026gt;bag\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;, BR trench (\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/~5ihzH\\\" target=\\\"_blank\\\"\\u0026gt;similar\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;), \\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://bit.ly/1cTH9kU\\\" target=\\\"_blank\\\"\\u0026gt;Halogen shirt\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;,\\u0026amp;nbsp;\\u0026lt;a href=\\\"http://rstyle.me/n/2uu9if46w\\\" style=\\\"font-weight: bold;\\\" target=\\\"_blank\\\"\\u0026gt;Bric's suitcase\\u0026lt;/a\\u0026gt;\\u0026lt;/i\\u0026gt;\\u0026lt;/div\\u0026gt;\\u0026lt;a href=\\\"https://www.flickr.com/photos/53737603@N04/18210223030\\\" title=\\\"travel casual outfit by Extra Petite, on Flickr\\\"\\u0026gt;\\u0026lt;img alt=\\\"travel casual outfit\\\" height=\\\"670\\\" src=\\\"https://c1.staticflickr.com/9/8790/18210223030_250fc37547_o.jpg\\\" width=\\\"670\\\" /\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br /\\u0026gt;I also wanted to mention that my\\u0026amp;nbsp;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/c6723f46w\\\" target=\\\"_blank\\\"\\u0026gt;Sole Society Cassidy weekender bag\\u0026lt;/a\\u0026gt;\\u0026amp;nbsp;\\u0026lt;/b\\u0026gt;(3 colors, bigger size \\\"Lacie\\\" sold\\u0026amp;nbsp;\\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://rstyle.me/n/nr9bsf46w\\\" target=\\\"_blank\\\"\\u0026gt;here\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;\\u0026amp;nbsp;with metal feet)\\u0026amp;nbsp;has finally been restocked! My default travel set shown above is the Bric’s carry-on and this weekender bag (love the neutral scheme with the two together), if Nick hasn’t claimed it first. The faux-leather has a decent weight to it so I usually transport it resting on top of my roller suitcase instead of on my shoulder.\\u0026lt;br /\\u0026gt;\\u0026lt;a href=\\\"https://www.flickr.com/photos/53737603@N04/18398966251\\\" title=\\\"ann taylor chanel style jacket petites by Extra Petite, on Flickr\\\"\\u0026gt;\\u0026lt;img alt=\\\"ann taylor chanel style jacket petites\\\" height=\\\"464\\\" src=\\\"https://c2.staticflickr.com/8/7745/18398966251_bd0044a75b_o.jpg\\\" width=\\\"670\\\" /\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br /\\u0026gt;\\u0026lt;br /\\u0026gt;\\u0026lt;a name='more'\\u0026gt;\\u0026lt;/a\\u0026gt;I picked out these Sole Society sandals after seeing them on a fellow blogger, who mentioned they fit true to size and were comfy right off the bat (thanks, \\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"https://instagram.com/p/1x-OVcur4b/?taken-by=fhasselhof\\\" target=\\\"_blank\\\"\\u0026gt;Fran\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;!). They indeed required no breaking in for me, and have a fair amount of cushioning on the soles. The stones helped spruce up my most basic of airport outfits, without adding much weight to the shoe. Sizing felt true to size if not a little small, typical of Sole Society. I’m usually between a 5 and 5.5 in US shoes – got a 5 in these and probably could've gone up half, as the back of my foot is almost past the edge of the sandal. For T-straps like these, I think fit also depends on your toe length. Since I have shorter toes, you can see in the second photo there's still space in the front, which could be taken up by someone with the same shoe size but longer toes.\\u0026lt;br /\\u0026gt;\\u0026lt;a href=\\\"https://www.flickr.com/photos/53737603@N04/18397910745\\\" title=\\\"jardin du luxembourg by Extra Petite, on Flickr\\\"\\u0026gt;\\u0026lt;img alt=\\\"jardin du luxembourg\\\" height=\\\"670\\\" src=\\\"https://c1.staticflickr.com/1/534/18397910745_c39667f37a_o.jpg\\\" width=\\\"670\\\" /\\u0026gt;\\u0026lt;/a\\u0026gt;I walked in these shoes for around 3 miles the first day and am happy to report no comfort issues. Our first journey brought us to the beautiful\\u0026amp;nbsp;Jardin Du Luxembourg, which was abuzz with visitors sun-tanning and enjoying picnics. We had hoped to have tapas at the nearby, popular \\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://www.yelp.com/biz/l-avant-comptoir-paris\\\" target=\\\"_blank\\\"\\u0026gt;L’Avant Comptoir \\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;but the line was wrapped around the corner. Will have to go back earlier another time!\\u0026lt;br /\\u0026gt;\\u0026lt;a href=\\\"https://www.flickr.com/photos/53737603@N04/18399539261\\\" title=\\\"Little Breizh paris france crepes by Extra Petite, on Flickr\\\"\\u0026gt;\\u0026lt;img alt=\\\"Little Breizh paris france crepes\\\" height=\\\"670\\\" src=\\\"https://c1.staticflickr.com/9/8759/18399539261_003e49552c_o.jpg\\\" width=\\\"670\\\" /\\u0026gt;\\u0026lt;/a\\u0026gt;After walking a bit more we came across \\u0026lt;b\\u0026gt;\\u0026lt;a href=\\\"http://www.yelp.com/biz/little-breizh-paris?osq=crepe\\\" target=\\\"_blank\\\"\\u0026gt;Little Breizh\\u0026lt;/a\\u0026gt;\\u0026lt;/b\\u0026gt;, which filled our bellies with savory and sweet crepes the size of our heads. I’m in awe at how the French can enjoy copious amounts of cheese, bread and sweets while staying so fit!\\u0026lt;br /\\u0026gt;\\u0026lt;a href=\\\"https://www.flickr.com/photos/53737603@N04/18397344925\\\" title=\\\"Jewel sandals paris casual outfit1 by Extra Petite, on Flickr\\\"\\u0026gt;\\u0026lt;img alt=\\\"Jewel sandals paris casual outfit1\\\" height=\\\"493\\\" src=\\\"https://c2.staticflickr.com/8/7741/18397344925_f861813a93_o.jpg\\\" width=\\\"670\\\" /\\u0026gt;\\u0026lt;/a\\u0026gt;\\u0026lt;br /\\u0026gt;From there it was an easy stroll along the Seine river. We stopped by the bridge full of love locks, not having had any idea that those locks (700,000 of them, estimated weighing ~ 45 tons) were being removed this weekend due to the weight and public safety concerns! We felt fortunate to have gotten a last glimpse.\\u0026lt;br /\\u0026gt;\\u0026lt;div class=\\\"shopthepost-widget\\\" data-widget-id=\\\"773840\\\"\\u0026gt;\\u0026lt;script type=\\\"text/javascript\\\"\\u0026gt;!function(d,s,id){var e, p = /^http:/.test(d.location) ? 'http' : 'https';if(!d.getElementById(id)) {e = d.createElement(s);e.id = id;e.src = p + '://' + 'widgets.rewardstyle.com' + '/js/shopthepost.js';d.body.appendChild(e);}if(typeof window.__stp === 'object') if(d.readyState === 'complete') {window.__stp.init();}}(document, 'script', 'shopthepost-script');\\u0026lt;/script\\u0026gt;\\u0026lt;br /\\u0026gt;\\u0026lt;div class=\\\"rs-adblock\\\"\\u0026gt;\\u0026lt;img onerror=\\\"this.parentNode.innerHTML='Disable your ad blocking software to view this content.'\\\" src=\\\"//assets.rewardstyle.com/images/search/350.gif\\\" style=\\\"height: 15px; width: 15px;\\\" /\\u0026gt;\\u0026lt;noscript\\u0026gt;JavaScript is currently disabled in this browser. Reactivate it to view this content.\\u0026lt;/noscript\\u0026gt;\\u0026lt;/div\\u0026gt;\\u0026lt;/div\\u0026gt;\\u0026lt;br /\\u0026gt;Thank you to Sole Society for sponsoring this post! Can't wait to share more from our trip, including our charming apartment rental that I know a few of you expressed interested in.\",\"published\":\"2015-06-02T15:43:00-07:00\",\"updated\":\"2015-06-03T15:22:45-07:00\",\"category\":\"\"}"], ["link", "http://www.extrapetite.com/feeds/6000008197990177099/comments/default"], ["title", "Exploring Paris: Tweed jacket, striped tee + jeweled sandals"], ["updated_at", Fri, 05 Jun 2015 00:18:16 UTC +00:00]]
+PG::NotNullViolation: ERROR:  null value in column "guid" violates not-null constraint
+DETAIL:  Failing row contains (1127, null, http://www.extrapetite.com/feeds/6000008197990177099/comments/de..., Exploring Paris: Tweed jacket, striped tee + jeweled sandals, null, 20, {"id":"tag:blogger.com,1999:blog-6879961822849422387.post-600000..., 2015-06-05 00:18:16.927819, 2015-06-05 00:18:16.927819).
+: INSERT INTO "entries" ("created_at", "feed_id", "json", "link", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 1604ms
+
+PG::NotNullViolation - ERROR:  null value in column "guid" violates not-null constraint
+DETAIL:  Failing row contains (1127, null, http://www.extrapetite.com/feeds/6000008197990177099/comments/de..., Exploring Paris: Tweed jacket, striped tee + jeweled sandals, null, 20, {"id":"tag:blogger.com,1999:blog-6879961822849422387.post-600000..., 2015-06-05 00:18:16.927819, 2015-06-05 00:18:16.927819).
+:
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:786:in `exec_cache'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:139:in `block in exec_query'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract_adapter.rb:435:in `block in log'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract_adapter.rb:430:in `log'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:137:in `exec_query'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:184:in `exec_insert'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/database_statements.rb:96:in `insert'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/query_cache.rb:14:in `insert'
+  activerecord (4.0.2) lib/active_record/relation.rb:76:in `insert'
+  activerecord (4.0.2) lib/active_record/persistence.rb:509:in `create_record'
+  activerecord (4.0.2) lib/active_record/attribute_methods/dirty.rb:78:in `create_record'
+  activerecord (4.0.2) lib/active_record/callbacks.rb:306:in `block in create_record'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3870286901813018079__create__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  activerecord (4.0.2) lib/active_record/callbacks.rb:306:in `create_record'
+  activerecord (4.0.2) lib/active_record/timestamp.rb:57:in `create_record'
+  activerecord (4.0.2) lib/active_record/persistence.rb:477:in `create_or_update'
+  activerecord (4.0.2) lib/active_record/callbacks.rb:302:in `block in create_or_update'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:383:in `_run__3870286901813018079__save__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  activerecord (4.0.2) lib/active_record/callbacks.rb:302:in `create_or_update'
+  activerecord (4.0.2) lib/active_record/persistence.rb:128:in `save!'
+  activerecord (4.0.2) lib/active_record/validations.rb:57:in `save!'
+  activerecord (4.0.2) lib/active_record/attribute_methods/dirty.rb:41:in `save!'
+  activerecord (4.0.2) lib/active_record/transactions.rb:275:in `block in save!'
+  activerecord (4.0.2) lib/active_record/transactions.rb:326:in `block in with_transaction_returning_status'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `block in transaction'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/database_statements.rb:210:in `within_new_transaction'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `transaction'
+  activerecord (4.0.2) lib/active_record/transactions.rb:209:in `transaction'
+  activerecord (4.0.2) lib/active_record/transactions.rb:323:in `with_transaction_returning_status'
+  activerecord (4.0.2) lib/active_record/transactions.rb:275:in `save!'
+  activerecord (4.0.2) lib/active_record/validations.rb:41:in `create!'
+  app/models/entry.rb:7:in `create_from_json!'
+  app/models/feed.rb:14:in `block in find_or_create_by_url'
+  app/models/feed.rb:13:in `find_or_create_by_url'
+  app/controllers/api/feeds_controller.rb:15:in `create'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:383:in `_run__3116807231895668283__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.3) lib/rack/etag.rb:23:in `call'
+  rack (1.5.3) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.3) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.3) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__389344137355494185__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.3) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.3) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.3) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.3) lib/rack/lock.rb:17:in `call'
+  rack (1.5.3) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.3) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/api/feeds" for 127.0.0.1 at 2015-06-04 17:18:59 -0700
+Processing by Api::FeedsController#create as JSON
+  Parameters: {"feed"=>{"title"=>"extrapetite", "url"=>"http://lorem-rss.herokuapp.com/feed?unit=second&interval=60"}}
+  [1m[35mFeed Load (0.6ms)[0m  SELECT "feeds".* FROM "feeds" WHERE "feeds"."url" = 'http://lorem-rss.herokuapp.com/feed?unit=second&interval=60' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (22.2ms)[0m  INSERT INTO "feeds" ("created_at", "title", "updated_at", "url") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00], ["title", "Lorem ipsum feed for an interval of 60 seconds"], ["updated_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00], ["url", "http://lorem-rss.herokuapp.com/feed?unit=second&interval=60"]]
+  [1m[36m (46.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00], ["feed_id", 21], ["guid", "http://example.com/test/1433463480"], ["json", "{\"title\":\"Lorem ipsum 2015-06-05T00:18:00+00:00\",\"link\":\"http://example.com/test/1433463480\",\"description\":\"Qui pariatur aliquip incididunt voluptate.\",\"pubDate\":\"2015-06-04T17:18:00-07:00\",\"guid\":\"http://example.com/test/1433463480\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433463480"], ["published_at", Fri, 05 Jun 2015 00:18:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-05T00:18:00+00:00"], ["updated_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00], ["feed_id", 21], ["guid", "http://example.com/test/1433463420"], ["json", "{\"title\":\"Lorem ipsum 2015-06-05T00:17:00+00:00\",\"link\":\"http://example.com/test/1433463420\",\"description\":\"Nisi proident sit reprehenderit elit reprehenderit est ipsum et veniam consectetur.\",\"pubDate\":\"2015-06-04T17:17:00-07:00\",\"guid\":\"http://example.com/test/1433463420\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433463420"], ["published_at", Fri, 05 Jun 2015 00:17:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-05T00:17:00+00:00"], ["updated_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00], ["feed_id", 21], ["guid", "http://example.com/test/1433463360"], ["json", "{\"title\":\"Lorem ipsum 2015-06-05T00:16:00+00:00\",\"link\":\"http://example.com/test/1433463360\",\"description\":\"Eiusmod voluptate in officia pariatur adipisicing ut exercitation est amet cupidatat sint laboris magna.\",\"pubDate\":\"2015-06-04T17:16:00-07:00\",\"guid\":\"http://example.com/test/1433463360\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433463360"], ["published_at", Fri, 05 Jun 2015 00:16:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-05T00:16:00+00:00"], ["updated_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00], ["feed_id", 21], ["guid", "http://example.com/test/1433463300"], ["json", "{\"title\":\"Lorem ipsum 2015-06-05T00:15:00+00:00\",\"link\":\"http://example.com/test/1433463300\",\"description\":\"Irure ad voluptate nisi pariatur excepteur.\",\"pubDate\":\"2015-06-04T17:15:00-07:00\",\"guid\":\"http://example.com/test/1433463300\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433463300"], ["published_at", Fri, 05 Jun 2015 00:15:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-05T00:15:00+00:00"], ["updated_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (31.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00], ["feed_id", 21], ["guid", "http://example.com/test/1433463240"], ["json", "{\"title\":\"Lorem ipsum 2015-06-05T00:14:00+00:00\",\"link\":\"http://example.com/test/1433463240\",\"description\":\"Occaecat laboris adipisicing ex velit pariatur adipisicing Lorem velit incididunt nulla minim reprehenderit irure pariatur.\",\"pubDate\":\"2015-06-04T17:14:00-07:00\",\"guid\":\"http://example.com/test/1433463240\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433463240"], ["published_at", Fri, 05 Jun 2015 00:14:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-05T00:14:00+00:00"], ["updated_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (33.1ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00], ["feed_id", 21], ["guid", "http://example.com/test/1433463180"], ["json", "{\"title\":\"Lorem ipsum 2015-06-05T00:13:00+00:00\",\"link\":\"http://example.com/test/1433463180\",\"description\":\"Eu minim amet irure laborum duis reprehenderit ea aute mollit incididunt.\",\"pubDate\":\"2015-06-04T17:13:00-07:00\",\"guid\":\"http://example.com/test/1433463180\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433463180"], ["published_at", Fri, 05 Jun 2015 00:13:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-05T00:13:00+00:00"], ["updated_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00], ["feed_id", 21], ["guid", "http://example.com/test/1433463120"], ["json", "{\"title\":\"Lorem ipsum 2015-06-05T00:12:00+00:00\",\"link\":\"http://example.com/test/1433463120\",\"description\":\"Esse tempor aute commodo enim adipisicing dolore deserunt dolor nisi officia cupidatat.\",\"pubDate\":\"2015-06-04T17:12:00-07:00\",\"guid\":\"http://example.com/test/1433463120\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433463120"], ["published_at", Fri, 05 Jun 2015 00:12:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-05T00:12:00+00:00"], ["updated_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00], ["feed_id", 21], ["guid", "http://example.com/test/1433463060"], ["json", "{\"title\":\"Lorem ipsum 2015-06-05T00:11:00+00:00\",\"link\":\"http://example.com/test/1433463060\",\"description\":\"Nostrud in sunt proident Lorem.\",\"pubDate\":\"2015-06-04T17:11:00-07:00\",\"guid\":\"http://example.com/test/1433463060\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433463060"], ["published_at", Fri, 05 Jun 2015 00:11:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-05T00:11:00+00:00"], ["updated_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00], ["feed_id", 21], ["guid", "http://example.com/test/1433463000"], ["json", "{\"title\":\"Lorem ipsum 2015-06-05T00:10:00+00:00\",\"link\":\"http://example.com/test/1433463000\",\"description\":\"Dolore consequat anim dolor reprehenderit in.\",\"pubDate\":\"2015-06-04T17:10:00-07:00\",\"guid\":\"http://example.com/test/1433463000\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433463000"], ["published_at", Fri, 05 Jun 2015 00:10:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-05T00:10:00+00:00"], ["updated_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "feed_id", "guid", "json", "link", "published_at", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00], ["feed_id", 21], ["guid", "http://example.com/test/1433462940"], ["json", "{\"title\":\"Lorem ipsum 2015-06-05T00:09:00+00:00\",\"link\":\"http://example.com/test/1433462940\",\"description\":\"Sint deserunt officia enim laborum eiusmod velit laborum proident culpa mollit et excepteur veniam laborum.\",\"pubDate\":\"2015-06-04T17:09:00-07:00\",\"guid\":\"http://example.com/test/1433462940\",\"dc_creator\":\"John Smith\"}"], ["link", "http://example.com/test/1433462940"], ["published_at", Fri, 05 Jun 2015 00:09:00 UTC +00:00], ["title", "Lorem ipsum 2015-06-05T00:09:00+00:00"], ["updated_at", Fri, 05 Jun 2015 00:18:59 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 434ms (Views: 0.3ms | ActiveRecord: 144.3ms)
