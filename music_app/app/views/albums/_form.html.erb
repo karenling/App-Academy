@@ -1,0 +1,47 @@
+<% action_url = album.persisted? ? album_url(album.id) : albums_url %>
+<% method_type = album.persisted? ? "patch" : "post" %>
+<% submit_value = album.persisted? ? "Update Album" : "Add Album!" %>
+
+<%= render 'shared/errors' %>
+
+<h1>Add Album</h1>
+
+<form action="<%= action_url %>" method="post">
+  <%= form_authentication %>
+
+  <input type="hidden"
+         name="_method"
+         value="<%= method_type %>">
+
+  <label for="album-name">Album Name</label>
+  <input type="text"
+         name="album[name]"
+         id="album-name"
+         value="<%= album.name %>">
+
+
+  <select name="album[band_id]">
+    <% bands.each do |band| %>
+      <option value="<%= band.id %>"
+        <%= "selected" if current_band.id == band.id %>>
+        <%= band.id %>: <%= band.name %>
+      </option>
+    <% end %>
+  </select>
+
+  <label for="album-live_type">
+  <input type="radio"
+         name="album[live_studio_type]"
+         id="album-live_type"
+         value="Live" <%= "checked" if album.live_studio_type == "Live" %>> Live Album
+  </label>
+
+  <label for="album-studio_type">
+  <input type="radio"
+         name="album[live_studio_type]"
+         id="album-studio_type"
+         value="Studio" <%= "checked" if album.live_studio_type == "Studio" %>> Studio Album
+  </label>
+
+  <input type="submit" value="<%= submit_value %>">
+</form>

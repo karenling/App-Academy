@@ -1,0 +1,23 @@
+<%= render "shared/errors" %>
+
+<h1>Sign Up</h1>
+
+<form action="<%= users_url %>" method="post">
+  <input type="hidden"
+         name="authenticity_token"
+         value="<%= form_authenticity_token %>">
+
+  <label for="user-email">Email</label>
+  <input type="text"
+         name="user[email]"
+         id="user-email"
+         value="<%= @user.email %>">
+
+  <label for="user-password">Password</label>
+  <input type="password"
+         name="user[password]"
+         id="user-password"
+         value="<%= @user.password %>">
+
+  <input type="submit" value="Sign Up">
+</form>

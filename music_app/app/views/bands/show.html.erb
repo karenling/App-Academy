@@ -1,0 +1,21 @@
+<h1><%= @band.name %></h1>
+
+<h2>Albums By This Band:</h2>
+
+<ul>
+  <% @band.albums.each do |album| %>
+    <li><%= link_to album.name, album_url(album) %></li>
+  <% end %>
+</ul>
+<br>
+
+<% if admin? == true %>
+  <%= link_to "Add Album for #{@band.name}",
+      new_band_album_url(@band) %><br>
+  <%= link_to "Edit this #{@band.name}", edit_band_url(@band) %><br>
+  <%= button_to "Delete this #{@band.name}", band_url(@band), method: "delete" %><br>
+<% end %>
+
+
+
+<%= link_to "Back to Band Index Page", bands_url %><br>

@@ -1,0 +1,13 @@
+<% if track.notes %>
+<h3>Track Notes:</h3>
+  <ol>
+    <% track.notes.each do |note| %>
+      <li>
+        <%= note.user.email %>: <%= note.body %>
+        <% if note.user == current_user %>
+          <%= button_to "Delete", note_url(note.id), method: "delete" %>
+        <% end %>
+      </li>
+    <% end %>
+  </ol>
+<% end %>

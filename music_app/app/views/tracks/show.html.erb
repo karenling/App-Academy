@@ -1,0 +1,36 @@
+<h1>Track: <%= @track.name %></h1>
+
+<div>
+<table cellspacing="10" cellpadding="10" width="300px">
+    <tr>
+        <td align="left" valign="top">ID</td>
+        <td align="left" valign="top"><%= @track.id %><td>
+    </tr><tr>
+        <td align="left" valign="top">Name</td>
+        <td align="left" valign="top"><%= @track.name %><td>
+    </tr><tr>
+        <td align="left" valign="top">Type</td>
+        <td align="left" valign="top"><%= @track.bonus %></td>
+    </tr><tr>
+        <td align="left" valign="top">lyrics</td>
+        <td align="left" valign="top">
+          <%= ugly_lyrics(@track.lyrics) %>
+        </td>
+    </tr>
+</table>
+</div>
+<br><br>
+
+
+
+<%= render "notes/note", track: @track %>
+<%= render "notes/form", note: @note, track: @track %>
+
+<br><br>
+<% if admin? == true %>
+  <%= link_to "Edit for #{@track.name}", edit_track_url(@track) %><br>
+  <%= button_to "Delete for #{@track.name}", track_url(@track), method: "delete" %><br>
+<% end %>
+
+
+<%= link_to "Back to Album Page", album_url(@track.album_id) %>

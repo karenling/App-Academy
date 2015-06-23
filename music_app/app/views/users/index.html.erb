@@ -1,0 +1,16 @@
+All Users (only viewable by admin)
+
+<ul>
+  <% @users.each do |user| %>
+  <li>
+    <%= user.email %>
+    <% if !user.admin %>
+      <%= button_to "Make Admin",
+          make_admin_user_url(user),
+          method: "patch" %>
+    <% else %>
+      Admin
+    <% end %>
+  </li>
+  <% end %>
+</ul>

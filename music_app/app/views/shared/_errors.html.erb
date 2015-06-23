@@ -1,0 +1,13 @@
+
+<% if flash[:errors] %>
+<div style="background: #eeeeee;
+            border: 1px solid red;
+            width: 300px;
+            margin: 20px 0;">
+  <ul>
+  <% flash[:errors].each do |error| %>
+    <li><%= error %></li>
+  <% end %>
+  </ul>
+</div>
+<% end %>

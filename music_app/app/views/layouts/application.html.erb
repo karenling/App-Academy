@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MusicApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% if flash[:notice] %>
+  <ul>
+  <% flash[:notice].each do |notice| %>
+    <li><%= notice %></li>
+  <% end %>
+  </ul>
+<% end %>
+<% if current_user %>
+  <%= current_user.email %>
+  <%= button_to "Sign Out", session_url, method: "delete" %>
+<% else %>
+  <%= link_to "Please sign in", new_session_url %>
+<% end %>
+<div style="margin: 20px 0; width: 100%; height: 1px; background-color: #000000"></div>
+<%= yield %>
+
+</body>
+</html>
