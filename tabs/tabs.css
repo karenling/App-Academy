@@ -1,0 +1,25 @@
+body {
+  font: 14px sans-serif;
+  line-height: 21px;
+  margin: 50px;
+}
+.tabs a.active {
+  font-weight: bold;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  /*background-color: red;*/
+  opacity: 1;
+  display: block;
+  transition: opacity 1000ms ease;
+}
+
+.tab-pane.transitioning {
+  display: block;
+  opacity: 0;
+  transition: opacity 500ms linear;
+}

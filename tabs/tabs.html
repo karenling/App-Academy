@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cool Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="./tabs.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <link href="./tabs.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <ul class='tabs' data-content-tabs="#content-tabs">
+      <li>
+        <a href='javascript:void(0);' class="active" for='#retriever'>Golden Retrievers</a>
+      </li>
+      <li>
+        <a href='javascript:void(0);' for='#poodle'>Poodles</a>
+      </li>
+      <li>
+        <a href='javascript:void(0);' for='#frise'>Bichon Frises</a>
+      </li>
+    </ul>
+    <div id="content-tabs">
+      <div class="tab-pane active" id="retriever">
+        <p>The Golden Retriever is a happy-go-lucky clown. He's reliable, trustworthy, calm, friendly, gentle and confident. He's very eager to please you. He isn't a one-man dog because he loves everybody. He's friendly with all dogs and strangers. He's highly intelligent and trainable. He's very active and energetic. He loves to romp, run and play outdoors and he loves to swim. He's gentle and patient with kids, even bratty ones! He loves to play games and have fun. He's athletic, agile and fast on his feet.</p>
+      </div>
+      <div class="tab-pane" id="poodle">
+        <p>The Standard Poodle is good-natured and eager-to-please. He's also cheerful, loyal, proud, dignified, and extremely smart. When most people think of a "Poodle" they think of a feminine, girly dog. But nothing could be further from than the truth. He's actually very rugged and athletic. He's incredibly intelligent -- one of the most intelligent breeds -- and is easily trained. He thinks of himself as a person and demands to be treated like one. He's very affectionate and craves your love and companionship. He wants to be with you always. He's highly playful and loves to clown around. He possesses a keen sense of humor! He's highly energetic and very active around the home. He's playful and can learn to play fetch! He's a strong swimmer and loves the water. He's highly social and loves all people. He's gentle and patient with children. He gets along well with other dogs and pets. If he's bored he will get into mischief, so you need to give him something to do to occupy his mind. He housetrains easily. He's one of the most popular breeds.</p>
+      </div>
+      <div class="tab-pane" id="frise">
+        <p>The Bichon Frise is an incredibly cheerful little dog who loves to be the center of attention. He likes to think he runs the household, and will want to be at your heels or in your lap at all times. They are naturally gentle, intelligent, playful, and happy. They make a good family dog, but many breeders do not recommend they live in homes with small children, because the children could easily accidentally injure them. And if harassed by a child, a Bichon Frise will get snappy. They do, however, get along well with other household pets, as long as they get lots (and lots) of their human's attention. They do not do well being alone for hours at a time, and can start to chew at their own skin and fur out of distress. They can also bark out of boredom and loneliness, which will not necessarily endear him to your neighbors. Speaking of barking, the Bichon Frise is good at it, and will bark often. They have great hearing and will bark at everything. They do not need lots of exercise, but will require regular short walks. They are social dogs and like to get out and about and see people. The Bichon Frise does best with a loving, patient owner, as they are notoriously slow to housetrain.</p>
+      </div>
+    </div>
+
+
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      })
+    </script>
+  </body>
+</html>

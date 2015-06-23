@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="./carousel.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <link href="./carousel.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <div class="carousel">
+    <div class="items">
+      <img src="http://www.psdgraphics.com/file/red-number-1.jpg"/>
+    </div>
+    <div class="items">
+      <img src="http://www.psdgraphics.com/file/red-number-2.jpg"/>
+    </div>
+    <div class="items">
+      <img src="http://www.psdgraphics.com/file/red-number-3.jpg"/>
+    </div>
+    <div class="items">
+      <img src="http://www.psdgraphics.com/file/red-number-4.jpg"/>
+    </div>
+    <div class="items">
+      <img src="http://www.psdgraphics.com/file/red-number-5.jpg"/>
+    </div>
+
+    <a href="javascript:void(0)" class="slide-right">Prev</a>
+    <a href="javascript:void(0)" class="slide-left">Next</a>
+  </div>
+
+  <script type="text/javascript">
+    $(function () {
+      $('.carousel').carousel()
+    })
+  </script>
+  </body>
+</html>
