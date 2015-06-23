@@ -1,0 +1,29 @@
+<span style="float: right;">subs/show.html.erb</span>
+
+<h1>Subforum Show: <%= @sub.title %></h1>
+<p style="margin-top: -10px; font-style: italic;">
+  Moderator: <%= @sub.moderator.username %>
+</p>
+
+<h2><%= @sub.description %> </h2>
+
+<h3>Posts:</h3>
+<% if @posts.count > 0 %>
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+    <% if post.url.empty? %>
+      <%= link_to post.title, post_url(post) %>
+    <% else %>
+      <%= link_to post.title, post.url %>*
+    <% end %>
+    <%= voting(post) %>
+    </li>
+  <% end %>
+</ul>
+<% end %>
+<h4><%= link_to "Create a Post", new_post_url(sub_ref: @sub.id) %></h4>
+<% if moderator? %>
+  <h4><%= link_to "Edit This Subforum", edit_sub_url %></h4>
+<% end %>
+<h4><%= link_to "View All Subforums", subs_url %> </h4>

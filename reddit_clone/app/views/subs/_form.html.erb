@@ -1,0 +1,22 @@
+<% action_url = sub.persisted? ? sub_url(sub) : subs_url %>
+<% request    = sub.persisted? ? "patch" : "post" %>
+<% submit_msg = sub.persisted? ? "Update Sub!" : "Create Sub!" %>
+
+<form action="<%= action_url %>" method="post">
+  <%= csrf_tag %>
+  <input type="hidden"
+         name="_method"
+         value="<%= request %>">
+
+  <label for="sub-title">Title</label><br>
+  <input type="text"
+         id="sub-title"
+         name="sub[title]"
+         value="<%= sub.title %>">
+
+  <br><br>
+  <label for="sub-description">Description</label><br>
+  <textarea id="sub_description" name="sub[description]"><%=sub.description %> </textarea>
+  <br><br>
+  <input type="submit" value="<%= submit_msg %>">
+</form>

@@ -1,0 +1,11 @@
+<ul>
+  <% comment.child_comments.each do |comment| %>
+    <li>
+      <%= comment.content %> by
+      <i style="color: green"><%= comment.author.username %></i>
+      [ <%= link_to "link", comment_url(comment) %> ]
+      <%= voting(comment) %>
+      <%= render 'comments/comment', comment: comment %>
+    </li>
+  <% end %>
+</ul>

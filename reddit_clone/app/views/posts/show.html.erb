@@ -1,0 +1,36 @@
+<span style="float: right;">posts/show.html.erb</span>
+
+<h1><%= @post.title %> </h1>
+<p style="margin-top: -10px; font-style: italic;">
+  Post by <%= @post.author.username %> <%= time_ago_in_words(@post.created_at) %> ago.
+</p>
+<h3><%= @post.content %> </h3>
+
+<h2>Comments:</h2>
+
+<% if @comments.count > 0 %>
+  <ul>
+  <% @top_level_comments.each do |comment| %>
+      <li>
+          <%= comment.content %> by
+          <i style="color: green"><%= comment.author.username %></i>
+          [ <%= link_to "link", comment_url(comment) %> ]
+          <%= voting(comment) %>
+      </li>
+      <%= render 'comments/comment.html.erb', comment: comment %>
+  <% end %>
+  </ul>
+<% else %>
+  There are no comments yet.
+<% end %>
+<%= link_to "Add Comment", new_post_comment_url(@post.id) %>
+
+<br>
+<h2>Related Subforums</h2>
+<% @subs_of_post.each do |sub| %>
+  [ <%= link_to sub.title, sub_url(sub) %> ]
+<% end %>
+<% if author? %>
+  <h4><%= link_to "Edit", edit_post_url(@post) %></h4>
+<% end %>
+<h4><%= link_to "All Subs", subs_url %></h4>

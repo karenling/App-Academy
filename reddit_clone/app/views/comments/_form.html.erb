@@ -1,0 +1,13 @@
+<form action="<%= comments_url %>" method="post">
+  <%= csrf_tag %>
+  <input type="hidden"
+         name="comment[post_id]"
+         value="<%= post_id %>">
+  <input type="hidden"
+          name="comment[parent_comment_id]"
+          value="<%= nil_or_parent_id %>">
+  <label for="comment-content">Comment</label><br>
+  <textarea name="comment[content]" id="comment-content"><% @comment.content %> </textarea>
+  <br><br>
+  <input type="submit" value="Add Comment!">
+</form>

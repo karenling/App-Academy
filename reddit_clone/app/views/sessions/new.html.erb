@@ -1,0 +1,9 @@
+<span style="float: right;">session/new.html.erb</span>
+
+<% unless logged_in? %>
+  <%= render 'shared/username_password_form',
+    user: @user,
+    action_url: session_url,
+    submit_msg: "Sign in!"
+  %>
+<% end %>

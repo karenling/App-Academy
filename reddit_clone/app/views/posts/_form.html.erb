@@ -1,0 +1,48 @@
+
+<% action_url = current_post.persisted? ? post_url(current_post, sub_ref: params[:sub_ref]) : posts_url(sub_ref: params[:sub_ref]) %>
+<% request    = current_post.persisted? ? "patch" : "post" %>
+<% submit_msg = current_post.persisted? ? "Update post!" : "Create post!" %>
+
+<form action="<%= action_url %>" method="post">
+  <%= csrf_tag %>
+
+  <input type="hidden"
+         name="_method"
+         value="<%= request %>">
+
+  <input type="hidden"
+         name="post[sub_ids][]"
+         value="">
+
+  <label for="post-title"><b>Title</b></label><br>
+  <input type="text"
+         id="post-title"
+         name="post[title]"
+         value="<%= current_post.title %>">
+  <br><br>
+  <label for="post-url"><b>URL</b></label><br>
+  <input type="text"
+         id="post-url"
+         name="post[url]"
+         value="<%= current_post.url %>">
+  <br><br>
+  <label for="post-content">Content</label><br>
+  <textarea id="post-content"
+            name="post[content]"
+            ><%= current_post.content %></textarea>
+  <br>
+  <p><b>Subforums:</b></p>
+  <% all_subs.each do |sub| %>
+    <label for="post-sub_ids-<%= sub.title %>"><%= sub.title %></label>
+    <input type="checkbox"
+           id="post-sub_ids-<%= sub.title %>"
+           name="post[sub_ids][]"
+           value="<%= sub.id %>"
+           <%= "checked" if
+               sub.id == params[:sub_ref].to_i || subs_of_post.include?(sub) %>>
+  <% end %>
+  <br><br>
+  <input type="submit" value="<%= submit_msg %>">
+</form>
+
+<h4><%= link_to "Back", :back %></h4>

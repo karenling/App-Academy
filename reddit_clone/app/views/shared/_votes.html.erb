@@ -1,0 +1,11 @@
+<% if item.is_a?(Comment)
+      up_url = comment_upvote_url(item.id)
+      down_url = comment_downvote_url(item.id)
+   else
+      up_url = post_upvote_url(item.id)
+      down_url = post_downvote_url(item.id)
+   end %>
+
+(<%= item.vote_value %> votes)
+<%= button_to "-1", "#{down_url}", method: "post" %>
+<%= button_to "+1", "#{up_url}", method: "post" %>

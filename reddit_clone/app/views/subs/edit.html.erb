@@ -1,0 +1,7 @@
+<span style="float: right;">subs/edit.html.erb</span>
+
+<h1>Edit Subforum: <%= @sub.title %></h1>
+
+<%= render "form", sub: @sub %>
+
+<h4><%= link_to "Back to #{@sub.title}", sub_url(@sub) %> </h4>
