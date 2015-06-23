@@ -1,0 +1,57 @@
+<script>
+$(function() {
+  var cardIds = [];
+  $('.cards').each(function(idx, card) {
+    var newId = "cards-"+ idx
+    $(card).attr("id", newId);
+    cardIds.push(newId);
+  });
+
+  cardIds = '#'.concat(cardIds.join(", #"));
+
+  $(cardIds).sortable({
+    forcePlaceholderSize: true,
+    placeholder: "card-sort-placeholder",
+    connectWith: ".cards",
+
+    receive: function (event, ui) { // This event is triggered when an item from a connected sortable list has been dropped into another list. The latter is the event target.
+      var receivingListID = $(event.target).data('cards-id');
+      // console.log(event.currentTarget);
+      ui.item.trigger("dropCard", [ui.item.index(), receivingListID]);
+
+    },
+
+    start: function (event, ui) {
+      ui.item.addClass('dragged');
+    },
+
+    stop: function (event, ui) {
+      ui.item.removeClass('dragged');
+  }
+}).disableSelection();
+
+
+  // $( ".cards" ).sortable({
+  //   stop: function(event, ul) {
+  //     ul.item.trigger('dropCard', ul.item.index());
+  //   }
+  // });
+  // $( ".cards" ).disableSelection();
+});
+</script>
+
+<div class="list-item-title">
+  <%= listItem.escape('title') %> <button class="list-delete-button delete btn btn-danger pull-right">X</button>
+</div>
+
+
+
+
+
+<ul class="cards" data-cards-id="<%= listItem.id %>"></ul>
+
+<div class="card-form-holder">
+  <div class="show-button">Add a Card...</div>
+  <div class="card-form" style="display: none;"></div>
+  <div class="hide-button" style="display: none;">Close</div>
+</div>

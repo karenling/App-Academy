@@ -1,0 +1,52 @@
+<script>
+  $(function() {
+    $('.board-list-items').sortable({
+      forcePlaceholderSize: true,
+      placeholder: "list-sort-placeholder",
+      start: function(event, ul) {
+        ul.item.addClass('dragged');
+      },
+
+      stop: function(event, ul) {
+        console.log('stop ');
+        ul.item.removeClass('dragged');
+        ul.item.trigger('drop', ul.item.index()); // takes the one item that has moved
+       }
+    });
+    $('.board-list-items').disableSelection();
+
+  });
+</script>
+
+<style type="text/css">
+  body {
+    background: rgb(0, 121, 191);
+  }
+</style>
+
+<div class="board-show-title">
+  <%= board.escape('title') %>
+  <button class="board-delete-button btn btn-danger">x</button>
+  <div class="add-member-closed">Add Member...</div>
+  <div class="add-member-opened"></div>
+</div>
+<br>
+
+<% var boardCount = board.lists().length %>
+
+
+<div class="horizontal-boards">
+  <ul class="board-list-items"></ul>
+  <div class="board-list-form">
+    <div class="list-form-opened"></div>
+    <div class="list-form-closed"></div>
+  </div>
+</div>
+
+
+<div class="errors"></div>
+
+
+<br>
+
+<a href="#boards">Back to Board Index</a>
