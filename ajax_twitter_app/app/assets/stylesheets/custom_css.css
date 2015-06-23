@@ -1,0 +1,14 @@
+body {
+  font: 12px sans-serif;
+  line-height: 22px;
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #aab624;
+}
+
+a:hover {
+  color: black;
+}
