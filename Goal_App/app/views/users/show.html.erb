@@ -1,0 +1,19 @@
+<h2><%= @user.username %>'s Goals</h2>
+
+<% @user.goals.each do |goal| %>
+
+    <% if goal.private_status == false %>
+      <%= goal.body %><br>
+    <% end %>
+
+    <% if current_user == @user %>
+      <%= goal.body if goal.private_status %><br>
+    <% end %>
+
+    <% if current_user == @user %>
+      <%= link_to "Edit", edit_goal_url(goal) %>
+      <%= button_to "Delete", goal_url(goal), method: :delete %>
+    <% end %>
+  <% end %>
+<%= link_to "Create Goal", new_goal_url if current_user == @user %>
+<%= link_to "Users Index", users_url %>

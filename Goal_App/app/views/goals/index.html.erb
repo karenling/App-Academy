@@ -1,0 +1,12 @@
+<h1>All Goals</h1>
+<ul>
+<% @goals.each do |goal| %>
+  <li>
+    <%= goal.body %>
+    |
+    <%= link_to goal.user.username, user_url(goal.user) %>
+    |
+    <%= time_ago_in_words(goal.created_at) %>
+  </li>
+<% end %>
+</ul>
