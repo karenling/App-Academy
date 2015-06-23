@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NinetyNineCatsDay1</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<%= session[:session_token] %>
+<% if current_user %>
+  Hello, <%= current_user.user_name %>!
+  <%= button_to "Logout", session_url, method: "delete" %><br>
+
+  You are currently logged in at these locations:
+  <table>
+    <tr>
+      <th>Media Type</th><th>Location</th>
+    </tr>
+    <% Session.where(user_id: current_user.id).each do |session| %>
+    <tr>
+      <td><%= session.media %></td><td><%= session.location %></td>
+    </tr>
+    <% end %>
+  </table>
+<% else %>
+  <%= link_to "Please log in", new_session_url %>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>

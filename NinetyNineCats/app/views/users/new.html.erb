@@ -1,0 +1,18 @@
+<% if flash.now[:errors] %>
+  <% flash.now[:errors].each do |error| %>
+    <%= error %>
+  <% end %>
+<% end %>
+
+<form action="<%= users_url %>" method="POST">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <input type="text"
+         name="user[user_name]"
+         value="<%= @user.user_name %>">
+
+  <input type="password"
+         name="user[password]">
+
+  <input type="submit" value="Create User!">
+</form>
