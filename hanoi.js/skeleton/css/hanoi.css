@@ -1,0 +1,76 @@
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.hanoi {
+  width: 635px;
+  margin: auto;
+}
+
+.hanoi:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.tower {
+  height: 195px;
+  width: 185px;
+  border-bottom: 10px solid black;
+  float: left;
+  margin-right: 40px;
+  position: relative;
+}
+
+.tower:last-child {
+  margin-right: 0;
+}
+
+.tower:hover:not(.won) {
+  border-color: blue;
+}
+
+.tower.selected {
+  border-color: red;
+}
+
+.disc-container {
+  position: absolute;
+  bottom: 0;
+  width: 185px;
+
+}
+.disc {
+  background-color: #aaa;
+  border-radius: 50px;
+  height: 50px;
+  margin: 10px auto;
+}
+
+.tower.won .disc {
+  background-color: green;
+}
+
+.disc:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.disc-1 {
+  width: 33%;
+}
+
+.disc-2 {
+  width: 66%;
+}
+
+.disc-3 {
+  width: 100%;
+}
+
+.hidden {
+  height: 0;
+  background-color: red;
+}
