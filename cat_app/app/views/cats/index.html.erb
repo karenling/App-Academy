@@ -1,0 +1,11 @@
+<% if @cats.any? %>
+  <ol>
+    <% @cats.each do |cat| %>
+      <li>
+        <%= link_to cat.name, cat_url(cat) %>
+      </li>
+    <% end %>
+  </ol>
+<% end %>
+
+<%= link_to "Create a new cat", new_cat_url %>
