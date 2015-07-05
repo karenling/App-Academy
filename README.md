@@ -4,8 +4,6 @@ Contains daily work while at App Academy.
 
 #### w0d0 | Precourse Work
 
-## w1: Intro Ruby
-
 #### w1d1 | Intro Ruby Exercises
 
 #### w1d2 | Ruby Object-Oriented Exercises
