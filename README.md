@@ -1,6 +1,8 @@
 #App Academy
 
-#### w0d0 |
+Contains daily work while at App Academy.
+
+#### w0d0 | Precourse Work
 
 ## w1: Intro Ruby
 
