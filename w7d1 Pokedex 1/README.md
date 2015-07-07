@@ -1,6 +1,3 @@
 # w7d1
 
-## Backbone
-
-+ Models
-+ Collections
+Backbone Pokedex -- Models, Collections
