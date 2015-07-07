@@ -1,2 +1,3 @@
 # w5d2
-**Implementing Basic Rails Functionality**
+
+Rails lite -- Implementing Basic Rails Functionality

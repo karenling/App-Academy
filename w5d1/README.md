@@ -1,2 +1,3 @@
-**Using Capybara and RSpec** to create a goals app.
 # w5d1
+
+Rails App Goal Setter App with TDD (RSpec & Capybara) -- FactoryGirl, Faker Gems

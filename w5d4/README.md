@@ -1,3 +1,3 @@
 # w5d4
 
-Redo week one of [AppAcademy](appacademy.io), but with **JavaScript** instead of Ruby. 
+Intro JavaScript Exercises -- Server-side JS, OO JS, Function invocation, Closures & Scope

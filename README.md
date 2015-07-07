@@ -54,7 +54,7 @@ Daily work while at App Academy.
 
 ## Week 5 | Rails (cont) & JavaScript
 
-**[w5d1](./w5d1)** | Rails App Goal Setter App
+**[w5d1](./w5d1)** | Rails App Goal Setter App with TDD (RSpec & Capybara)
 
 **[w5d2](./w5d2)** | Rails Lite
 
