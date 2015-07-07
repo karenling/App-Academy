@@ -2,7 +2,7 @@
 
 Daily work while at App Academy.
 
-**[w0d0]()** | Precourse Work
+**[w0d0](./w0d0)** | Precourse Work ([Blogger2 from JumpStart Lab](http://tutorials.jumpstartlab.com/projects/blogger.html))
 
 ## Week 1 | Intro to Ruby, OOP, & Algorithms
 
