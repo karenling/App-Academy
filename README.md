@@ -1,10 +1,10 @@
 #App Academy
 
-Contains daily work while at App Academy.
+Daily work while at App Academy.
 
 **[w0d0]()** | Precourse Work
 
-## Week 1 | Intro to Ruby, Object-Oriented Programming, & Algorithms
+## Week 1 | Intro to Ruby, OOP, & Algorithms
 
 **[w1d1]()** | Intro Ruby Exercises
 
@@ -16,6 +16,8 @@ Contains daily work while at App Academy.
 
 **[w1d5]()** | Ruby TicTacToe & BFS/DFS Knights Travails
 
+## Week 2 | Language Basics II, OO Design, & RSpec
+
 **[w2d1]()** | Ruby Games Continued
 
 **[w2d2]()** | Ruby Chess
@@ -25,6 +27,8 @@ Contains daily work while at App Academy.
 **[w2d4]()** | Ruby Checkers
 
 **[w2d5]()** | Ruby Poker with RSpec/TDD
+
+## Week 3 | Intro to SQL & ActiveRecord
 
 **[w3d1]()** | SQLZoo
 
@@ -36,6 +40,8 @@ Contains daily work while at App Academy.
 
 **[w3d5]()** | ActiveRecord Lite
 
+## Week 4 | Rails
+
 **[w4d1]()** | Rails Routes & Controllers
 
 **[w4d2]()** | Rails App 99 Cats
@@ -45,6 +51,8 @@ Contains daily work while at App Academy.
 **[w4d4]()** | Rails Music App
 
 **[w4d5]()** | Rails Reddit Clone
+
+## Week 5 | Rails (cont) & JavaScript
 
 **[w5d1]()** | Rails App Goal Setter App
 
@@ -56,6 +64,8 @@ Contains daily work while at App Academy.
 
 **[w5d5]()** | Towers of Hanoi & Tic Tac Toe
 
+## Week 6 | JavaScript (cont), AJAX
+
 **[w6d1]()** | Asteroids with HTML5 Canvas
 
 **[w6d2]()** | CSS Friends
@@ -65,6 +75,8 @@ Contains daily work while at App Academy.
 **[w6d4]()** | jQuery Plugins
 
 **[w6d5]()** | AjaxTwitter
+
+## Week 7 | Backbone
 
 **[w7d1]()** | Backbone Pokedex
 
