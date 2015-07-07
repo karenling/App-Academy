@@ -1,3 +1,3 @@
 # W7D3
 
-Backbone Journal App
+Backbone Journal App, CollectionView pattern, getOrFetch, Backbone events

@@ -2,7 +2,7 @@
 
 Daily work while at App Academy.
 
-**[w0d0](./w0d0)** | Precourse Work 
+**[w0d0](./w0d0)** | Precourse Work
 
 ## Week 1 | Intro to Ruby, OOP, & Algorithms
 
@@ -72,18 +72,18 @@ Daily work while at App Academy.
 
 **[w6d3](./w6d3)** | jQuery Tic Tac Toe, Towers of Hanoi, Snake
 
-**[w6d4](./w6d4)** | jQuery Plugins
+**[w6d4](./w6d4)** | jQuery Plugins, event delegation, triggering
 
-**[w6d5](./w6d5)** | AjaxTwitter
+**[w6d5](./w6d5)** | AjaxTwitter, Underscore
 
 ## Week 7 | Backbone
 
-**[w7d1](./w7d1)** | Backbone Pokedex
+**[w7d1](./w7d1)** | Backbone Pokedex -- Models, Collections, jBuilder, Associations
 
-**[w7d2](./w7d2)** | Continue Backbone Pokedex
+**[w7d2](./w7d2)** | Continue Backbone Pokedex -- Views & Routers
 
-**[w7d3](./w7d3)** | Backbone Journal App
+**[w7d3](./w7d3)** | Backbone Journal App, CollectionView pattern, getOrFetch, Backbone events
 
-**[w7d4](./w7d4)** | Backbone News Reader (feed)
+**[w7d4](./w7d4)** | Backbone News Reader (feed) -- Backbone parse, CompositeView
 
-**[w7d5](./w7d5)** | Backbone Trello Clone
+**[w7d5](./w7d5)** | Backbone Trello Clone -- jQuery UI

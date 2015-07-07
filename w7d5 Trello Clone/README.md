@@ -1,3 +1,3 @@
 # W7D5
 
-Backbone Trello Clone
+Backbone Trello Clone -- jQuery UI

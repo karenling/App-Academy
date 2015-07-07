@@ -1,3 +1,3 @@
 # W7D1
 
-Backbone Pokedex -- Models, Collections
+Backbone Pokedex -- Models, Collections, jBuilder, Associations
