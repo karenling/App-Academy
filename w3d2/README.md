@@ -1,3 +1,3 @@
-# w3d2
+# W3D2
 
 SQL Queries -- SQLite3, Heredocs

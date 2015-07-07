@@ -1,3 +1,3 @@
-# w7d2
+# W7D2
 
 Continue Backbone Pokedex -- Routers, Views

@@ -1,3 +1,3 @@
-# w2d1
+# W2D1
 
 Ruby Games Continued -- [Minesweeper](minesweeper.rb)

@@ -1,3 +1,3 @@
-# w1d4
+# W1D4
 
 Ruby Recursion

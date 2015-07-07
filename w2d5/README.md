@@ -1,3 +1,3 @@
-# w2d5
+# W2D5
 
 Ruby Poker with RSpec/TDD

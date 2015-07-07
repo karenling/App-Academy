@@ -1,3 +1,3 @@
-# w1d2
+# W1D2
 
 Ruby Object-Oriented Exercises -- Methods, iteration, symbols, strings, option hashes, I/O.

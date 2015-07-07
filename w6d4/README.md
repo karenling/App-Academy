@@ -1,3 +1,3 @@
-# w6d4
+# W6D4
 
 jQuery Plugins - tabs, carousel, & thumbnails

@@ -1,3 +1,3 @@
-# w4d4
+# W4D4
 
 Rails [Music App](./music_app) -- ActionMailer, Helpers, Layouts, & Partials

@@ -1,3 +1,3 @@
-# w3d1
+# W3D1
 
 SQLZoo -- SQL fundamentals
