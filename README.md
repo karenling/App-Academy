@@ -34,9 +34,9 @@ Daily work while at App Academy.
 
 **[w3d2](./w3d2)** | SQL Queries
 
-**[w3d3](./w3d3)** | Associations
+**[w3d3](./w3d3)** | First Rails app (Tiny URL) & Associations
 
-**[w3d4](./w3d4)** | Models
+**[w3d4](./w3d4)** | Polling App & Models
 
 **[w3d5](./w3d5)** | ActiveRecord Lite
 
