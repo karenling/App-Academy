@@ -1,7 +1,3 @@
 #w6d1
 
-+ `arguments`
-+ `myBind` with `arguments`
-+ Currying
-+ Prototypal inheritance with `Surrogate`
-+ Asteroids Game
+Asteroids with HTML5 Canvas, `arguments`, `myBind`, Currying, Prototypal inheritance with `Surrogate`

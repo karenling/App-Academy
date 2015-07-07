@@ -1,7 +1,3 @@
 # w6d4
 
-## Custom jQuery Plug-ins
-
-+ Tabs
-+ Carousel
-+ Thumbnails
+jQuery Plugins - tabs, carousel, & thumbnails
